@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "category": "simple",
+    "subtopic": "geography",
+    "query": "What is the capital of Japan?"
+  },
+  {
+    "id": 2,
+    "category": "simple",
+    "subtopic": "geography",
+    "query": "Which country has the largest population in the world?"
+  },
+  {
+    "id": 3,
+    "category": "simple",
+    "subtopic": "geography",
+    "query": "What is the longest river in the world?"
+  },
+  {
+    "id": 4,
+    "category": "simple",
+    "subtopic": "geography",
+    "query": "How many continents are there?"
+  },
+  {
+    "id": 5,
+    "category": "simple",
+    "subtopic": "geography",
+    "query": "What is the capital of Australia?"
+  },
+  {
+    "id": 6,
+    "category": "simple",
+    "subtopic": "geography",
+    "query": "Which ocean is the largest?"
+  },
+  {
+    "id": 7,
+    "category": "simple",
+    "subtopic": "geography",
+    "query": "What is the smallest country in the world?"
+  },
+  {
+    "id": 8,
+    "category": "simple",
+    "subtopic": "geography",
+    "query": "Name the tallest mountain on Earth."
+  },
+  {
+    "id": 9,
+    "category": "simple",
+    "subtopic": "science_fact",
+    "query": "What is the chemical symbol for gold?"
+  },
+  {
+    "id": 10,
+    "category": "simple",
+    "subtopic": "science_fact",
+    "query": "How many planets are there in our solar system?"
+  },
+  {
+    "id": 11,
+    "category": "simple",
+    "subtopic": "science_fact",
+    "query": "What gas do plants absorb from the atmosphere?"
+  },
+  {
+    "id": 12,
+    "category": "simple",
+    "subtopic": "science_fact",
+    "query": "What is the boiling point of water in Celsius?"
+  },
+  {
+    "id": 13,
+    "category": "simple",
+    "subtopic": "science_fact",
+    "query": "What is the speed of light in a vacuum?"
+  },
+  {
+    "id": 14,
+    "category": "simple",
+    "subtopic": "science_fact",
+    "query": "How many bones are there in the adult human body?"
+  },
+  {
+    "id": 15,
+    "category": "simple",
+    "subtopic": "basic_math",
+    "query": "What is 15 multiplied by 12?"
+  },
+  {
+    "id": 16,
+    "category": "simple",
+    "subtopic": "basic_math",
+    "query": "Convert 5 kilometers to miles."
+  },
+  {
+    "id": 17,
+    "category": "simple",
+    "subtopic": "basic_math",
+    "query": "What is the square root of 144?"
+  },
+  {
+    "id": 18,
+    "category": "simple",
+    "subtopic": "basic_math",
+    "query": "How many minutes are there in a day?"
+  },
+  {
+    "id": 19,
+    "category": "simple",
+    "subtopic": "basic_math",
+    "query": "What is 7 squared?"
+  },
+  {
+    "id": 20,
+    "category": "simple",
+    "subtopic": "basic_math",
+    "query": "Convert 100 Fahrenheit to Celsius."
+  },
+  {
+    "id": 21,
+    "category": "simple",
+    "subtopic": "history_fact",
+    "query": "In which year did World War II end?"
+  },
+  {
+    "id": 22,
+    "category": "simple",
+    "subtopic": "history_fact",
+    "query": "Who was the first President of the United States?"
+  },
+  {
+    "id": 23,
+    "category": "simple",
+    "subtopic": "history_fact",
+    "query": "When was the Declaration of Independence signed?"
+  },
+  {
+    "id": 24,
+    "category": "simple",
+    "subtopic": "history_fact",
+    "query": "Who invented the telephone?"
+  },
+  {
+    "id": 25,
+    "category": "simple",
+    "subtopic": "history_fact",
+    "query": "In what year did India gain independence?"
+  },
+  {
+    "id": 26,
+    "category": "simple",
+    "subtopic": "definition",
+    "query": "What does the acronym NASA stand for?"
+  },
+  {
+    "id": 27,
+    "category": "simple",
+    "subtopic": "definition",
+    "query": "What is the definition of photosynthesis?"
+  },
+  {
+    "id": 28,
+    "category": "simple",
+    "subtopic": "definition",
+    "query": "What does HTTP stand for?"
+  },
+  {
+    "id": 29,
+    "category": "simple",
+    "subtopic": "definition",
+    "query": "What is the meaning of the word 'ubiquitous'?"
+  },
+  {
+    "id": 30,
+    "category": "simple",
+    "subtopic": "definition",
+    "query": "What does GDP stand for in economics?"
+  },
+  {
+    "id": 31,
+    "category": "simple",
+    "subtopic": "general_knowledge",
+    "query": "Who wrote the play Romeo and Juliet?"
+  },
+  {
+    "id": 32,
+    "category": "simple",
+    "subtopic": "general_knowledge",
+    "query": "What is the currency used in Japan?"
+  },
+  {
+    "id": 33,
+    "category": "simple",
+    "subtopic": "general_knowledge",
+    "query": "How many strings does a standard guitar have?"
+  },
+  {
+    "id": 34,
+    "category": "simple",
+    "subtopic": "general_knowledge",
+    "query": "What is the national sport of Japan?"
+  },
+  {
+    "id": 35,
+    "category": "simple",
+    "subtopic": "general_knowledge",
+    "query": "Which planet is known as the Red Planet?"
+  },
+  {
+    "id": 36,
+    "category": "simple",
+    "subtopic": "general_knowledge",
+    "query": "What is the largest mammal on Earth?"
+  },
+  {
+    "id": 37,
+    "category": "simple",
+    "subtopic": "general_knowledge",
+    "query": "How many colors are there in a rainbow?"
+  },
+  {
+    "id": 38,
+    "category": "simple",
+    "subtopic": "conversions",
+    "query": "Convert 1 hour into seconds."
+  },
+  {
+    "id": 39,
+    "category": "simple",
+    "subtopic": "conversions",
+    "query": "How many grams are there in a kilogram?"
+  },
+  {
+    "id": 40,
+    "category": "simple",
+    "subtopic": "conversions",
+    "query": "Convert 50 miles per hour into kilometers per hour."
+  },
+  {
+    "id": 41,
+    "category": "simple",
+    "subtopic": "conversions",
+    "query": "How many centimeters are in a meter?"
+  },
+  {
+    "id": 42,
+    "category": "complex",
+    "subtopic": "economics",
+    "query": "Explain why increasing interest rates tends to reduce inflation."
+  },
+  {
+    "id": 43,
+    "category": "complex",
+    "subtopic": "economics",
+    "query": "Why does a trade deficit not necessarily indicate a weak economy?"
+  },
+  {
+    "id": 44,
+    "category": "complex",
+    "subtopic": "economics",
+    "query": "Explain the relationship between unemployment and inflation using the Phillips curve."
+  },
+  {
+    "id": 45,
+    "category": "complex",
+    "subtopic": "economics",
+    "query": "Why might a country choose to devalue its own currency?"
+  },
+  {
+    "id": 46,
+    "category": "complex",
+    "subtopic": "economics",
+    "query": "Explain how supply chain disruptions can cause inflation even without demand changes."
+  },
+  {
+    "id": 47,
+    "category": "complex",
+    "subtopic": "science_reasoning",
+    "query": "Explain why vaccines sometimes require multiple doses to be effective."
+  },
+  {
+    "id": 48,
+    "category": "complex",
+    "subtopic": "science_reasoning",
+    "query": "Why does ice float on water despite being a solid form of it?"
+  },
+  {
+    "id": 49,
+    "category": "complex",
+    "subtopic": "science_reasoning",
+    "query": "Explain why nuclear fusion produces more energy than nuclear fission per unit mass."
+  },
+  {
+    "id": 50,
+    "category": "complex",
+    "subtopic": "science_reasoning",
+    "query": "Why is it harder to boil water at higher altitudes?"
+  },
+  {
+    "id": 51,
+    "category": "complex",
+    "subtopic": "science_reasoning",
+    "query": "Explain how greenhouse gases trap heat in the atmosphere."
+  },
+  {
+    "id": 52,
+    "category": "complex",
+    "subtopic": "philosophy",
+    "query": "Is it ethical to use animals for medical testing? Present arguments on both sides."
+  },
+  {
+    "id": 53,
+    "category": "complex",
+    "subtopic": "philosophy",
+    "query": "Explain the trolley problem and what it reveals about moral decision-making."
+  },
+  {
+    "id": 54,
+    "category": "complex",
+    "subtopic": "philosophy",
+    "query": "Discuss whether free will can coexist with a fully deterministic universe."
+  },
+  {
+    "id": 55,
+    "category": "complex",
+    "subtopic": "philosophy",
+    "query": "What is the difference between moral relativism and moral absolutism?"
+  },
+  {
+    "id": 56,
+    "category": "complex",
+    "subtopic": "comparative_analysis",
+    "query": "Compare the advantages and disadvantages of renewable energy versus nuclear power."
+  },
+  {
+    "id": 57,
+    "category": "complex",
+    "subtopic": "comparative_analysis",
+    "query": "Compare capitalism and socialism in terms of economic incentives."
+  },
+  {
+    "id": 58,
+    "category": "complex",
+    "subtopic": "comparative_analysis",
+    "query": "Compare the long-term effects of remote work versus in-office work on productivity."
+  },
+  {
+    "id": 59,
+    "category": "complex",
+    "subtopic": "comparative_analysis",
+    "query": "Compare monarchies and democracies in terms of long-term political stability."
+  },
+  {
+    "id": 60,
+    "category": "complex",
+    "subtopic": "multi_step_reasoning",
+    "query": "If a train leaves City A at 60 km/h and another leaves City B at 90 km/h toward each other 300 km apart, when do they meet?"
+  },
+  {
+    "id": 61,
+    "category": "complex",
+    "subtopic": "multi_step_reasoning",
+    "query": "A company's revenue grows 10% each year. If it starts at $1 million, what will it be after 5 years, and why does this differ from simple 50% growth?"
+  },
+  {
+    "id": 62,
+    "category": "complex",
+    "subtopic": "multi_step_reasoning",
+    "query": "Explain step by step why a Ponzi scheme inevitably collapses."
+  },
+  {
+    "id": 63,
+    "category": "complex",
+    "subtopic": "multi_step_reasoning",
+    "query": "Walk through the reasoning for why compound interest grows faster than simple interest over time."
+  },
+  {
+    "id": 64,
+    "category": "complex",
+    "subtopic": "cause_effect",
+    "query": "Explain how deforestation contributes to changes in regional rainfall patterns."
+  },
+  {
+    "id": 65,
+    "category": "complex",
+    "subtopic": "cause_effect",
+    "query": "Why did the 2008 financial crisis spread from the housing market to the global economy?"
+  },
+  {
+    "id": 66,
+    "category": "complex",
+    "subtopic": "cause_effect",
+    "query": "Explain how overfishing can collapse an entire marine ecosystem."
+  },
+  {
+    "id": 67,
+    "category": "complex",
+    "subtopic": "cause_effect",
+    "query": "Why can a small change in interest rates have a large effect on stock markets?"
+  },
+  {
+    "id": 68,
+    "category": "complex",
+    "subtopic": "cause_effect",
+    "query": "Explain why antibiotic overuse leads to drug-resistant bacteria over time."
+  },
+  {
+    "id": 69,
+    "category": "complex",
+    "subtopic": "technology_reasoning",
+    "query": "Explain why increasing a neural network's size doesn't always improve its accuracy."
+  },
+  {
+    "id": 70,
+    "category": "complex",
+    "subtopic": "technology_reasoning",
+    "query": "Why do distributed systems need to make trade-offs described by the CAP theorem?"
+  },
+  {
+    "id": 71,
+    "category": "complex",
+    "subtopic": "technology_reasoning",
+    "query": "Explain why encryption alone doesn't guarantee complete data security."
+  },
+  {
+    "id": 72,
+    "category": "complex",
+    "subtopic": "technology_reasoning",
+    "query": "Why can caching improve performance but also introduce data consistency issues?"
+  },
+  {
+    "id": 73,
+    "category": "complex",
+    "subtopic": "technology_reasoning",
+    "query": "Explain why more CPU cores don't always make a program run proportionally faster."
+  },
+  {
+    "id": 74,
+    "category": "complex",
+    "subtopic": "social_reasoning",
+    "query": "Explain why raising the minimum wage can have mixed effects on employment."
+  },
+  {
+    "id": 75,
+    "category": "complex",
+    "subtopic": "social_reasoning",
+    "query": "Discuss why social media algorithms tend to amplify polarizing content."
+  },
+  {
+    "id": 76,
+    "category": "complex",
+    "subtopic": "social_reasoning",
+    "query": "Explain why urbanization often leads to declining birth rates."
+  },
+  {
+    "id": 77,
+    "category": "coding",
+    "subtopic": "arrays",
+    "query": "Write a Python function to find the maximum subarray sum (Kadane's algorithm)."
+  },
+  {
+    "id": 78,
+    "category": "coding",
+    "subtopic": "arrays",
+    "query": "Write a function to rotate an array to the right by k steps."
+  },
+  {
+    "id": 79,
+    "category": "coding",
+    "subtopic": "arrays",
+    "query": "Write code to find the second largest element in an array."
+  },
+  {
+    "id": 80,
+    "category": "coding",
+    "subtopic": "arrays",
+    "query": "Write a function to remove duplicates from a sorted array in place."
+  },
+  {
+    "id": 81,
+    "category": "coding",
+    "subtopic": "linked_lists",
+    "query": "Write a Python function to reverse a singly linked list."
+  },
+  {
+    "id": 82,
+    "category": "coding",
+    "subtopic": "linked_lists",
+    "query": "How do I detect a cycle in a linked list?"
+  },
+  {
+    "id": 83,
+    "category": "coding",
+    "subtopic": "linked_lists",
+    "query": "Write code to find the middle node of a linked list in one pass."
+  },
+  {
+    "id": 84,
+    "category": "coding",
+    "subtopic": "linked_lists",
+    "query": "Write a function to merge two sorted linked lists."
+  },
+  {
+    "id": 85,
+    "category": "coding",
+    "subtopic": "recursion",
+    "query": "Write a recursive function to compute the nth Fibonacci number."
+  },
+  {
+    "id": 86,
+    "category": "coding",
+    "subtopic": "recursion",
+    "query": "Write a recursive function to calculate the factorial of a number."
+  },
+  {
+    "id": 87,
+    "category": "coding",
+    "subtopic": "recursion",
+    "query": "Write a recursive function to check if a string is a palindrome."
+  },
+  {
+    "id": 88,
+    "category": "coding",
+    "subtopic": "recursion",
+    "query": "Explain and implement recursive binary search."
+  },
+  {
+    "id": 89,
+    "category": "coding",
+    "subtopic": "dynamic_programming",
+    "query": "Write a dynamic programming solution for the 0/1 knapsack problem."
+  },
+  {
+    "id": 90,
+    "category": "coding",
+    "subtopic": "dynamic_programming",
+    "query": "Write code to find the longest common subsequence between two strings."
+  },
+  {
+    "id": 91,
+    "category": "coding",
+    "subtopic": "dynamic_programming",
+    "query": "Solve the coin change problem using dynamic programming."
+  },
+  {
+    "id": 92,
+    "category": "coding",
+    "subtopic": "dynamic_programming",
+    "query": "Write a DP solution to find the minimum number of edits to convert one string to another."
+  },
+  {
+    "id": 93,
+    "category": "coding",
+    "subtopic": "sorting_searching",
+    "query": "Implement quicksort in Python."
+  },
+  {
+    "id": 94,
+    "category": "coding",
+    "subtopic": "sorting_searching",
+    "query": "Implement merge sort and explain its time complexity."
+  },
+  {
+    "id": 95,
+    "category": "coding",
+    "subtopic": "sorting_searching",
+    "query": "Write a function to perform binary search on a rotated sorted array."
+  },
+  {
+    "id": 96,
+    "category": "coding",
+    "subtopic": "sorting_searching",
+    "query": "Explain the difference between quicksort and mergesort in terms of worst-case complexity."
+  },
+  {
+    "id": 97,
+    "category": "coding",
+    "subtopic": "graphs",
+    "query": "Write code to perform a breadth-first search on a graph."
+  },
+  {
+    "id": 98,
+    "category": "coding",
+    "subtopic": "graphs",
+    "query": "Write a function to detect a cycle in a directed graph."
+  },
+  {
+    "id": 99,
+    "category": "coding",
+    "subtopic": "graphs",
+    "query": "Implement Dijkstra's algorithm for shortest path."
+  },
+  {
+    "id": 100,
+    "category": "coding",
+    "subtopic": "graphs",
+    "query": "Write code to check if a graph is bipartite."
+  },
+  {
+    "id": 101,
+    "category": "coding",
+    "subtopic": "sql",
+    "query": "Write a SQL query to find the second highest salary from an Employees table."
+  },
+  {
+    "id": 102,
+    "category": "coding",
+    "subtopic": "sql",
+    "query": "Write a SQL query to find duplicate rows in a table."
+  },
+  {
+    "id": 103,
+    "category": "coding",
+    "subtopic": "sql",
+    "query": "Write a SQL query to join three tables and filter by a date range."
+  },
+  {
+    "id": 104,
+    "category": "coding",
+    "subtopic": "sql",
+    "query": "Explain the difference between INNER JOIN and LEFT JOIN with an example."
+  },
+  {
+    "id": 105,
+    "category": "coding",
+    "subtopic": "debugging",
+    "query": "Why does this Python code throw an IndexError: list index out of range?"
+  },
+  {
+    "id": 106,
+    "category": "coding",
+    "subtopic": "debugging",
+    "query": "Debug this function that is supposed to reverse a string but returns the same string."
+  },
+  {
+    "id": 107,
+    "category": "coding",
+    "subtopic": "debugging",
+    "query": "Why is my recursive function causing a stack overflow?"
+  },
+  {
+    "id": 108,
+    "category": "coding",
+    "subtopic": "debugging",
+    "query": "Explain why this code has an off-by-one error in a for loop."
+  },
+  {
+    "id": 109,
+    "category": "coding",
+    "subtopic": "oop_design",
+    "query": "Explain the difference between abstraction and encapsulation with a code example."
+  },
+  {
+    "id": 110,
+    "category": "coding",
+    "subtopic": "oop_design",
+    "query": "Write a Python class hierarchy demonstrating inheritance and polymorphism for shapes."
+  },
+  {
+    "id": 111,
+    "category": "coding",
+    "subtopic": "oop_design",
+    "query": "Implement the singleton design pattern in Python."
+  },
+  {
+    "id": 112,
+    "category": "coding",
+    "subtopic": "oop_design",
+    "query": "Explain when to use composition over inheritance, with an example."
+  },
+  {
+    "id": 113,
+    "category": "coding",
+    "subtopic": "strings_regex",
+    "query": "Write a regular expression to validate an email address."
+  },
+  {
+    "id": 114,
+    "category": "coding",
+    "subtopic": "strings_regex",
+    "query": "Write a function to check if two strings are anagrams of each other."
+  },
+  {
+    "id": 115,
+    "category": "coding",
+    "subtopic": "strings_regex",
+    "query": "Write code to find the longest palindromic substring in a string."
+  },
+  {
+    "id": 116,
+    "category": "creative",
+    "subtopic": "poem",
+    "query": "Write a short poem about autumn rain."
+  },
+  {
+    "id": 117,
+    "category": "creative",
+    "subtopic": "poem",
+    "query": "Write a haiku about the ocean at sunset."
+  },
+  {
+    "id": 118,
+    "category": "creative",
+    "subtopic": "poem",
+    "query": "Write a poem about a lighthouse guiding lost sailors home."
+  },
+  {
+    "id": 119,
+    "category": "creative",
+    "subtopic": "poem",
+    "query": "Write a short poem about the feeling of starting a new city."
+  },
+  {
+    "id": 120,
+    "category": "creative",
+    "subtopic": "short_story",
+    "query": "Write a short story about a robot discovering emotions for the first time."
+  },
+  {
+    "id": 121,
+    "category": "creative",
+    "subtopic": "short_story",
+    "query": "Write a short story about two strangers stuck in an elevator during a storm."
+  },
+  {
+    "id": 122,
+    "category": "creative",
+    "subtopic": "short_story",
+    "query": "Write a short story about a child who finds a door to another world in their attic."
+  },
+  {
+    "id": 123,
+    "category": "creative",
+    "subtopic": "short_story",
+    "query": "Write a short mystery story set in a small isolated village."
+  },
+  {
+    "id": 124,
+    "category": "creative",
+    "subtopic": "dialogue",
+    "query": "Write a short dialogue between a detective and a suspect who is clearly lying."
+  },
+  {
+    "id": 125,
+    "category": "creative",
+    "subtopic": "dialogue",
+    "query": "Write a conversation between two old friends meeting after 20 years."
+  },
+  {
+    "id": 126,
+    "category": "creative",
+    "subtopic": "dialogue",
+    "query": "Write a dialogue between a scientist and an alien meeting for the first time."
+  },
+  {
+    "id": 127,
+    "category": "creative",
+    "subtopic": "tagline_naming",
+    "query": "Suggest a creative tagline for a coffee shop that opens only at night."
+  },
+  {
+    "id": 128,
+    "category": "creative",
+    "subtopic": "tagline_naming",
+    "query": "Suggest a name and tagline for a startup that delivers plants to apartments."
+  },
+  {
+    "id": 129,
+    "category": "creative",
+    "subtopic": "tagline_naming",
+    "query": "Write a catchy slogan for an eco-friendly clothing brand."
+  },
+  {
+    "id": 130,
+    "category": "creative",
+    "subtopic": "descriptive_writing",
+    "query": "Describe a bustling street market in vivid sensory detail."
+  },
+  {
+    "id": 131,
+    "category": "creative",
+    "subtopic": "descriptive_writing",
+    "query": "Describe an abandoned amusement park at night."
+  },
+  {
+    "id": 132,
+    "category": "creative",
+    "subtopic": "descriptive_writing",
+    "query": "Describe the feeling of standing at the edge of a cliff overlooking the sea."
+  },
+  {
+    "id": 133,
+    "category": "creative",
+    "subtopic": "descriptive_writing",
+    "query": "Write a vivid description of a thunderstorm rolling into a quiet town."
+  },
+  {
+    "id": 134,
+    "category": "creative",
+    "subtopic": "letters_speeches",
+    "query": "Write a heartfelt letter from a soldier to their family during wartime, in a fictional voice."
+  },
+  {
+    "id": 135,
+    "category": "creative",
+    "subtopic": "letters_speeches",
+    "query": "Write a short motivational speech for a team about to compete in a big tournament."
+  },
+  {
+    "id": 136,
+    "category": "creative",
+    "subtopic": "letters_speeches",
+    "query": "Write a farewell letter from a retiring teacher to their students."
+  },
+  {
+    "id": 137,
+    "category": "creative",
+    "subtopic": "letters_speeches",
+    "query": "Write a toast speech for a friend's wedding."
+  },
+  {
+    "id": 138,
+    "category": "creative",
+    "subtopic": "metaphor_analogy",
+    "query": "Write a metaphor comparing time to a river, and expand it into a short paragraph."
+  },
+  {
+    "id": 139,
+    "category": "creative",
+    "subtopic": "metaphor_analogy",
+    "query": "Describe love using an extended analogy to gardening."
+  },
+  {
+    "id": 140,
+    "category": "creative",
+    "subtopic": "metaphor_analogy",
+    "query": "Write a short piece comparing life to a marathon."
+  },
+  {
+    "id": 141,
+    "category": "creative",
+    "subtopic": "worldbuilding",
+    "query": "Describe a futuristic city where it never stops raining."
+  },
+  {
+    "id": 142,
+    "category": "creative",
+    "subtopic": "worldbuilding",
+    "query": "Invent a fictional creature and describe its habitat and behavior."
+  },
+  {
+    "id": 143,
+    "category": "creative",
+    "subtopic": "worldbuilding",
+    "query": "Describe a hidden village that exists inside a giant tree."
+  },
+  {
+    "id": 144,
+    "category": "creative",
+    "subtopic": "worldbuilding",
+    "query": "Write a short piece introducing a fantasy kingdom on the edge of extinction."
+  },
+  {
+    "id": 145,
+    "category": "creative",
+    "subtopic": "original_verse",
+    "query": "Write an original short verse (not from any existing song) about chasing dreams in a big city."
+  },
+  {
+    "id": 146,
+    "category": "creative",
+    "subtopic": "original_verse",
+    "query": "Write an original short verse about missing home while traveling far away."
+  },
+  {
+    "id": 147,
+    "category": "creative",
+    "subtopic": "original_verse",
+    "query": "Write an original short verse celebrating friendship and good times."
+  },
+  {
+    "id": 148,
+    "category": "creative",
+    "subtopic": "humor_satire",
+    "query": "Write a humorous short piece about a cat who thinks it runs the household."
+  },
+  {
+    "id": 149,
+    "category": "creative",
+    "subtopic": "humor_satire",
+    "query": "Write a satirical news headline and short blurb about Mondays being banned."
+  },
+  {
+    "id": 150,
+    "category": "creative",
+    "subtopic": "humor_satire",
+    "query": "Write a funny short story about a Wi-Fi router that develops a personality."
+  }
+]
