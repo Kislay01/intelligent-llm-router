@@ -19,7 +19,7 @@ def ask_gemini(prompt: str) -> str:
     """Send a prompt to Gemini and return its text response."""
     client = get_client()
     response = client.models.generate_content(
-        model="gemini-3.6-flash",
+        model="gemini-3.5-flash-lite",
         contents=prompt
     )
     return response.text

@@ -898,5 +898,149 @@
     "category": "creative",
     "subtopic": "humor_satire",
     "query": "Write a funny short story about a Wi-Fi router that develops a personality."
+  },
+  {
+    "id": 151,
+    "category": "coding",
+    "subtopic": "trees",
+    "query": "Write a function to find the height of a binary tree."
+  },
+  {
+    "id": 152,
+    "category": "coding",
+    "subtopic": "trees",
+    "query": "Write code to check if a binary tree is a valid binary search tree."
+  },
+  {
+    "id": 153,
+    "category": "coding",
+    "subtopic": "trees",
+    "query": "Write a function to perform an in-order traversal of a binary tree without recursion."
+  },
+  {
+    "id": 154,
+    "category": "coding",
+    "subtopic": "trees",
+    "query": "Write code to find the lowest common ancestor of two nodes in a binary tree."
+  },
+  {
+    "id": 155,
+    "category": "coding",
+    "subtopic": "bit_manipulation",
+    "query": "Write a function to count the number of set bits in an integer."
+  },
+  {
+    "id": 156,
+    "category": "coding",
+    "subtopic": "bit_manipulation",
+    "query": "Write code to check if a number is a power of two using bitwise operations."
+  },
+  {
+    "id": 157,
+    "category": "coding",
+    "subtopic": "bit_manipulation",
+    "query": "Write a function to find the single number in an array where every other number appears twice."
+  },
+  {
+    "id": 158,
+    "category": "coding",
+    "subtopic": "stacks_queues",
+    "query": "Write code to check if a string of parentheses is balanced using a stack."
+  },
+  {
+    "id": 159,
+    "category": "coding",
+    "subtopic": "stacks_queues",
+    "query": "Implement a queue using two stacks."
+  },
+  {
+    "id": 160,
+    "category": "coding",
+    "subtopic": "stacks_queues",
+    "query": "Write a function to evaluate a postfix expression using a stack."
+  },
+  {
+    "id": 161,
+    "category": "coding",
+    "subtopic": "stacks_queues",
+    "query": "Implement a min-stack that supports push, pop, and retrieving the minimum in O(1)."
+  },
+  {
+    "id": 162,
+    "category": "coding",
+    "subtopic": "hashmaps",
+    "query": "Write a function to find the first non-repeating character in a string using a hashmap."
+  },
+  {
+    "id": 163,
+    "category": "coding",
+    "subtopic": "hashmaps",
+    "query": "Write code to group anagrams together from a list of strings."
+  },
+  {
+    "id": 164,
+    "category": "coding",
+    "subtopic": "hashmaps",
+    "query": "Write a function to find two numbers in an array that sum to a target value."
+  },
+  {
+    "id": 165,
+    "category": "coding",
+    "subtopic": "matrix",
+    "query": "Write a function to rotate an N x N matrix 90 degrees in place."
+  },
+  {
+    "id": 166,
+    "category": "coding",
+    "subtopic": "matrix",
+    "query": "Write code to search for a target value in a row-wise and column-wise sorted matrix."
+  },
+  {
+    "id": 167,
+    "category": "coding",
+    "subtopic": "matrix",
+    "query": "Write a function to find the number of islands in a 2D grid of 1s and 0s."
+  },
+  {
+    "id": 168,
+    "category": "coding",
+    "subtopic": "greedy",
+    "query": "Write a greedy algorithm to solve the activity selection problem."
+  },
+  {
+    "id": 169,
+    "category": "coding",
+    "subtopic": "greedy",
+    "query": "Write code to find the minimum number of coins needed using a greedy approach, and explain when it fails."
+  },
+  {
+    "id": 170,
+    "category": "coding",
+    "subtopic": "greedy",
+    "query": "Write a function to determine the maximum profit from at most one stock transaction."
+  },
+  {
+    "id": 171,
+    "category": "coding",
+    "subtopic": "arrays",
+    "query": "Write a function to find all pairs in an array that sum to a given target, without using extra space for a hashmap."
+  },
+  {
+    "id": 172,
+    "category": "coding",
+    "subtopic": "recursion",
+    "query": "Write a recursive function to generate all permutations of a string."
+  },
+  {
+    "id": 173,
+    "category": "coding",
+    "subtopic": "dynamic_programming",
+    "query": "Write a DP solution to find the length of the longest increasing subsequence."
+  },
+  {
+    "id": 174,
+    "category": "coding",
+    "subtopic": "debugging",
+    "query": "Why does this recursive Fibonacci implementation become extremely slow for n > 35, and how would you fix it?"
   }
 ]
