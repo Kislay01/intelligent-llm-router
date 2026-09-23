@@ -10,6 +10,9 @@ from pydantic import BaseModel
 
 from embed import embed_query
 from ollama_client import query_model
+from db import init_db, log_request, get_stats
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 MODEL_PATH = "models/classifier.pkl"
 ENCODER_PATH = "models/label_encoder.pkl"
@@ -18,6 +21,10 @@ CONFIDENCE_THRESHOLD = 0.30
 FALLBACK_MODEL = "llama3.1:8b"
 
 app = FastAPI(title="Intelligent LLM Router")
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+init_db()
 
 with open(MODEL_PATH, "rb") as f:
     classifier = pickle.load(f)
@@ -37,6 +44,11 @@ class RouteResponse(BaseModel):
     fallback_triggered: bool
     response: str
     latency_seconds: float
+
+
+@app.get("/")
+def serve_ui():
+    return FileResponse("static/index.html")
 
 
 @app.get("/health")
@@ -65,6 +77,14 @@ def route_query(request: RouteRequest):
     model_response = query_model(final_model, request.query)
     latency = time.perf_counter() - start_time
 
+    log_request(
+        query=request.query,
+        routed_model=final_model,
+        confidence=confidence,
+        fallback_triggered=fallback_triggered,
+        latency_seconds=round(latency, 2)
+    )
+
     return RouteResponse(
         query=request.query,
         routed_model=final_model,
@@ -74,3 +94,8 @@ def route_query(request: RouteRequest):
         response=model_response,
         latency_seconds=round(latency, 2)
     )
+
+
+@app.get("/stats")
+def stats():
+    return get_stats()

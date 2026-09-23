@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Intelligent LLM Router</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 900px; margin: 40px auto; background: #0f1117; color: #e6e6e6; }
+  h1 { font-size: 22px; }
+  textarea { width: 100%; height: 80px; background: #1a1d27; color: #e6e6e6; border: 1px solid #333; border-radius: 6px; padding: 10px; font-size: 14px; }
+  button { background: #4f7cff; color: white; border: none; padding: 10px 18px; border-radius: 6px; cursor: pointer; font-size: 14px; margin-top: 8px; }
+  button:disabled { background: #555; cursor: not-allowed; }
+  .card { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 8px; padding: 16px; margin-top: 16px; }
+  .badge { display: inline-block; background: #2b3350; color: #8fb4ff; padding: 3px 10px; border-radius: 12px; font-size: 12px; margin-right: 6px; }
+  pre { white-space: pre-wrap; word-wrap: break-word; background: #12141c; padding: 12px; border-radius: 6px; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #2a2d3a; font-size: 13px; }
+  .tabs { margin-bottom: 16px; }
+  .tab { display: inline-block; padding: 8px 16px; cursor: pointer; border-bottom: 2px solid transparent; }
+  .tab.active { border-bottom: 2px solid #4f7cff; color: #4f7cff; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<h1>Intelligent LLM Router</h1>
+
+<div class="tabs">
+  <span class="tab active" onclick="showTab('chat')">Chat</span>
+  <span class="tab" onclick="showTab('dashboard')">Dashboard</span>
+</div>
+
+<div id="chat-tab">
+  <textarea id="queryInput" placeholder="Ask something..."></textarea><br>
+  <button id="sendBtn" onclick="sendQuery()">Send</button>
+
+  <div id="result" class="card hidden">
+    <div>
+      <span class="badge" id="routedModel"></span>
+      <span class="badge" id="confidence"></span>
+      <span class="badge" id="fallback"></span>
+      <span class="badge" id="latency"></span>
+    </div>
+    <pre id="responseText"></pre>
+  </div>
+</div>
+
+<div id="dashboard-tab" class="hidden">
+  <div class="card">
+    <h3>Overview</h3>
+    <p id="totalRequests"></p>
+    <p id="fallbackCount"></p>
+  </div>
+
+  <div class="card">
+    <h3>Model Usage</h3>
+    <table id="usageTable">
+      <thead><tr><th>Model</th><th>Requests</th><th>Avg Latency (s)</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Recent Requests</h3>
+    <table id="recentTable">
+      <thead><tr><th>Query</th><th>Model</th><th>Confidence</th><th>Time</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <button onclick="loadStats()">Refresh</button>
+</div>
+
+<script>
+function showTab(tab) {
+  document.getElementById('chat-tab').classList.toggle('hidden', tab !== 'chat');
+  document.getElementById('dashboard-tab').classList.toggle('hidden', tab !== 'dashboard');
+  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+  event.target.classList.add('active');
+  if (tab === 'dashboard') loadStats();
+}
+
+async function sendQuery() {
+  const query = document.getElementById('queryInput').value.trim();
+  if (!query) return;
+
+  const btn = document.getElementById('sendBtn');
+  btn.disabled = true;
+  btn.textContent = 'Thinking...';
+
+  try {
+    const res = await fetch('/route', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query })
+    });
+    const data = await res.json();
+
+    document.getElementById('routedModel').textContent = 'Model: ' + data.routed_model;
+    document.getElementById('confidence').textContent = 'Confidence: ' + (data.confidence * 100).toFixed(1) + '%';
+    document.getElementById('fallback').textContent = data.fallback_triggered ? 'Fallback used' : 'Direct routing';
+    document.getElementById('latency').textContent = data.latency_seconds + 's';
+    document.getElementById('responseText').textContent = data.response;
+    document.getElementById('result').classList.remove('hidden');
+  } catch (e) {
+    alert('Error: ' + e);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Send';
+  }
+}
+
+async function loadStats() {
+  const res = await fetch('/stats');
+  const data = await res.json();
+
+  document.getElementById('totalRequests').textContent = 'Total requests: ' + data.total_requests;
+  document.getElementById('fallbackCount').textContent = 'Fallback triggered: ' + data.fallback_count;
+
+  const usageBody = document.querySelector('#usageTable tbody');
+  usageBody.innerHTML = '';
+  data.model_usage.forEach(row => {
+    usageBody.innerHTML += `<tr><td>${row.routed_model}</td><td>${row.count}</td><td>${row.avg_latency.toFixed(2)}</td></tr>`;
+  });
+
+  const recentBody = document.querySelector('#recentTable tbody');
+  recentBody.innerHTML = '';
+  data.recent_requests.forEach(row => {
+    recentBody.innerHTML += `<tr><td>${row.query}</td><td>${row.routed_model}</td><td>${(row.confidence*100).toFixed(1)}%</td><td>${row.timestamp}</td></tr>`;
+  });
+}
+</script>
+
+</body>
+</html>
