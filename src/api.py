@@ -14,6 +14,9 @@ from ollama_client import query_model
 MODEL_PATH = "models/classifier.pkl"
 ENCODER_PATH = "models/label_encoder.pkl"
 
+CONFIDENCE_THRESHOLD = 0.30
+FALLBACK_MODEL = "llama3.1:8b"
+
 app = FastAPI(title="Intelligent LLM Router")
 
 with open(MODEL_PATH, "rb") as f:
@@ -31,6 +34,7 @@ class RouteResponse(BaseModel):
     routed_model: str
     confidence: float
     all_probabilities: dict
+    fallback_triggered: bool
     response: str
     latency_seconds: float
 
@@ -54,15 +58,19 @@ def route_query(request: RouteRequest):
         for i, p in enumerate(probabilities)
     }
 
+    fallback_triggered = confidence < CONFIDENCE_THRESHOLD
+    final_model = FALLBACK_MODEL if fallback_triggered else predicted_model
+
     start_time = time.perf_counter()
-    model_response = query_model(predicted_model, request.query)
+    model_response = query_model(final_model, request.query)
     latency = time.perf_counter() - start_time
 
     return RouteResponse(
         query=request.query,
-        routed_model=predicted_model,
+        routed_model=final_model,
         confidence=confidence,
         all_probabilities=all_probs,
+        fallback_triggered=fallback_triggered,
         response=model_response,
         latency_seconds=round(latency, 2)
     )
