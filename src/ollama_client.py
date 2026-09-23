@@ -1,6 +1,8 @@
+import os
 import requests
 
-OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+OLLAMA_URL = f"{OLLAMA_HOST}/api/generate"
 
 
 def query_model(model: str, prompt: str) -> str:
@@ -19,6 +21,5 @@ def query_model(model: str, prompt: str) -> str:
 
 
 if __name__ == "__main__":
-    # Quick manual test
     result = query_model("llama3.2:3b", "What is 2 + 2?")
     print(result)
