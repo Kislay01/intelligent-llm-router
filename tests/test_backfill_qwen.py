@@ -28,10 +28,18 @@ def test_needs_backfill():
     assert not bq.needs_backfill(row)
 
 
+def test_errored_answer_is_regenerated():
+    row = _old_row()
+    row["scores"]["qwen2.5-coder:7b"] = 8
+    row["responses"]["qwen2.5-coder:7b"] = "Tokyo"
+    row["responses"]["mistral:7b"] = "[ERROR: HTTPConnectionPool Read timed out]"
+    assert bq.models_to_generate(row) == ["mistral:7b"]
+
+
 def test_rebuild_row_replaces_pool_and_keeps_legacy():
     judgment = {"scores": {"llama3.2:3b": 9, "llama3.1:8b": 10, "qwen2.5-coder:7b": 7, "mistral:7b": 8},
                 "winner": "wrong-on-purpose"}
-    new = bq.rebuild_row(_old_row(), "Tokyo!", judgment)
+    new = bq.rebuild_row(_old_row(), {"qwen2.5-coder:7b": "Tokyo!"}, judgment)
     assert set(new["scores"]) == set(bq.OLLAMA_MODELS)
     assert "codellama:7b" not in new["responses"]
     assert new["responses"]["qwen2.5-coder:7b"] == "Tokyo!"
@@ -65,3 +73,11 @@ def test_judge_retries_then_succeeds(mock_gemini, _sleep):
     mock_gemini.side_effect = [RuntimeError("503"), ok]
     assert bq.judge_with_retry("p")["scores"]["mistral:7b"] == 8
     assert mock_gemini.call_count == 2
+
+
+def test_repeated_pass_keeps_original_legacy():
+    judgment = {"scores": {m: 8 for m in bq.OLLAMA_MODELS}, "winner": "x"}
+    once = bq.rebuild_row(_old_row(), {"qwen2.5-coder:7b": "a"}, judgment)
+    twice = bq.rebuild_row(once, {"mistral:7b": "b"}, judgment)
+    assert twice["legacy_winner"] == "mistral:7b"
+    assert twice["legacy_scores"]["codellama:7b"] == 9

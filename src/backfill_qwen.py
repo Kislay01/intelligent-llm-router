@@ -2,7 +2,8 @@
 
 The first 150 queries were judged against codellama:7b instead of qwen2.5-coder:7b, so qwen
 has scores for only 24 queries. For each row missing a qwen score this script:
-  1. generates qwen's answer with Ollama,
+  1. generates qwen's answer with Ollama (and re-generates any served model's answer that is a
+     stored "[ERROR: ...]" timeout string, which would otherwise be judged as a terrible answer),
   2. re-judges {llama3.2:3b, llama3.1:8b, qwen2.5-coder:7b, mistral:7b} in ONE Gemini call
      (same prompt and model order as label_pipeline.py, so scores are comparable),
   3. stores the new scores/winner and keeps the old ones as legacy_scores / legacy_winner.
@@ -24,10 +25,21 @@ from ollama_client import query_model
 
 RESULTS_FILE = "data/labeled_results.jsonl"
 QWEN = "qwen2.5-coder:7b"
+ERROR_PREFIX = "[ERROR"
+
+
+def models_to_generate(row: dict) -> list:
+    """Served models whose answer is missing (qwen on old rows) or is a stored error string."""
+    return [
+        m for m in OLLAMA_MODELS
+        if m not in row["responses"]
+        or row["responses"][m].startswith(ERROR_PREFIX)
+        or m not in row["scores"]
+    ]
 
 
 def needs_backfill(row: dict) -> bool:
-    return QWEN not in row["scores"] or QWEN not in row["responses"]
+    return bool(models_to_generate(row))
 
 
 def build_prompt(query: str, responses: dict) -> str:
@@ -49,15 +61,14 @@ def validate_scores(scores: dict) -> dict:
     return scores
 
 
-def rebuild_row(row: dict, qwen_response: str, judgment: dict) -> dict:
-    """New row with the full four-model pool; the previous judgement is kept for audit."""
+def rebuild_row(row: dict, new_responses: dict, judgment: dict) -> dict:
+    """New row with the full four-model pool; the first-ever judgement is kept for audit."""
     scores = validate_scores(judgment["scores"])
-    responses = {m: row["responses"][m] for m in OLLAMA_MODELS if m != QWEN}
-    responses[QWEN] = qwen_response
+    responses = {**row["responses"], **new_responses}
     new = dict(row)
-    new["legacy_scores"] = row["scores"]
-    new["legacy_winner"] = row["winner"]
-    new["responses"] = {m: responses[m] for m in OLLAMA_MODELS}  # drop codellama's answer
+    new.setdefault("legacy_scores", row["scores"])  # keep the ORIGINAL on repeated passes
+    new.setdefault("legacy_winner", row["winner"])
+    new["responses"] = {m: responses[m] for m in OLLAMA_MODELS}  # drops codellama's answer
     new["scores"] = scores
     new["winner"] = max(scores, key=scores.get)  # derive it ourselves, do not trust the judge's field
     new["backfilled"] = True
@@ -89,10 +100,21 @@ def save_rows(rows: list, path: str = RESULTS_FILE) -> None:
     os.replace(tmp, path)  # atomic: an interrupt can never leave a half-written file
 
 
+def generate_with_retry(model: str, query: str, attempts: int = 2) -> str:
+    """Ollama call that must not return an error string (a timeout on first model load is common)."""
+    for attempt in range(attempts):
+        try:
+            return query_model(model, query)
+        except Exception as e:
+            if attempt == attempts - 1:
+                raise
+            print(f"  Ollama error on {model} ({e}), retrying...")
+
+
 def backfill_one(row: dict) -> dict:
-    qwen_response = query_model(QWEN, row["query"])
-    prompt = build_prompt(row["query"], {**row["responses"], QWEN: qwen_response})
-    return rebuild_row(row, qwen_response, judge_with_retry(prompt))
+    new_responses = {m: generate_with_retry(m, row["query"]) for m in models_to_generate(row)}
+    prompt = build_prompt(row["query"], {**row["responses"], **new_responses})
+    return rebuild_row(row, new_responses, judge_with_retry(prompt))
 
 
 def main():
@@ -102,7 +124,7 @@ def main():
 
     rows = load_rows()
     todo = [i for i, r in enumerate(rows) if needs_backfill(r)]
-    print(f"{len(rows)} rows, {len(todo)} need a qwen score.")
+    print(f"{len(rows)} rows, {len(todo)} need a missing/errored answer regenerated and re-judged.")
     if args.limit is not None:
         todo = todo[: args.limit]
 
@@ -119,7 +141,7 @@ def main():
         time.sleep(4)
 
     remaining = sum(needs_backfill(r) for r in rows)
-    print(f"\nDone. Rows still missing a qwen score: {remaining}")
+    print(f"\nDone. Rows still needing work: {remaining}")
     if remaining == 0:
         print("Next: python src/train_classifier.py && python src/run_evaluation.py")
 
