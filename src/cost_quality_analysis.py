@@ -8,7 +8,7 @@ import sys
 sys.path.append(os.path.dirname(__file__))
 
 from embed import embed_query
-from pricing import MODEL_PRICING_PER_1M_TOKENS
+from pricing import estimate_cost
 from relabel import DEFAULT_TOLERANCE, get_label
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -19,22 +19,7 @@ MODEL_PATH = "models/classifier.pkl"
 ENCODER_PATH = "models/label_encoder.pkl"
 OUTPUT_CHART = "data/cost_quality_chart.png"
 
-MODEL_PRICING_PER_1K_TOKENS = {
-    model: price / 1000 for model, price in MODEL_PRICING_PER_1M_TOKENS.items()
-}
-
 BASELINE_MODEL = "llama3.1:8b"  # the empirically strongest all-rounder from your data
-
-
-def estimate_tokens(text: str) -> float:
-    """Rough heuristic: ~4 characters per token for English text."""
-    return len(text) / 4
-
-
-def estimate_cost(query_text: str, response_text: str, model: str) -> float:
-    price_per_1k = MODEL_PRICING_PER_1K_TOKENS[model]
-    total_tokens = estimate_tokens(query_text) + estimate_tokens(response_text)
-    return (total_tokens / 1000) * price_per_1k
 
 
 def load_labeled_data():

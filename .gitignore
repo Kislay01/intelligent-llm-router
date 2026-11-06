@@ -4,3 +4,4 @@ __pycache__/
 .env
 *.pkl
 *.db
+data/evaluation_results.json
