@@ -1,0 +1,142 @@
+import os
+import sys
+
+import pytest
+
+BENCH = os.path.join(os.path.dirname(__file__), "..", "bench")
+sys.path.append(BENCH)
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
+
+from extract import build_program, extract_code
+from generate import pending
+from load_benchmarks import normalize_humaneval, normalize_mbpp
+from report import build_outcomes, headroom, wilson
+from runner import run_program, selftest
+
+HE_PROMPT = 'def helper(x):\n    return x * 2\n\n\ndef add_twice(a, b):\n    """Add a and b, then double."""\n'
+HE_TASK = {
+    "id": "humaneval/0", "source": "humaneval", "prompt": HE_PROMPT, "entry_point": "add_twice",
+    "tests": "def check(candidate):\n    assert candidate(1, 2) == 6\n    assert candidate(0, 0) == 0\n",
+}
+MBPP_TASK = {"id": "mbpp/1", "source": "mbpp", "setup": "import math", "entry_point": None,
+             "tests": "assert area(2) == math.pi * 4"}
+
+
+def _reply(code):
+    return f"Sure!\n```python\n{code}\n```\nHope that helps."
+
+
+# ---- extraction and program assembly ----
+def test_extract_prefers_block_defining_entry_point():
+    reply = "```python\nprint('demo')\n```\n```python\ndef f(x):\n    return x\n```"
+    assert "def f" in extract_code(reply, "f")
+
+
+def test_extract_handles_unterminated_fence_and_raw_code():
+    assert "def f" in extract_code("```python\ndef f():\n    pass", "f")
+    assert "def f" in extract_code("def f():\n    pass", "f")
+
+
+def test_extract_drops_main_demo():
+    code = extract_code(_reply("def f():\n    return 1\n\nif __name__ == '__main__':\n    print(input())"), "f")
+    assert "__main__" not in code and "def f" in code
+
+
+def test_humaneval_full_function_reuses_prompt_helpers():
+    program = build_program(HE_TASK, _reply("def add_twice(a, b):\n    return helper(a + b)"))
+    assert run_program(program, "local")["status"] == "pass"
+
+
+def test_humaneval_body_only_completion_works():
+    program = build_program(HE_TASK, "```python\n    return helper(a + b)\n```")
+    assert run_program(program, "local")["status"] == "pass"
+
+
+def test_humaneval_wrong_answer_fails():
+    program = build_program(HE_TASK, _reply("def add_twice(a, b):\n    return a + b"))
+    assert run_program(program, "local")["status"] == "fail"
+
+
+def test_mbpp_program_uses_setup_imports():
+    ok = build_program(MBPP_TASK, _reply("def area(r):\n    return math.pi * r * r"))
+    bad = build_program(MBPP_TASK, _reply("def area(r):\n    return 3 * r * r"))
+    assert run_program(ok, "local")["status"] == "pass"
+    assert run_program(bad, "local")["status"] == "fail"
+
+
+# ---- runner ----
+def test_runner_distinguishes_pass_fail_timeout():
+    assert run_program("assert True", "local")["status"] == "pass"
+    assert run_program("assert False", "local")["status"] == "fail"
+    assert run_program("while True:\n    pass", "local", timeout=1)["status"] == "timeout"
+
+
+def test_local_selftest_passes():
+    assert selftest("local") is True
+
+
+def test_unknown_mode_rejected():
+    with pytest.raises(ValueError):
+        run_program("pass", "magic")
+
+
+# ---- loaders ----
+def test_normalize_humaneval_and_missing_columns():
+    rows = [{"task_id": "HumanEval/0", "prompt": "def f():\n", "test": "t", "entry_point": "f", "canonical_solution": ""}]
+    tasks = normalize_humaneval(rows)
+    assert tasks[0]["id"] == "humaneval/0" and "def f" in tasks[0]["question"]
+    with pytest.raises(KeyError):
+        normalize_humaneval([{"task_id": "x"}])
+
+
+def test_normalize_mbpp_is_deterministic_and_shows_tests():
+    rows = [{"task_id": i, "prompt": f"p{i}", "test_list": [f"assert f({i})"], "test_imports": []} for i in range(1, 50)]
+    a = normalize_mbpp(rows, 10, seed=42)
+    b = normalize_mbpp(list(reversed(rows)), 10, seed=42)
+    assert [t["id"] for t in a] == [t["id"] for t in b] and len(a) == 10
+    assert "assert f(" in a[0]["question"]
+
+
+# ---- generation resume and reporting ----
+def test_pending_skips_done_pairs():
+    tasks = [{"id": "a"}, {"id": "b"}]
+    assert [t["id"] for t in pending(tasks, "m", {("a", "m")})] == ["b"]
+
+
+def test_wilson_interval_is_sane():
+    p, lo, hi = wilson(50, 100)
+    assert p == 0.5 and lo < 0.5 < hi and 0 <= lo and hi <= 1
+    assert wilson(0, 0) == (0.0, 0.0, 0.0)
+
+
+def _outcomes(passing_by_model):
+    tasks = [{"id": f"t{i}", "source": "mbpp", "question": "q" * 40} for i in range(len(passing_by_model["llama3.1:8b"]))]
+    models = list(passing_by_model)
+    gens = [{"task_id": t["id"], "model": m, "response": "x" * 100} for t in tasks for m in models]
+    res = [{"task_id": t["id"], "model": m, "passed": passing_by_model[m][i], "status": "pass" if passing_by_model[m][i] else "fail"}
+           for i, t in enumerate(tasks) for m in models]
+    return tasks, gens, res, models
+
+
+def test_headroom_counts_agreement_and_oracle():
+    data = {
+        "llama3.1:8b":      [True, True, False, False],
+        "llama3.2:3b":      [True, False, True, False],
+        "mistral:7b":       [True, False, False, False],
+        "qwen2.5-coder:7b": [True, False, False, False],
+    }
+    tasks, gens, res, models = _outcomes(data)
+    rows = build_outcomes(tasks, gens, res, models)
+    h = headroom(rows, models)
+    assert (h["all_models_pass"], h["no_model_passes"], h["mixed"]) == (1, 1, 2)
+    assert h["baseline_fails_but_a_cheaper_model_passes"] == 1
+    assert h["baseline_passes_but_every_cheaper_model_fails"] == 1
+    assert h["oracle_pass_rate"][0] == 0.75
+    assert h["oracle_savings_vs_baseline_pct"] > 0
+
+
+def test_build_outcomes_skips_tasks_missing_a_model():
+    data = {m: [True, True] for m in ["llama3.1:8b", "llama3.2:3b", "mistral:7b", "qwen2.5-coder:7b"]}
+    tasks, gens, res, models = _outcomes(data)
+    gens = [g for g in gens if not (g["task_id"] == "t1" and g["model"] == "mistral:7b")]
+    assert [r["id"] for r in build_outcomes(tasks, gens, res, models)] == ["t0"]

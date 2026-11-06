@@ -6,17 +6,15 @@ OLLAMA_URL = f"{OLLAMA_HOST}/api/generate"
 OLLAMA_CHAT_URL = f"{OLLAMA_HOST}/api/chat"
 
 
-def query_model(model: str, prompt: str) -> str:
-    """Send a prompt to a local Ollama model and return its text response."""
-    response = requests.post(
-        OLLAMA_URL,
-        json={
-            "model": model,
-            "prompt": prompt,
-            "stream": False
-        },
-        timeout=120
-    )
+def query_model(model: str, prompt: str, options: dict | None = None, timeout: int = 120) -> str:
+    """Send a prompt to a local Ollama model and return its text response.
+
+    `options` is Ollama's sampling options (e.g. {"temperature": 0}); omitted by default.
+    """
+    payload = {"model": model, "prompt": prompt, "stream": False}
+    if options:
+        payload["options"] = options
+    response = requests.post(OLLAMA_URL, json=payload, timeout=timeout)
     response.raise_for_status()
     return response.json()["response"]
 

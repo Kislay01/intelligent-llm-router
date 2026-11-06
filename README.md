@@ -147,6 +147,21 @@ python src/cost_quality_analysis.py    # cost vs quality evaluation + chart
 python src/embedding_visualization.py  # UMAP cluster chart
 ```
 
+## Objective benchmark (experimental)
+
+The judge-labelled dataset depends on one noisy LLM judge. `bench/` measures the same four models on tasks with
+right answers instead: HumanEval and MBPP, graded by running unit tests in a Docker sandbox (no network,
+read-only filesystem, memory/CPU/time limits).
+
+```bash
+pip install -r requirements-bench.txt
+python bench/load_benchmarks.py          # HumanEval + 100 MBPP problems -> data/bench/tasks.json
+python bench/grade.py --selftest         # prove the sandbox isolates and tells pass/fail/timeout apart
+python bench/generate.py                 # all 4 models answer every task (hours; resumable)
+python bench/grade.py                    # run answers against the tests
+python bench/report.py                   # pass rates, routing headroom, cost-aware oracle
+```
+
 ## API
 
 | Endpoint | Method | Description |
