@@ -1,0 +1,1056 @@
+{"task_id": "humaneval/1", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 66, in <module>\n  File \"<stdin>\", line 54, in check\nAssertionError"}
+{"task_id": "humaneval/0", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/2", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/3", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/4", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/0", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/1", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/2", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/4", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/3", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/1", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/0", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/2", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/3", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/4", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/0", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/1", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 55, in <module>\n  File \"<stdin>\", line 43, in check\nAssertionError"}
+{"task_id": "humaneval/2", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/3", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/4", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/5", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/6", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/8", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/7", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/10", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 67, in <module>\n  File \"<stdin>\", line 62, in check\nAssertionError"}
+{"task_id": "humaneval/9", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/11", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/12", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/13", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/14", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/15", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/16", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/17", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 66, in <module>\n  File \"<stdin>\", line 62, in check\nAssertionError"}
+{"task_id": "humaneval/18", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/20", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/19", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/22", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/21", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/23", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/24", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/25", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/26", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/27", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/28", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/29", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/30", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/31", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/33", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 42, in <module>\n  File \"<stdin>\", line 35, in check\nAssertionError"}
+{"task_id": "humaneval/34", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/35", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/36", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/37", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 38, in <module>\n  File \"<stdin>\", line 32, in check\n  File \"<stdin>\", line 23, in sort_even\nTypeError: 'int' object is not iterable"}
+{"task_id": "humaneval/38", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/39", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/40", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 69, in <module>\n  File \"<stdin>\", line 57, in check\nAssertionError"}
+{"task_id": "humaneval/41", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 46, in <module>\n  File \"<stdin>\", line 38, in check\nAssertionError"}
+{"task_id": "humaneval/42", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/43", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/44", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/45", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/46", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/47", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/48", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/49", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/50", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/51", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/52", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/32", "source": "humaneval", "model": "llama3.2:3b", "status": "timeout", "passed": false, "detail": "exceeded 10s"}
+{"task_id": "humaneval/53", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/54", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/55", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/56", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/57", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/58", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/59", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/60", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/61", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/62", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError"}
+{"task_id": "humaneval/63", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/64", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 60, in <module>\n  File \"<stdin>\", line 47, in check\nAssertionError: Test 1"}
+{"task_id": "humaneval/65", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\n  File \"<stdin>\", line 33, in check\nAssertionError"}
+{"task_id": "humaneval/66", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/67", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "e 41, in check\n  File \"<stdin>\", line 32, in fruit_distribution\n  File \"/usr/local/lib/python3.12/re/__init__.py\", line 177, in search\n    return _compile(pattern, flags).search(string)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: expected string or bytes-like object, got 're.Match'"}
+{"task_id": "humaneval/68", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 97, in <module>\n  File \"<stdin>\", line 83, in check\n  File \"<stdin>\", line 72, in pluck\nAttributeError: 'int' object has no attribute 'value'"}
+{"task_id": "humaneval/69", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/70", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/71", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/72", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/73", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/74", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/76", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 45, in check\nAssertionError: This prints if this assert fails 2 (also good for debugging!)"}
+{"task_id": "humaneval/75", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError"}
+{"task_id": "humaneval/78", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/77", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 38, in check\n  File \"<stdin>\", line 30, in iscube\nTypeError: type complex doesn't define __round__ method"}
+{"task_id": "humaneval/79", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/80", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 42, in check\nAssertionError: aabb"}
+{"task_id": "humaneval/81", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 88, in <module>\n  File \"<stdin>\", line 76, in check\nAssertionError"}
+{"task_id": "humaneval/82", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/83", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 37, in <module>\n  File \"<stdin>\", line 27, in check\nAssertionError"}
+{"task_id": "humaneval/84", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError: Error"}
+{"task_id": "humaneval/86", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/85", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/87", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 86, in <module>\n  File \"<stdin>\", line 55, in check\nAssertionError"}
+{"task_id": "humaneval/88", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 59, in <module>\n  File \"<stdin>\", line 48, in check\nAssertionError: Error"}
+{"task_id": "humaneval/89", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 59, in <module>\n  File \"<stdin>\", line 45, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/90", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 38, in check\nAssertionError"}
+{"task_id": "humaneval/92", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/91", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError: Test 2"}
+{"task_id": "humaneval/93", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 62, in <module>\n  File \"<stdin>\", line 52, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/94", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 68, in <module>\n  File \"<stdin>\", line 46, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/96", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/95", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 40, in check\n  File \"<stdin>\", line 32, in check_dict_case\n  File \"<stdin>\", line 32, in <genexpr>\nAttributeError: 'int' object has no attribute 'islower'"}
+{"task_id": "humaneval/97", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 46, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError: First test error: 6"}
+{"task_id": "humaneval/98", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/99", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/100", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/101", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/102", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 35, in check\nAssertionError"}
+{"task_id": "humaneval/104", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/103", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 53, in <module>\n  File \"<stdin>\", line 35, in check\nAssertionError"}
+{"task_id": "humaneval/105", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/106", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 33, in check\n  File \"<stdin>\", line 25, in f\nNameError: name 'math' is not defined. Did you forget to import 'math'?"}
+{"task_id": "humaneval/108", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/107", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/109", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 79, in <module>\n  File \"<stdin>\", line 71, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/110", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 55, in <module>\n  File \"<stdin>\", line 44, in check\nAssertionError"}
+{"task_id": "humaneval/112", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/111", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/113", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 38, in check\n  File \"<stdin>\", line 31, in odd_count\nNameError: name 'n' is not defined"}
+{"task_id": "humaneval/114", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 52, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/115", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 63, in <module>\n  File \"<stdin>\", line 59, in check\nAssertionError: Error"}
+{"task_id": "humaneval/116", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/117", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/118", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 63, in <module>\n  File \"<stdin>\", line 46, in check\nAssertionError"}
+{"task_id": "humaneval/120", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 76, in <module>\n  File \"<stdin>\", line 60, in check\nAssertionError"}
+{"task_id": "humaneval/119", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 75, in <module>\n  File \"<stdin>\", line 57, in check\nAssertionError"}
+{"task_id": "humaneval/122", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/121", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/124", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 105, in <module>\n  File \"<stdin>\", line 74, in check\nAssertionError"}
+{"task_id": "humaneval/123", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/125", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/126", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 65, in <module>\n  File \"<stdin>\", line 58, in check\nAssertionError: This prints if this assert fails 5 (good for debugging!)"}
+{"task_id": "humaneval/127", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 81, in <module>\n  File \"<stdin>\", line 69, in check\nAssertionError"}
+{"task_id": "humaneval/128", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 59, in <module>\n  File \"<stdin>\", line 46, in check\nAssertionError"}
+{"task_id": "humaneval/129", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 105, in <module>\n  File \"<stdin>\", line 89, in check\nAssertionError"}
+{"task_id": "humaneval/130", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 72, in <module>\n  File \"<stdin>\", line 58, in check\nAssertionError"}
+{"task_id": "humaneval/131", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 42, in <module>\n  File \"<stdin>\", line 38, in check\nAssertionError"}
+{"task_id": "humaneval/132", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 63, in <module>\n  File \"<stdin>\", line 44, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/133", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/134", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 59, in <module>\n  File \"<stdin>\", line 43, in check\nAssertionError"}
+{"task_id": "humaneval/135", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 34, in check\nAssertionError"}
+{"task_id": "humaneval/136", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 60, in <module>\n  File \"<stdin>\", line 51, in check\nAssertionError"}
+{"task_id": "humaneval/137", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 60, in <module>\n  File \"<stdin>\", line 50, in check\nAssertionError"}
+{"task_id": "humaneval/138", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\n  File \"<stdin>\", line 33, in check\nAssertionError"}
+{"task_id": "humaneval/139", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/140", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 54, in <module>\n  File \"<stdin>\", line 49, in check\nAssertionError: This prints if this assert fails 4 (good for debugging!)"}
+{"task_id": "humaneval/141", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 79, in <module>\n  File \"<stdin>\", line 50, in check\nAssertionError"}
+{"task_id": "humaneval/142", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 57, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError"}
+{"task_id": "humaneval/143", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/144", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/145", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError"}
+{"task_id": "humaneval/146", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 43, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError"}
+{"task_id": "humaneval/147", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/148", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/149", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/150", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/151", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/152", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/153", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/154", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError: test #1"}
+{"task_id": "humaneval/155", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError"}
+{"task_id": "humaneval/156", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/157", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/158", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 35, in check\nAssertionError: t2"}
+{"task_id": "humaneval/159", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 85, in <module>\n  File \"<stdin>\", line 73, in check\nAssertionError: Error"}
+{"task_id": "humaneval/160", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 87, in <module>\n  File \"<stdin>\", line 79, in check\nAssertionError"}
+{"task_id": "humaneval/161", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/162", "source": "humaneval", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/163", "source": "humaneval", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\n  File \"<stdin>\", line 31, in check\nAssertionError: Test 1"}
+{"task_id": "mbpp/6", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/18", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/19", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/56", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\n  File \"<stdin>\", line 3, in check\nTypeError: unsupported operand type(s) for -: 'str' and 'int'"}
+{"task_id": "mbpp/57", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/64", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/65", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/80", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/82", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/86", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/90", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/93", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/95", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/97", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/98", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/103", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 15, in <module>\nAssertionError"}
+{"task_id": "mbpp/111", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/131", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/133", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/137", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/141", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/167", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/171", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/227", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/230", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/232", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/233", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/235", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 11, in <module>\nAssertionError"}
+{"task_id": "mbpp/238", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/242", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/123", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\nNameError: name 'amicable_numbers_sum' is not defined"}
+{"task_id": "mbpp/249", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/261", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/262", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/267", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/265", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/269", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/276", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/296", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/278", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/305", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/307", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/309", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/389", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\nAssertionError"}
+{"task_id": "mbpp/391", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/393", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/394", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/397", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/404", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/401", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/428", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/426", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/441", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/444", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 10, in <module>\nAssertionError"}
+{"task_id": "mbpp/448", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 14, in <module>\nAssertionError"}
+{"task_id": "mbpp/447", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/474", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/564", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/565", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/572", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/579", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/576", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/589", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/581", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nAssertionError"}
+{"task_id": "mbpp/596", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/595", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 23, in <module>\nAssertionError"}
+{"task_id": "mbpp/603", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 18, in <module>\nAssertionError"}
+{"task_id": "mbpp/604", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/612", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/606", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/618", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/623", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/625", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/629", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/630", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/638", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 11, in <module>\nAssertionError"}
+{"task_id": "mbpp/722", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/724", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/728", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/735", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 18, in <module>\nAssertionError"}
+{"task_id": "mbpp/737", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nAssertionError"}
+{"task_id": "mbpp/738", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAssertionError"}
+{"task_id": "mbpp/744", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/746", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 10, in <module>\nAssertionError"}
+{"task_id": "mbpp/755", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 10, in <module>\nAssertionError"}
+{"task_id": "mbpp/757", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/764", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/767", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/772", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/776", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/787", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nAssertionError"}
+{"task_id": "mbpp/790", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/793", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/797", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/798", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/799", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/800", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/804", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/806", "source": "mbpp", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/809", "source": "mbpp", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "humaneval/5", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/6", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/7", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/8", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/9", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/10", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 67, in <module>\n  File \"<stdin>\", line 61, in check\nAssertionError"}
+{"task_id": "humaneval/11", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/12", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/13", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/14", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/15", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/16", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/17", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/18", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 52, in <module>\n  File \"<stdin>\", line 48, in check\nAssertionError"}
+{"task_id": "humaneval/19", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/20", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/22", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/21", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/23", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/24", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/26", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 43, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/25", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/27", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/28", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/29", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/30", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/31", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/32", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 27, in <module>\nModuleNotFoundError: No module named 'numpy'"}
+{"task_id": "humaneval/33", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 43, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/34", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/35", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/36", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/37", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 38, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError"}
+{"task_id": "humaneval/38", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/39", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/40", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/41", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 46, in <module>\n  File \"<stdin>\", line 38, in check\nAssertionError"}
+{"task_id": "humaneval/42", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/43", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/44", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/45", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/46", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 56, in <module>\n  File \"<stdin>\", line 49, in check\nAssertionError"}
+{"task_id": "humaneval/47", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/48", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/49", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 55, in <module>\n  File \"<stdin>\", line 45, in check\nAssertionError"}
+{"task_id": "humaneval/50", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/51", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/52", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/53", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/54", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 56, in <module>\n  File \"<stdin>\", line 46, in check\nAssertionError"}
+{"task_id": "humaneval/55", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/56", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/57", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/58", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/59", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/60", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/61", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/62", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/63", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/64", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/65", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 40, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError"}
+{"task_id": "humaneval/66", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/67", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/68", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 98, in <module>\n  File \"<stdin>\", line 84, in check\nAssertionError: Error"}
+{"task_id": "humaneval/69", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 72, in <module>\n  File \"<stdin>\", line 43, in check\nAssertionError"}
+{"task_id": "humaneval/70", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/71", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/72", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/73", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 54, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError"}
+{"task_id": "humaneval/75", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/74", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/76", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 54, in <module>\n  File \"<stdin>\", line 42, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/77", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 38, in check\n  File \"<stdin>\", line 30, in iscube\nTypeError: type complex doesn't define __round__ method"}
+{"task_id": "humaneval/78", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/79", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/80", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 42, in check\nAssertionError: aabb"}
+{"task_id": "humaneval/81", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 87, in <module>\n  File \"<stdin>\", line 75, in check\nAssertionError"}
+{"task_id": "humaneval/82", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/83", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 32, in <module>\n  File \"<stdin>\", line 21, in check\nAssertionError"}
+{"task_id": "humaneval/84", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError: Error"}
+{"task_id": "humaneval/85", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/86", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/87", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 87, in <module>\n  File \"<stdin>\", line 56, in check\nAssertionError"}
+{"task_id": "humaneval/89", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/88", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/91", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 47, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError: Test 2"}
+{"task_id": "humaneval/90", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 38, in check\nAssertionError"}
+{"task_id": "humaneval/92", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/93", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 56, in <module>\n  File \"<stdin>\", line 46, in check\n  File \"<stdin>\", line 39, in encode\nTypeError: string indices must be integers, not 'str'"}
+{"task_id": "humaneval/95", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/94", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/96", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/97", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/99", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 56, in <module>\n  File \"<stdin>\", line 47, in check\nAssertionError: Test 2"}
+{"task_id": "humaneval/98", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/101", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/100", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 57, in <module>\n  File \"<stdin>\", line 46, in check\nAssertionError: Test 3"}
+{"task_id": "humaneval/102", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/103", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 54, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/104", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 34, in check\n  File \"<stdin>\", line 28, in unique_digits\n  File \"<stdin>\", line 28, in <genexpr>\nTypeError: not all arguments converted during string formatting"}
+{"task_id": "humaneval/105", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/107", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/106", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/109", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 76, in <module>\n  File \"<stdin>\", line 68, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/108", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError"}
+{"task_id": "humaneval/111", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/110", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 39, in check\nAssertionError"}
+{"task_id": "humaneval/113", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/112", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/114", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/115", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 96, in <module>\n  File \"<stdin>\", line 85, in check\n  File \"<stdin>\", line 77, in max_fill\nNameError: name 'math' is not defined. Did you forget to import 'math'?"}
+{"task_id": "humaneval/117", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/116", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/118", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 64, in <module>\n  File \"<stdin>\", line 45, in check\nAssertionError"}
+{"task_id": "humaneval/119", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 67, in <module>\n  File \"<stdin>\", line 52, in check\nAssertionError"}
+{"task_id": "humaneval/121", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/120", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 76, in <module>\n  File \"<stdin>\", line 60, in check\nAssertionError"}
+{"task_id": "humaneval/122", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/123", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/124", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/125", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 35, in check\nAssertionError"}
+{"task_id": "humaneval/127", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 85, in <module>\n  File \"<stdin>\", line 73, in check\nAssertionError"}
+{"task_id": "humaneval/126", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 60, in <module>\n  File \"<stdin>\", line 55, in check\nAssertionError: This prints if this assert fails 7 (good for debugging!)"}
+{"task_id": "humaneval/128", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/129", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 104, in <module>\n  File \"<stdin>\", line 88, in check\nAssertionError"}
+{"task_id": "humaneval/130", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 70, in <module>\n  File \"<stdin>\", line 56, in check\nAssertionError"}
+{"task_id": "humaneval/131", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 42, in <module>\n  File \"<stdin>\", line 38, in check\nAssertionError"}
+{"task_id": "humaneval/132", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 63, in <module>\n  File \"<stdin>\", line 44, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/133", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/134", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 58, in <module>\n  File \"<stdin>\", line 45, in check\n  File \"<stdin>\", line 34, in check_if_last_char_is_a_letter\nIndexError: string index out of range"}
+{"task_id": "humaneval/135", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 43, in <module>\n  File \"<stdin>\", line 33, in check\nAssertionError"}
+{"task_id": "humaneval/137", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 58, in <module>\n  File \"<stdin>\", line 48, in check\n  File \"<stdin>\", line 30, in compare_one\nValueError: could not convert string to float: '2,3'"}
+{"task_id": "humaneval/136", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/138", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 38, in <module>\n  File \"<stdin>\", line 30, in check\nAssertionError"}
+{"task_id": "humaneval/139", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 46, in <module>\n  File \"<stdin>\", line 37, in check\n  File \"<stdin>\", line 30, in special_factorial\nNameError: name 'math' is not defined. Did you forget to import 'math'?"}
+{"task_id": "humaneval/140", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError: This prints if this assert fails 3 (good for debugging!)"}
+{"task_id": "humaneval/141", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 84, in <module>\n  File \"<stdin>\", line 56, in check\nAssertionError"}
+{"task_id": "humaneval/142", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/143", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/145", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError"}
+{"task_id": "humaneval/144", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/146", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 43, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError"}
+{"task_id": "humaneval/147", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/148", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/149", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/150", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/151", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError: This prints if this assert fails 5 (also good for debugging!)"}
+{"task_id": "humaneval/152", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/153", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/154", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 45, in check\nAssertionError: test #3"}
+{"task_id": "humaneval/155", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/156", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/157", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/158", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/159", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/160", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 91, in <module>\n  File \"<stdin>\", line 83, in check\nAssertionError"}
+{"task_id": "humaneval/161", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 54, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/162", "source": "humaneval", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/163", "source": "humaneval", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\n  File \"<stdin>\", line 31, in check\nAssertionError: Test 1"}
+{"task_id": "mbpp/6", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/18", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/19", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/56", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/57", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/64", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/65", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/80", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/82", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/86", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/90", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/93", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/95", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/97", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/98", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/103", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/111", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nAssertionError"}
+{"task_id": "mbpp/131", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/133", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/137", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nAssertionError"}
+{"task_id": "mbpp/141", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 17, in <module>\nAssertionError"}
+{"task_id": "mbpp/167", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/171", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/227", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/230", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/123", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 23, in <module>\nAssertionError"}
+{"task_id": "mbpp/232", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/233", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nAssertionError"}
+{"task_id": "mbpp/235", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/238", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/242", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/249", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/261", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/262", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/265", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/267", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/269", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/276", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/278", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/296", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\nAssertionError"}
+{"task_id": "mbpp/305", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/307", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/309", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/389", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 14, in <module>\nAssertionError"}
+{"task_id": "mbpp/391", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/393", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/394", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/397", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/401", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/404", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/426", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/428", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/441", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/444", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/447", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/448", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/474", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/564", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/565", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/572", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/576", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/579", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/581", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAssertionError"}
+{"task_id": "mbpp/589", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/595", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/596", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/603", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 18, in <module>\nAssertionError"}
+{"task_id": "mbpp/604", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/606", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/612", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/618", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/623", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/625", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/629", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/630", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/638", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAssertionError"}
+{"task_id": "mbpp/722", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/724", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/728", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/735", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 18, in <module>\nAssertionError"}
+{"task_id": "mbpp/737", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/738", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAssertionError"}
+{"task_id": "mbpp/744", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/746", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/755", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/757", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/764", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/767", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/772", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/776", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/787", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/790", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/793", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/797", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/798", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/799", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/800", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/804", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/806", "source": "mbpp", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/809", "source": "mbpp", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "humaneval/5", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/6", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/7", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/8", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/9", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/10", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 64, in <module>\n  File \"<stdin>\", line 59, in check\nAssertionError"}
+{"task_id": "humaneval/11", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/12", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/13", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/14", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/15", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/16", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/17", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/18", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/19", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/20", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/21", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/22", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/23", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/24", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/25", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/26", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError"}
+{"task_id": "humaneval/27", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/28", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/29", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/30", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/31", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/32", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 92, in <module>\n  File \"<stdin>\", line 87, in check\n  File \"<stdin>\", line 65, in find_zero\nModuleNotFoundError: No module named 'scipy'"}
+{"task_id": "humaneval/33", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 47, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/34", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/35", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/36", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/37", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/38", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/39", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 19, in <module>\nModuleNotFoundError: No module named 'sympy'"}
+{"task_id": "humaneval/40", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/41", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/42", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/43", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/44", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/45", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/46", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/47", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/48", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/49", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/50", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/51", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/52", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/53", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/54", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/55", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/56", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/57", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/58", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/59", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/60", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/61", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/62", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/63", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/64", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/65", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/66", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/67", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/68", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/69", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/70", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/71", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/72", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/73", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/74", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/75", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 34, in check\nAssertionError"}
+{"task_id": "humaneval/76", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/77", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/78", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/79", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/80", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/81", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/82", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/83", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 34, in <module>\n  File \"<stdin>\", line 24, in check\nAssertionError"}
+{"task_id": "humaneval/84", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/85", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/86", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/87", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/88", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/89", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/90", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/91", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 38, in check\nAssertionError: Test 2"}
+{"task_id": "humaneval/92", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/93", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 61, in <module>\n  File \"<stdin>\", line 51, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/94", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/95", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError: Fourth test error: True"}
+{"task_id": "humaneval/96", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/97", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/98", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/100", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/99", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/102", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/101", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/103", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/104", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/105", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/106", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/107", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/108", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/109", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/110", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/112", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/111", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/113", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/114", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/115", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 61, in <module>\n  File \"<stdin>\", line 57, in check\nAssertionError: Error"}
+{"task_id": "humaneval/116", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/118", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/117", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/120", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 76, in <module>\n  File \"<stdin>\", line 60, in check\nAssertionError"}
+{"task_id": "humaneval/119", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/121", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 40, in <module>\n  File \"<stdin>\", line 28, in check\nAssertionError"}
+{"task_id": "humaneval/122", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/124", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/123", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/125", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/126", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/127", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 82, in <module>\n  File \"<stdin>\", line 70, in check\nAssertionError"}
+{"task_id": "humaneval/128", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/130", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 56, in <module>\n  File \"<stdin>\", line 42, in check\n  File \"<stdin>\", line 34, in tri\nIndexError: list index out of range"}
+{"task_id": "humaneval/131", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/132", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 52, in <module>\n  File \"<stdin>\", line 42, in check\nAssertionError"}
+{"task_id": "humaneval/133", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/134", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/135", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/129", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/136", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/137", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/138", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/139", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/140", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/141", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 73, in <module>\n  File \"<stdin>\", line 45, in check\nAssertionError"}
+{"task_id": "humaneval/142", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/143", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/145", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 47, in <module>\n  File \"<stdin>\", line 35, in check\nAssertionError"}
+{"task_id": "humaneval/144", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/146", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/147", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/148", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/149", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/150", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/151", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/153", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/152", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/154", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/155", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/157", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/156", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/158", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/159", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/161", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/160", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/163", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 42, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError: Test 1"}
+{"task_id": "humaneval/162", "source": "humaneval", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/6", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/18", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/56", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/19", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/57", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/64", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/65", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/80", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/86", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/82", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/93", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/90", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/97", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/95", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/98", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/103", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/111", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/123", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 23, in <module>\nAssertionError"}
+{"task_id": "mbpp/131", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/133", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/141", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/137", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 14, in <module>\nAssertionError"}
+{"task_id": "mbpp/171", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/167", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/230", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/227", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/233", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/232", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/235", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 21, in <module>\nAssertionError"}
+{"task_id": "mbpp/238", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/242", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/249", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nAssertionError"}
+{"task_id": "mbpp/262", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/261", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/267", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/265", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/269", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/276", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/278", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/296", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/307", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nAssertionError"}
+{"task_id": "mbpp/305", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAssertionError"}
+{"task_id": "mbpp/389", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/309", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/393", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/391", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/397", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/394", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/401", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/404", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/426", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/428", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/441", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/444", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 10, in <module>\nAssertionError"}
+{"task_id": "mbpp/447", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/448", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 26, in <module>\nAssertionError"}
+{"task_id": "mbpp/564", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/474", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/565", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/572", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nAssertionError"}
+{"task_id": "mbpp/579", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/576", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/589", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/581", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 14, in <module>\nAssertionError"}
+{"task_id": "mbpp/596", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/595", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/604", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/603", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 14, in <module>\n  File \"<stdin>\", line 6, in get_ludic\nIndexError: list index out of range"}
+{"task_id": "mbpp/606", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/612", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAssertionError"}
+{"task_id": "mbpp/618", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/623", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/625", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/629", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/638", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/630", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/724", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/722", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 10, in <module>\nAssertionError"}
+{"task_id": "mbpp/728", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/735", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 29, in <module>\nAssertionError"}
+{"task_id": "mbpp/738", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/737", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/744", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/746", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 11, in <module>\nAssertionError"}
+{"task_id": "mbpp/755", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/757", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/764", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/767", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/772", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/776", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\nAssertionError"}
+{"task_id": "mbpp/790", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/787", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/793", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/797", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/798", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/799", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/804", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/800", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/806", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/809", "source": "mbpp", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/6", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 40, in <module>\n  File \"<stdin>\", line 35, in check\n  File \"<stdin>\", line 22, in parse_nested_parens\n  File \"<stdin>\", line 19, in find_depth\nAttributeError: 'str' object has no attribute 'group'"}
+{"task_id": "humaneval/5", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 40, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/7", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/8", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/10", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 52, in <module>\n  File \"<stdin>\", line 46, in check\nAssertionError"}
+{"task_id": "humaneval/9", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/11", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/12", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/13", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/14", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 35, in <module>\n  File \"<stdin>\", line 30, in check\nAssertionError"}
+{"task_id": "humaneval/15", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/16", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/17", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 44, in check\nAssertionError"}
+{"task_id": "humaneval/18", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/19", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 38, in <module>\n  File \"<stdin>\", line 32, in check\n  File \"<stdin>\", line 19, in sort_numbers\nTypeError: sequence item 0: expected str instance, int found"}
+{"task_id": "humaneval/20", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 43, in check\nAssertionError"}
+{"task_id": "humaneval/22", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/21", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/24", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 33, in <module>\n  File \"<stdin>\", line 28, in check\nAssertionError"}
+{"task_id": "humaneval/23", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/25", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 52, in <module>\n  File \"<stdin>\", line 43, in check\nAssertionError"}
+{"task_id": "humaneval/26", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 35, in <module>\n  File \"<stdin>\", line 32, in check\nAssertionError"}
+{"task_id": "humaneval/27", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/28", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/30", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/29", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/32", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 84, in <module>\n  File \"<stdin>\", line 80, in check\nAssertionError"}
+{"task_id": "humaneval/31", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/33", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 37, in <module>\n  File \"<stdin>\", line 30, in check\nAssertionError"}
+{"task_id": "humaneval/34", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/35", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/36", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 40, in <module>\n  File \"<stdin>\", line 30, in check\nAssertionError"}
+{"task_id": "humaneval/37", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 33, in check\nAssertionError"}
+{"task_id": "humaneval/38", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 44, in check\nAssertionError"}
+{"task_id": "humaneval/39", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 61, in <module>\n  File \"<stdin>\", line 48, in check\nAssertionError"}
+{"task_id": "humaneval/40", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/42", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/41", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError"}
+{"task_id": "humaneval/44", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/43", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/45", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/46", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/48", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/47", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/49", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 53, in <module>\n  File \"<stdin>\", line 44, in check\nAssertionError"}
+{"task_id": "humaneval/50", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/51", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/52", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/53", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/54", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/56", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/55", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/57", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/58", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/60", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/59", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 37, in <module>\n  File \"<stdin>\", line 29, in check\nAssertionError"}
+{"task_id": "humaneval/61", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/62", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 38, in <module>\n  File \"<stdin>\", line 30, in check\n  File \"<stdin>\", line 21, in derivative\n  File \"<stdin>\", line 21, in <lambda>\nTypeError: object of type 'int' has no len()"}
+{"task_id": "humaneval/63", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 46, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/64", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 47, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError: Test 4"}
+{"task_id": "humaneval/65", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 38, in <module>\n  File \"<stdin>\", line 30, in check\nAssertionError"}
+{"task_id": "humaneval/66", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 26, in check\nAssertionError: Error"}
+{"task_id": "humaneval/68", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 66, in <module>\n  File \"<stdin>\", line 52, in check\nAssertionError: Error"}
+{"task_id": "humaneval/67", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "File \"<stdin>\", line 24\n    mangoes = n - fruits['apples'] - fruits['oranges]'\n                                           ^\nSyntaxError: '[' was never closed"}
+{"task_id": "humaneval/69", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 56, in <module>\n  File \"<stdin>\", line 44, in check\nAssertionError"}
+{"task_id": "humaneval/70", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 34, in check\n  File \"<stdin>\", line 26, in strange_sort_list\nValueError: min() iterable argument is empty"}
+{"task_id": "humaneval/71", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/72", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/74", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/73", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 56, in <module>\n  File \"<stdin>\", line 43, in check\nAssertionError"}
+{"task_id": "humaneval/75", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/76", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError: This prints if this assert fails 2 (also good for debugging!)"}
+{"task_id": "humaneval/77", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\n  File \"<stdin>\", line 29, in check\n  File \"<stdin>\", line 18, in iscube\nTypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'"}
+{"task_id": "humaneval/78", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 47, in <module>\n  File \"<stdin>\", line 34, in check\nAssertionError: First test error: 2"}
+{"task_id": "humaneval/79", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 35, in <module>\n  File \"<stdin>\", line 25, in check\nAssertionError"}
+{"task_id": "humaneval/80", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 40, in <module>\n  File \"<stdin>\", line 33, in check\nAssertionError: aabb"}
+{"task_id": "humaneval/81", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "File \"<stdin>\", line 32\n    (3.7, 4.0]: 'A',\n             ^\nSyntaxError: closing parenthesis ']' does not match opening parenthesis '('"}
+{"task_id": "humaneval/82", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/83", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError"}
+{"task_id": "humaneval/84", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 42, in <module>\n  File \"<stdin>\", line 31, in check\nAssertionError: Error"}
+{"task_id": "humaneval/85", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/87", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 76, in <module>\n  File \"<stdin>\", line 45, in check\nAssertionError"}
+{"task_id": "humaneval/86", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/88", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 34, in check\nAssertionError: Error"}
+{"task_id": "humaneval/89", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 30, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/91", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "File \"<stdin>\", line 21\n    if S.endswith(\".\" or S.endswith(\"?\" or S.endswith(\"!\")):\n                                                           ^\nSyntaxError: invalid syntax"}
+{"task_id": "humaneval/90", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 30, in check\nAssertionError"}
+{"task_id": "humaneval/92", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/93", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError: This prints if this assert fails 2 (good for debugging!)"}
+{"task_id": "humaneval/94", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/95", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError: First test error: False"}
+{"task_id": "humaneval/97", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/96", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 38, in <module>\n  File \"<stdin>\", line 25, in check\nAssertionError"}
+{"task_id": "humaneval/99", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError: Test 2"}
+{"task_id": "humaneval/98", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/101", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 33, in <module>\n  File \"<stdin>\", line 21, in check\nAssertionError"}
+{"task_id": "humaneval/102", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 26, in check\nAssertionError"}
+{"task_id": "humaneval/103", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 46, in <module>\n  File \"<stdin>\", line 28, in check\nAssertionError"}
+{"task_id": "humaneval/104", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 33, in <module>\n  File \"<stdin>\", line 23, in check\n  File \"<stdin>\", line 17, in unique_digits\n  File \"<stdin>\", line 17, in <genexpr>\nTypeError: not all arguments converted during string formatting"}
+{"task_id": "humaneval/105", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/106", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 33, in <module>\n  File \"<stdin>\", line 27, in check\nAssertionError"}
+{"task_id": "humaneval/107", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/108", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 31, in check\nAssertionError"}
+{"task_id": "humaneval/109", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 54, in <module>\n  File \"<stdin>\", line 46, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/110", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 52, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/111", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/112", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/113", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 40, in <module>\n  File \"<stdin>\", line 27, in check\nAssertionError: Test 1"}
+{"task_id": "humaneval/114", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 29, in check\nAssertionError: This prints if this assert fails 1 (good for debugging!)"}
+{"task_id": "humaneval/115", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 66, in <module>\n  File \"<stdin>\", line 55, in check\n  File \"<stdin>\", line 47, in max_fill\nNameError: name 'math' is not defined. Did you forget to import 'math'?"}
+{"task_id": "humaneval/116", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 47, in <module>\n  File \"<stdin>\", line 33, in check\n  File \"<stdin>\", line 26, in sort_array\nTypeError: sort_array.<locals>.sort_by_ones_count() missing 1 required positional argument: 'b'"}
+{"task_id": "humaneval/117", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 26, in check\nAssertionError: First test error: ['lamb']"}
+{"task_id": "humaneval/118", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 53, in <module>\n  File \"<stdin>\", line 34, in check\nAssertionError"}
+{"task_id": "humaneval/119", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 54, in <module>\n  File \"<stdin>\", line 36, in check\nAssertionError"}
+{"task_id": "humaneval/120", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 53, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError"}
+{"task_id": "humaneval/100", "source": "humaneval", "model": "mistral:7b", "status": "timeout", "passed": false, "detail": "exceeded 10s"}
+{"task_id": "humaneval/121", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 27, in check\nAssertionError"}
+{"task_id": "humaneval/122", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/123", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/124", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/125", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 37, in <module>\n  File \"<stdin>\", line 28, in check\nAssertionError"}
+{"task_id": "humaneval/126", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError: This prints if this assert fails 5 (good for debugging!)"}
+{"task_id": "humaneval/127", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 61, in <module>\n  File \"<stdin>\", line 49, in check\nAssertionError"}
+{"task_id": "humaneval/128", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 48, in <module>\n  File \"<stdin>\", line 34, in check\nAssertionError"}
+{"task_id": "humaneval/129", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 91, in <module>\n  File \"<stdin>\", line 75, in check\nAssertionError"}
+{"task_id": "humaneval/130", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError"}
+{"task_id": "humaneval/131", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 41, in check\nAssertionError"}
+{"task_id": "humaneval/132", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 50, in <module>\n  File \"<stdin>\", line 33, in check\nAssertionError"}
+{"task_id": "humaneval/133", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "aceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 25, in check\n  File \"<stdin>\", line 19, in sum_squares\n  File \"<stdin>\", line 19, in <genexpr>\n  File \"<stdin>\", line 19, in <lambda>\nNameError: name 'math' is not defined. Did you forget to import 'math'?"}
+{"task_id": "humaneval/134", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 31, in check\nAssertionError"}
+{"task_id": "humaneval/135", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 34, in <module>\n  File \"<stdin>\", line 27, in check\nAssertionError"}
+{"task_id": "humaneval/136", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 33, in check\n  File \"<stdin>\", line 21, in largest_smallest_integers\nTypeError: '>' not supported between instances of 'int' and 'NoneType'"}
+{"task_id": "humaneval/137", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 62, in <module>\n  File \"<stdin>\", line 53, in check\nAssertionError"}
+{"task_id": "humaneval/138", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 47, in <module>\n  File \"<stdin>\", line 39, in check\n  File \"<stdin>\", line 33, in is_equal_to_sum_even\nNameError: name 'itertools' is not defined. Did you forget to import 'itertools'?"}
+{"task_id": "humaneval/139", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 35, in <module>\n  File \"<stdin>\", line 26, in check\n  File \"<stdin>\", line 20, in special_factorial\nNameError: name 'math' is not defined. Did you forget to import 'math'?"}
+{"task_id": "humaneval/140", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 44, in <module>\n  File \"<stdin>\", line 39, in check\nAssertionError: This prints if this assert fails 4 (good for debugging!)"}
+{"task_id": "humaneval/142", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 49, in <module>\n  File \"<stdin>\", line 37, in check\nAssertionError"}
+{"task_id": "humaneval/141", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 68, in <module>\n  File \"<stdin>\", line 40, in check\nAssertionError"}
+{"task_id": "humaneval/143", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 46, in <module>\n  File \"<stdin>\", line 34, in check\n  File \"<stdin>\", line 26, in words_in_sentence\nUnboundLocalError: cannot access local variable 'prime_numbers' where it is not associated with a value"}
+{"task_id": "humaneval/144", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 54, in <module>\n  File \"<stdin>\", line 35, in check\nAssertionError: test1"}
+{"task_id": "humaneval/145", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\n  File \"<stdin>\", line 29, in check\n  File \"<stdin>\", line 22, in order_by_points\nValueError: 1 is not in list"}
+{"task_id": "humaneval/146", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 36, in <module>\n  File \"<stdin>\", line 24, in check\nAssertionError"}
+{"task_id": "humaneval/147", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 37, in <module>\n  File \"<stdin>\", line 31, in check\nAssertionError"}
+{"task_id": "humaneval/148", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\n  File \"<stdin>\", line 38, in check\nAssertionError: First test error: 3"}
+{"task_id": "humaneval/150", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/149", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 42, in <module>\n  File \"<stdin>\", line 30, in check\nAssertionError"}
+{"task_id": "humaneval/152", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/151", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 39, in <module>\n  File \"<stdin>\", line 25, in check\nAssertionError: This prints if this assert fails 2 (good for debugging!)"}
+{"task_id": "humaneval/154", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/153", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/156", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 55, in <module>\n  File \"<stdin>\", line 35, in check\n  File \"<stdin>\", line 27, in int_to_mini_roman\nKeyError: 19"}
+{"task_id": "humaneval/155", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/158", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 31, in check\nAssertionError: t2"}
+{"task_id": "humaneval/157", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/160", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 58, in <module>\n  File \"<stdin>\", line 50, in check\nAssertionError"}
+{"task_id": "humaneval/159", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 55, in <module>\n  File \"<stdin>\", line 43, in check\nAssertionError: Error"}
+{"task_id": "humaneval/162", "source": "humaneval", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "humaneval/161", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 45, in <module>\n  File \"<stdin>\", line 31, in check\nAssertionError"}
+{"task_id": "humaneval/163", "source": "humaneval", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 35, in <module>\n  File \"<stdin>\", line 25, in check\nAssertionError: Test 1"}
+{"task_id": "mbpp/6", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/18", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/19", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/56", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAssertionError"}
+{"task_id": "mbpp/57", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/64", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/65", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\n  File \"<stdin>\", line 3, in recursive_list_sum\n  File \"<stdin>\", line 3, in <genexpr>\n  File \"<stdin>\", line 3, in recursive_list_sum\nTypeError: 'int' object is not iterable"}
+{"task_id": "mbpp/82", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/80", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/86", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/90", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/93", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/95", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/98", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/97", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/111", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\nAssertionError"}
+{"task_id": "mbpp/103", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 41, in <module>\nAssertionError"}
+{"task_id": "mbpp/131", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 11, in <module>\n  File \"<stdin>\", line 6, in reverse_vowels\nTypeError: list indices must be integers or slices, not list"}
+{"task_id": "mbpp/133", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/137", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/141", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\n  File \"<stdin>\", line 8, in pancake_sort\nValueError: 5 is not in list"}
+{"task_id": "mbpp/123", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 31, in <module>\nAssertionError"}
+{"task_id": "mbpp/171", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\n  File \"<stdin>\", line 6, in perimeter_pentagon\nNameError: name 'cos' is not defined. Did you mean: 'acos'?"}
+{"task_id": "mbpp/227", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/230", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/232", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/233", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nAssertionError"}
+{"task_id": "mbpp/235", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/238", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 14, in <module>\nAssertionError"}
+{"task_id": "mbpp/242", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/249", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/261", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/262", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/265", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/267", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/269", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/276", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/278", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 12, in <module>\nAssertionError"}
+{"task_id": "mbpp/296", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 33, in <module>\nAssertionError"}
+{"task_id": "mbpp/167", "source": "mbpp", "model": "mistral:7b", "status": "timeout", "passed": false, "detail": "exceeded 10s"}
+{"task_id": "mbpp/305", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/307", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\nAssertionError"}
+{"task_id": "mbpp/309", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/391", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 15, in <module>\nAssertionError"}
+{"task_id": "mbpp/389", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\nAssertionError"}
+{"task_id": "mbpp/394", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/393", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/401", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/397", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/426", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/404", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/441", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/428", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 25, in <module>\nAssertionError"}
+{"task_id": "mbpp/447", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/444", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/448", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 24, in <module>\nAssertionError"}
+{"task_id": "mbpp/474", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/565", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/564", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 19, in <module>\nTypeError: count_Pairs() takes 1 positional argument but 2 were given"}
+{"task_id": "mbpp/572", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 20, in <module>\n  File \"<stdin>\", line 9, in two_unique_nums\nTypeError: 'int' object is not iterable"}
+{"task_id": "mbpp/576", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/581", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 18, in <module>\nAssertionError"}
+{"task_id": "mbpp/579", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\n  File \"<stdin>\", line 3, in find_dissimilar\nTypeError: unsupported operand type(s) for -: 'list' and 'set'"}
+{"task_id": "mbpp/589", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/595", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 19, in <module>\nAssertionError"}
+{"task_id": "mbpp/596", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nNameError: name 'sys' is not defined. Did you forget to import 'sys'?"}
+{"task_id": "mbpp/603", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 12, in <module>\n  File \"<stdin>\", line 7, in lucid_numbers\n  File \"<stdin>\", line 7, in <genexpr>\nTypeError: not all arguments converted during string formatting"}
+{"task_id": "mbpp/606", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nNameError: name 'radian_degree' is not defined"}
+{"task_id": "mbpp/604", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/612", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\n  File \"<stdin>\", line 3, in merge\nTypeError: map() must have at least two arguments."}
+{"task_id": "mbpp/618", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/623", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/625", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/629", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/630", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 12, in <module>\nAssertionError"}
+{"task_id": "mbpp/722", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/638", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 11, in <module>\nAssertionError"}
+{"task_id": "mbpp/728", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/724", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\n  File \"<stdin>\", line 5, in power_base_sum\nTypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'"}
+{"task_id": "mbpp/735", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\nAssertionError"}
+{"task_id": "mbpp/737", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/738", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "mbpp/744", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/746", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 18, in <module>\nAssertionError"}
+{"task_id": "mbpp/755", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 13, in <module>\nAssertionError"}
+{"task_id": "mbpp/757", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\nAssertionError"}
+{"task_id": "mbpp/764", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/767", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/772", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/776", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\nAssertionError"}
+{"task_id": "mbpp/787", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/793", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/790", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/798", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/797", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/799", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/800", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/804", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nAssertionError"}
+{"task_id": "mbpp/806", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mbpp/809", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
