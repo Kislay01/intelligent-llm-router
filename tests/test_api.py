@@ -126,3 +126,12 @@ def test_follow_up_sends_history_and_routes_on_the_rewrite(_qm, mock_chat, mock_
 def test_invalid_routing_mode_env_falls_back_to_default(_qm, monkeypatch):
     monkeypatch.setenv("ROUTING_CONTEXT_MODE", "bogus")
     assert client.post("/route", json={"query": "hello"}).status_code == 200
+
+
+@patch("api.query_chat", return_value="in Java: ...")
+@patch("api.query_model", return_value="first answer")
+def test_sticky_default_does_not_pool_bare_follow_ups(_qm, _chat, monkeypatch):
+    monkeypatch.delenv("ROUTING_CONTEXT_MODE", raising=False)
+    first = client.post("/route", json={"query": "Write binary search"}).json()
+    client.post("/route", json={"query": "now in Java", "session_id": first["session_id"]})
+    assert db.count_learning_log() == 1  # only the standalone first message

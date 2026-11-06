@@ -18,8 +18,10 @@ from db import (init_db, log_request, log_learning, get_stats, create_session, s
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
-# Provisional: set from the follow-up comparison (src/compare_followup_routing.py).
-DEFAULT_ROUTING_MODE = "rewrite"
+# Chosen from src/compare_followup_routing.py (24 follow-ups): the strategies were statistically
+# indistinguishable, "rewrite" added ~5s per follow-up and sometimes answered or embellished
+# instead of rewriting, so the free strategy wins.
+DEFAULT_ROUTING_MODE = "sticky"
 
 MODEL_PATH = "models/classifier.pkl"
 ENCODER_PATH = "models/label_encoder.pkl"
@@ -109,8 +111,10 @@ def route_query(request: RouteRequest):
         routing_query=decision.routing_query,
     )
 
-    # The standalone version is what the router should learn from; a bare "explain that more" is useless.
-    log_learning(decision.routing_query, final_model, decision.confidence, decision.fallback_triggered)
+    # Only standalone text is useful for learning: a first message, or a follow-up that was rewritten.
+    # A bare "now in Java" would be a misleading training query.
+    if not history or decision.routing_query != request.query:
+        log_learning(decision.routing_query, final_model, decision.confidence, decision.fallback_triggered)
 
     return RouteResponse(
         query=request.query,
