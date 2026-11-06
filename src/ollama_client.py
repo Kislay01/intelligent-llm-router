@@ -3,6 +3,7 @@ import requests
 
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 OLLAMA_URL = f"{OLLAMA_HOST}/api/generate"
+OLLAMA_CHAT_URL = f"{OLLAMA_HOST}/api/chat"
 
 
 def query_model(model: str, prompt: str) -> str:
@@ -18,6 +19,17 @@ def query_model(model: str, prompt: str) -> str:
     )
     response.raise_for_status()
     return response.json()["response"]
+
+
+def query_chat(model: str, messages: list) -> str:
+    """Send a chat history ([{"role": "user"|"assistant", "content": str}, ...]) to an Ollama model."""
+    response = requests.post(
+        OLLAMA_CHAT_URL,
+        json={"model": model, "messages": messages, "stream": False},
+        timeout=120
+    )
+    response.raise_for_status()
+    return response.json()["message"]["content"]
 
 
 if __name__ == "__main__":

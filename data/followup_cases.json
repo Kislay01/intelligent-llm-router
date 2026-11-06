@@ -1,0 +1,101 @@
+{
+ "note": "Each case: base_id = a labeled dataset query asked first; followup = a context-dependent second message. Written by the assistant: add your own phrasings.",
+ "cases": [
+  {
+   "base_id": 4,
+   "followup": "And how many oceans?"
+  },
+  {
+   "base_id": 24,
+   "followup": "When was that?"
+  },
+  {
+   "base_id": 36,
+   "followup": "How much does it weigh?"
+  },
+  {
+   "base_id": 16,
+   "followup": "What about 10?"
+  },
+  {
+   "base_id": 28,
+   "followup": "Who created it?"
+  },
+  {
+   "base_id": 8,
+   "followup": "How tall is it exactly?"
+  },
+  {
+   "base_id": 48,
+   "followup": "Why is that unusual compared to other substances?"
+  },
+  {
+   "base_id": 56,
+   "followup": "Which of those would you pick for a developing country?"
+  },
+  {
+   "base_id": 68,
+   "followup": "Can you explain that more simply?"
+  },
+  {
+   "base_id": 72,
+   "followup": "Give me a real-world example of that"
+  },
+  {
+   "base_id": 52,
+   "followup": "Now only the arguments against, in two sentences"
+  },
+  {
+   "base_id": 64,
+   "followup": "How does that affect farming?"
+  },
+  {
+   "base_id": 80,
+   "followup": "Now do it in Java"
+  },
+  {
+   "base_id": 92,
+   "followup": "Walk me through it step by step"
+  },
+  {
+   "base_id": 100,
+   "followup": "What's the time complexity?"
+  },
+  {
+   "base_id": 104,
+   "followup": "Show the same with a RIGHT JOIN"
+  },
+  {
+   "base_id": 112,
+   "followup": "Rewrite it in TypeScript"
+  },
+  {
+   "base_id": 160,
+   "followup": "Add error handling for invalid input"
+  },
+  {
+   "base_id": 116,
+   "followup": "Make it rhyme"
+  },
+  {
+   "base_id": 124,
+   "followup": "Continue the scene"
+  },
+  {
+   "base_id": 136,
+   "followup": "Shorter, and a bit funnier"
+  },
+  {
+   "base_id": 148,
+   "followup": "Now from the dog's point of view"
+  },
+  {
+   "base_id": 120,
+   "followup": "Give it a sad ending"
+  },
+  {
+   "base_id": 140,
+   "followup": "Turn that into a haiku"
+  }
+ ]
+}

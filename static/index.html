@@ -32,6 +32,7 @@
   .tab.active { border-bottom: 2px solid #4f7cff; color: #4f7cff; }
   .hidden { display: none; }
   .empty { color: #777; margin-top: 24px; }
+  .note { color: #8a8fa3; font-size: 12px; font-style: italic; margin-bottom: 8px; }
 </style>
 </head>
 <body>
@@ -107,6 +108,12 @@ function appendMessage(m) {
 
   const card = document.createElement('div');
   card.className = 'card';
+  if (m.routing_query && m.routing_query !== m.query) {
+    const note = document.createElement('div');
+    note.className = 'note';
+    note.textContent = 'Routed as: ' + m.routing_query;
+    card.appendChild(note);
+  }
   const badges = document.createElement('div');
   [
     'Model: ' + m.routed_model,

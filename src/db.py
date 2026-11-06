@@ -55,6 +55,8 @@ def init_db() -> None:
             conn.execute("ALTER TABLE requests ADD COLUMN response TEXT")
         if "session_id" not in existing:
             conn.execute("ALTER TABLE requests ADD COLUMN session_id INTEGER")
+        if "routing_query" not in existing:
+            conn.execute("ALTER TABLE requests ADD COLUMN routing_query TEXT")
         conn.commit()
 
 
@@ -71,12 +73,14 @@ def session_exists(session_id: int) -> bool:
 
 
 def log_request(query, routed_model, confidence, fallback_triggered, latency_seconds,
-                response: str = "", session_id: Optional[int] = None) -> int:
+                response: str = "", session_id: Optional[int] = None,
+                routing_query: Optional[str] = None) -> int:
     with closing(_connect()) as conn:
         cur = conn.execute(
             "INSERT INTO requests (query, routed_model, confidence, fallback_triggered, "
-            "latency_seconds, response, session_id) VALUES (?, ?, ?, ?, ?, ?, ?)",
-            (query, routed_model, confidence, int(fallback_triggered), latency_seconds, response, session_id),
+            "latency_seconds, response, session_id, routing_query) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+            (query, routed_model, confidence, int(fallback_triggered), latency_seconds, response,
+             session_id, routing_query),
         )
         if session_id is not None:
             conn.execute("UPDATE sessions SET updated_at = CURRENT_TIMESTAMP WHERE id = ?", (session_id,))
@@ -121,7 +125,7 @@ def get_session(session_id: int) -> Optional[dict]:
             return None
         messages = conn.execute("""
             SELECT id, timestamp, query, response, routed_model, confidence,
-                   fallback_triggered, latency_seconds
+                   fallback_triggered, latency_seconds, routing_query
             FROM requests WHERE session_id = ? ORDER BY id
         """, (session_id,)).fetchall()
         result = dict(session)

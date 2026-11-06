@@ -37,6 +37,7 @@ Response + routing metadata returned, logged to SQLite
 - **UMAP embedding visualization** — 2D projection showing query clusters by category and by winning model
 - **Full test suite + CI/CD** — pytest tests (mocked external calls) run automatically via GitHub Actions on every push
 - **Chat UI + live dashboard** — single-page frontend for querying the router and viewing usage stats
+- **Conversational chats** — follow-ups like "now do it in Java" work: recent history goes to the answering model and the router classifies a standalone rewrite (three strategies compared in `src/compare_followup_routing.py`)
 - **Chat history** — every query and response is stored in SQLite and grouped into chats; browse, reopen or delete past chats from the sidebar without re-running any model
 - **Request logging** — every routed query logged to SQLite (model, confidence, fallback status, latency)
 - **Dockerized** — fully containerized via Docker Compose (app + Ollama), runs identically on any machine
@@ -185,7 +186,7 @@ Runs automatically via GitHub Actions on every push (`.github/workflows/ci.yml`)
 
 - **Dataset size**: 174 labeled examples is small by ML standards; one class (`codellama:7b`) has only 2 real examples. Sufficient to demonstrate the routing mechanism; a production system would train on real query logs at much larger scale.
 - **Local models, not commercial APIs**: uses Ollama-hosted open models for zero-cost demonstration. The routing architecture (embedding → classifier → model call) transfers directly to commercial APIs (OpenAI, Anthropic, Azure); only the backend calls would change.
-- **Single-turn only**: chats are stored and browsable, but the router and the models still see each query in isolation; earlier messages in a chat are not sent as context.
+- **Multi-turn is approximate**: the answering model sees the last 3 exchanges, and follow-ups are routed on a standalone rewrite made by `llama3.2:3b` (`ROUTING_CONTEXT_MODE=rewrite|sticky|none`). The rewrite adds one small model call per follow-up, and the router itself was trained only on single-turn queries.
 - **Queries are kept for learning after a chat is deleted**: `learning_log` stores the query text (never the response) independently of chat history; set `LEARNING_LOG=off` to disable it.
 - **History is stored in plain text, with no users or login**: everyone who can reach the app sees every chat.
 - **No content moderation layer**: a production router would need safety checks before dispatching to a model.
