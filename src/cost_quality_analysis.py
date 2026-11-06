@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import pickle
@@ -7,6 +8,8 @@ import sys
 sys.path.append(os.path.dirname(__file__))
 
 from embed import embed_query
+from pricing import MODEL_PRICING_PER_1M_TOKENS
+from relabel import DEFAULT_TOLERANCE, get_label
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
@@ -16,20 +19,6 @@ MODEL_PATH = "models/classifier.pkl"
 ENCODER_PATH = "models/label_encoder.pkl"
 OUTPUT_CHART = "data/cost_quality_chart.png"
 
-# ---------------------------------------------------------------------------
-# Real pricing sourced from Together AI (per 1M tokens, converted to per 1K).
-# NOTE: codellama:7b is not listed on Together AI's current catalog (older/
-# deprecated model) - using a placeholder matching the other 7B-tier models.
-# Since codellama wins only 2/174 queries, this has minimal effect on the
-# random-routing baseline, but confirm/replace if you find a real source.
-# ---------------------------------------------------------------------------
-MODEL_PRICING_PER_1M_TOKENS = {
-    "llama3.2:3b": 0.06,
-    "llama3.1:8b": 0.18,
-    "mistral:7b": 0.06,
-    "qwen2.5-coder:7b": 0.07,
-    "codellama:7b": 0.06,  # placeholder - not listed on Together AI, verify separately
-}
 MODEL_PRICING_PER_1K_TOKENS = {
     model: price / 1000 for model, price in MODEL_PRICING_PER_1M_TOKENS.items()
 }
@@ -59,6 +48,12 @@ def load_labeled_data():
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--tolerance", type=int, default=DEFAULT_TOLERANCE)
+    parser.add_argument("--judge-labels", action="store_true")
+    args = parser.parse_args()
+    tolerance = None if args.judge_labels else args.tolerance  # must match train_classifier.py
+
     rows = load_labeled_data()
 
     with open(MODEL_PATH, "rb") as f:
@@ -66,7 +61,7 @@ def main():
     with open(ENCODER_PATH, "rb") as f:
         label_encoder = pickle.load(f)
 
-    y_raw = [r["winner"] for r in rows]
+    y_raw = [get_label(r, tolerance) for r in rows]
     le_check = LabelEncoder()
     y = le_check.fit_transform(y_raw)
 

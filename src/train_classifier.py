@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import pickle
@@ -6,6 +7,8 @@ import sys
 sys.path.append(os.path.dirname(__file__))
 
 from embed import embed_query
+from relabel import DEFAULT_TOLERANCE, get_label
+from collections import Counter
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
@@ -27,12 +30,21 @@ def load_labeled_data():
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--tolerance", type=int, default=DEFAULT_TOLERANCE,
+                        help="cost-aware labelling: cheapest model within N judge points of the best")
+    parser.add_argument("--judge-labels", action="store_true",
+                        help="use the raw judge winner instead of cost-aware labels")
+    args = parser.parse_args()
+    tolerance = None if args.judge_labels else args.tolerance
+
     rows = load_labeled_data()
     print(f"Loaded {len(rows)} labeled examples.")
 
     print("Computing embeddings for all queries (this may take a minute)...")
     X = [embed_query(r["query"]) for r in rows]
-    y_raw = [r["winner"] for r in rows]
+    y_raw = [get_label(r, tolerance) for r in rows]
+    print("Label distribution:", dict(sorted(Counter(y_raw).items())))
 
     le = LabelEncoder()
     y = le.fit_transform(y_raw)
