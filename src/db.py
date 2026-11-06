@@ -37,6 +37,18 @@ def init_db() -> None:
                 latency_seconds REAL NOT NULL
             )
         """)
+        # Queries kept for improving the router. Deliberately independent of chat history:
+        # deleting a chat does not delete from here, and no response text or session link is stored.
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS learning_log (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                timestamp TEXT DEFAULT CURRENT_TIMESTAMP,
+                query TEXT NOT NULL,
+                routed_model TEXT NOT NULL,
+                confidence REAL NOT NULL,
+                fallback_triggered INTEGER NOT NULL
+            )
+        """)
         # Databases created before chat history existed lack these columns; add them in place.
         existing = {row["name"] for row in conn.execute("PRAGMA table_info(requests)")}
         if "response" not in existing:
@@ -72,6 +84,24 @@ def log_request(query, routed_model, confidence, fallback_triggered, latency_sec
         return cur.lastrowid
 
 
+def log_learning(query, routed_model, confidence, fallback_triggered) -> bool:
+    """Record a query for later relabelling. Set LEARNING_LOG=off to disable. Returns whether it wrote."""
+    if os.getenv("LEARNING_LOG", "on").lower() == "off":
+        return False
+    with closing(_connect()) as conn:
+        conn.execute(
+            "INSERT INTO learning_log (query, routed_model, confidence, fallback_triggered) VALUES (?, ?, ?, ?)",
+            (query, routed_model, confidence, int(fallback_triggered)),
+        )
+        conn.commit()
+    return True
+
+
+def count_learning_log() -> int:
+    with closing(_connect()) as conn:
+        return conn.execute("SELECT COUNT(*) AS c FROM learning_log").fetchone()["c"]
+
+
 def list_sessions(limit: int = 100) -> List[dict]:
     with closing(_connect()) as conn:
         rows = conn.execute("""
@@ -100,7 +130,10 @@ def get_session(session_id: int) -> Optional[dict]:
 
 
 def delete_session(session_id: int) -> bool:
-    """Deletes the session and its messages (they also leave the usage stats)."""
+    """Deletes the session and its messages (they also leave the usage stats).
+
+    learning_log is intentionally left untouched.
+    """
     with closing(_connect()) as conn:
         conn.execute("DELETE FROM requests WHERE session_id = ?", (session_id,))
         cur = conn.execute("DELETE FROM sessions WHERE id = ?", (session_id,))

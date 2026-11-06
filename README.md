@@ -186,6 +186,7 @@ Runs automatically via GitHub Actions on every push (`.github/workflows/ci.yml`)
 - **Dataset size**: 174 labeled examples is small by ML standards; one class (`codellama:7b`) has only 2 real examples. Sufficient to demonstrate the routing mechanism; a production system would train on real query logs at much larger scale.
 - **Local models, not commercial APIs**: uses Ollama-hosted open models for zero-cost demonstration. The routing architecture (embedding → classifier → model call) transfers directly to commercial APIs (OpenAI, Anthropic, Azure); only the backend calls would change.
 - **Single-turn only**: chats are stored and browsable, but the router and the models still see each query in isolation; earlier messages in a chat are not sent as context.
+- **Queries are kept for learning after a chat is deleted**: `learning_log` stores the query text (never the response) independently of chat history; set `LEARNING_LOG=off` to disable it.
 - **History is stored in plain text, with no users or login**: everyone who can reach the app sees every chat.
 - **No content moderation layer**: a production router would need safety checks before dispatching to a model.
 - **Synchronous request handling**: no async queuing (e.g., Celery/Redis) for concurrent load at scale.

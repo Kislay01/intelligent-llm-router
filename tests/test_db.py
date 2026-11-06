@@ -70,3 +70,20 @@ def test_init_db_migrates_old_schema_without_losing_rows(tmp_path, monkeypatch):
     sid = db.create_session("new")
     _log(sid)
     assert db.get_session(sid)["messages"][0]["query"] == "q"
+
+
+def test_deleting_a_chat_keeps_the_learning_log_without_responses():
+    sid = db.create_session("t")
+    _log(sid, "secret question", "secret answer")
+    assert db.log_learning("secret question", "llama3.2:3b", 0.5, False) is True
+    db.delete_session(sid)
+    assert db.count_learning_log() == 1
+    with db._connect() as conn:
+        columns = {r["name"] for r in conn.execute("PRAGMA table_info(learning_log)")}
+    assert "response" not in columns and "session_id" not in columns
+
+
+def test_learning_log_can_be_switched_off(monkeypatch):
+    monkeypatch.setenv("LEARNING_LOG", "off")
+    assert db.log_learning("q", "m", 0.5, False) is False
+    assert db.count_learning_log() == 0

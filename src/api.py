@@ -11,7 +11,7 @@ from pydantic import BaseModel
 
 from embed import embed_query
 from ollama_client import query_model
-from db import (init_db, log_request, get_stats, create_session, session_exists,
+from db import (init_db, log_request, log_learning, get_stats, create_session, session_exists,
                 list_sessions, get_session, delete_session)
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -98,6 +98,8 @@ def route_query(request: RouteRequest):
         response=model_response,
         session_id=session_id,
     )
+
+    log_learning(request.query, final_model, confidence, fallback_triggered)
 
     return RouteResponse(
         query=request.query,

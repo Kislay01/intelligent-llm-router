@@ -170,7 +170,7 @@ async function openSession(id) {
 }
 
 async function deleteSession(id) {
-  if (!confirm('Delete this chat? Its messages will also leave the usage stats.')) return;
+  if (!confirm('Delete this chat? The responses and the chat leave the history and usage stats. The text of your queries stays in the training pool used to improve the router (the administrator can switch this off).')) return;
   await fetch('/sessions/' + id, { method: 'DELETE' });
   if (id === currentSessionId) newChat();
   loadSessions();

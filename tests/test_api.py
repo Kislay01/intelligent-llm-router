@@ -85,3 +85,12 @@ def test_failed_model_call_leaves_no_empty_session(_mock):
     with pytest.raises(RuntimeError):
         client.post("/route", json={"query": "hi"})
     assert client.get("/sessions").json() == []
+
+
+@patch("api.query_model")
+def test_learning_log_survives_chat_deletion(mock_query_model):
+    mock_query_model.return_value = "x"
+    sid = client.post("/route", json={"query": "keep this query"}).json()["session_id"]
+    client.delete(f"/sessions/{sid}")
+    assert db.count_learning_log() == 1
+    assert client.get("/stats").json()["total_requests"] == 0
