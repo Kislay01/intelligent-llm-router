@@ -170,3 +170,14 @@ def test_error_type_classifies_stderr_tail():
     assert error_type("File x\n  ^\nSyntaxError: invalid syntax", "fail") == "SyntaxError"
     assert error_type("", "fail") == "NoMessage"
     assert error_type("anything", "timeout") == "Timeout"
+
+
+def test_jsonl_survives_a_cut_off_last_line(tmp_path):
+    from common import append_jsonl, read_jsonl
+    path = str(tmp_path / "g.jsonl")
+    append_jsonl(path, {"task_id": "a", "model": "m"})
+    with open(path, "a", encoding="utf-8") as f:
+        f.write('{"task_id": "b", "mod')            # simulated power loss mid-write
+    assert [r["task_id"] for r in read_jsonl(path)] == ["a"]
+    append_jsonl(path, {"task_id": "c", "model": "m"})  # must not glue onto the broken line
+    assert [r["task_id"] for r in read_jsonl(path)] == ["a", "c"]

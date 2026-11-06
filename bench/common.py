@@ -17,14 +17,33 @@ MODELS = list(SERVED_MODELS)
 
 
 def read_jsonl(path: str) -> list:
+    """Rows of a JSONL file. A line cut off by a crash or power loss is skipped (its row is redone)."""
     if not os.path.exists(path):
         return []
+    rows, skipped = [], 0
     with open(path, encoding="utf-8") as f:
-        return [json.loads(line) for line in f if line.strip()]
+        for line in f:
+            if not line.strip():
+                continue
+            try:
+                rows.append(json.loads(line))
+            except json.JSONDecodeError:
+                skipped += 1
+    if skipped:
+        print(f"Note: skipped {skipped} unreadable line(s) in {path}; those rows will be redone.")
+    return rows
 
 
 def append_jsonl(path: str, row: dict) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
+    # If the last write was cut off mid-line, start on a fresh line so the new row is not corrupted too.
+    if os.path.exists(path) and os.path.getsize(path) > 0:
+        with open(path, "rb") as f:
+            f.seek(-1, os.SEEK_END)
+            needs_newline = f.read(1) != b"\n"
+        if needs_newline:
+            with open(path, "a", encoding="utf-8") as f:
+                f.write("\n")
     with open(path, "a", encoding="utf-8") as f:
         f.write(json.dumps(row, ensure_ascii=False) + "\n")
         f.flush()
