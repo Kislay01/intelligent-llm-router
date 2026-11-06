@@ -37,3 +37,10 @@ def test_no_served_scores_raises():
 def test_none_tolerance_returns_judge_winner():
     row = {"winner": "mistral:7b", "scores": {"llama3.2:3b": 10, "mistral:7b": 10}}
     assert get_label(row, None) == "mistral:7b"
+
+
+def test_judge_labels_never_return_unserved_model():
+    row = {"winner": "codellama:7b",
+           "scores": {"codellama:7b": 10, "llama3.1:8b": 9, "llama3.2:3b": 7,
+                      "mistral:7b": 7, "qwen2.5-coder:7b": 5}}
+    assert get_label(row, None) == "llama3.1:8b"

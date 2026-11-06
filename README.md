@@ -138,9 +138,9 @@ Requires a Gemini API key in `.env` as `GEMINI_API_KEY=...`.
 ```bash
 python data/build_queries.py           # generates 150 synthetic queries
 python src/label_pipeline.py           # labels queries via Ollama + Gemini judge (run repeatedly, processes in batches)
-python src/train_classifier.py         # trains classifier on cost-aware labels (cheapest model within 1 judge point of the best)
+python src/train_classifier.py         # trains classifier on cost-aware labels (cheapest model among those tied for the best judge score)
 python src/train_classifier.py --judge-labels   # original labels: raw judge winner
-python src/train_classifier.py --tolerance 0    # cheapest among exact top scorers
+python src/train_classifier.py --tolerance 1    # looser: cheapest within 1 point (cheaper, but loses quality)
 python src/cost_quality_analysis.py    # cost vs quality evaluation + chart
 python src/embedding_visualization.py  # UMAP cluster chart
 ```
