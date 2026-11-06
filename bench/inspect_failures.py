@@ -31,12 +31,20 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--show", type=int, default=5)
     parser.add_argument("--model", default=None)
+    parser.add_argument("--type", default=None, help="only failures of this error type, e.g. NameError")
     args = parser.parse_args()
 
     tasks = {t["id"]: t for t in load_tasks()}
     gens = {(g["task_id"], g["model"]): g for g in read_jsonl(GENERATIONS_FILE)}
     failed = [r for r in read_jsonl(RESULTS_FILE) if not r["passed"] and (not args.model or r["model"] == args.model)]
+    if args.type:
+        failed = [r for r in failed if error_type(r["detail"], r["status"]) == args.type]
     print(f"{len(failed)} failed answers\n")
+
+    # An odd number of ``` fences means the reply was cut off mid-code (the 1024-token cap).
+    truncated = Counter(r["model"] for r in failed if gens[(r["task_id"], r["model"])]["response"].count("```") % 2)
+    if truncated:
+        print("Possibly truncated replies among these failures: " + ", ".join(f"{m}: {n}" for m, n in sorted(truncated.items())) + "\n")
 
     by_model = {}
     for r in failed:
