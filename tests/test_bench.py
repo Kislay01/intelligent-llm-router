@@ -181,3 +181,36 @@ def test_jsonl_survives_a_cut_off_last_line(tmp_path):
     assert [r["task_id"] for r in read_jsonl(path)] == ["a"]
     append_jsonl(path, {"task_id": "c", "model": "m"})  # must not glue onto the broken line
     assert [r["task_id"] for r in read_jsonl(path)] == ["a", "c"]
+
+
+# ---- judge vs ground truth ----
+def test_pair_accuracy_and_top_pick():
+    from judge_vs_truth import pair_accuracy, top_pick_pass
+    scores = {"a": 9, "b": 5, "c": 5, "d": 2}
+    passed = {"a": True, "b": False, "c": True, "d": False}
+    # pairs: (a,b)=1, (a,d)=1, (c,b)=0.5 (tie), (c,d)=1  -> 3.5/4
+    assert pair_accuracy(scores, passed) == pytest.approx(0.875)
+    assert top_pick_pass(scores, passed) == 1.0
+    assert top_pick_pass({"a": 7, "b": 7}, {"a": True, "b": False}) == 0.5
+
+
+def test_mixed_tasks_filters_unanimous():
+    from judge_vs_truth import mixed_tasks
+    def row(*flags):
+        return {"id": "x", "outcomes": {f"m{i}": {"passed": p} for i, p in enumerate(flags)}}
+    assert len(mixed_tasks([row(True, True), row(False, False), row(True, False)])) == 1
+
+
+def test_analyze_detects_a_judge_that_loves_the_wrong_model():
+    from judge_vs_truth import analyze
+    models = ["llama3.2:3b", "llama3.1:8b", "qwen2.5-coder:7b", "mistral:7b"]
+    # The judge always prefers the 8b model; only qwen is actually right.
+    judged = [{"task_id": str(i),
+               "scores": {"llama3.2:3b": 5, "llama3.1:8b": 9, "qwen2.5-coder:7b": 6, "mistral:7b": 4},
+               "passed": {"llama3.2:3b": False, "llama3.1:8b": False, "qwen2.5-coder:7b": True, "mistral:7b": False}}
+              for i in range(10)]
+    r = analyze(judged)
+    assert r["judge_top_pick_passes"][0] == 0.0
+    assert r["judge_top_pick_share"]["llama3.1:8b"] == 1.0
+    assert r["always_model_passes"]["qwen2.5-coder:7b"] == 1.0
+    assert r["mean_judge_score_passing"] < r["mean_judge_score_failing"] + 1  # sanity: numbers computed
