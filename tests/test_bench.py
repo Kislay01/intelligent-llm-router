@@ -162,3 +162,11 @@ def test_docker_daemon_down_raises_sandbox_error(monkeypatch):
     monkeypatch.setattr(runner.subprocess, "run", fake_run)
     with pytest.raises(runner.SandboxError):
         runner.run_program("pass", "docker")
+
+
+def test_error_type_classifies_stderr_tail():
+    from inspect_failures import error_type
+    assert error_type("Traceback...\nAssertionError", "fail") == "AssertionError"
+    assert error_type("File x\n  ^\nSyntaxError: invalid syntax", "fail") == "SyntaxError"
+    assert error_type("", "fail") == "NoMessage"
+    assert error_type("anything", "timeout") == "Timeout"
