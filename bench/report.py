@@ -77,6 +77,22 @@ def headroom(rows, models=MODELS, baseline=BASELINE):
     }
 
 
+def per_source(rows, models=MODELS):
+    """Pass rate of each model within each benchmark, and what choosing the best model per benchmark would give."""
+    sources = sorted({r["source"] for r in rows})
+    table = {}
+    for src in sources:
+        sub = [r for r in rows if r["source"] == src]
+        table[src] = {"n": len(sub),
+                      "pass": {m: wilson(sum(r["outcomes"][m]["passed"] for r in sub), len(sub)) for m in models}}
+    best_single = max(models, key=lambda m: sum(r["outcomes"][m]["passed"] for r in rows))
+    per_source_best = {src: max(models, key=lambda m: table[src]["pass"][m][0]) for src in sources}
+    by_source_passes = sum(r["outcomes"][per_source_best[r["source"]]]["passed"] for r in rows)
+    return {"table": table, "best_single_model": best_single, "best_model_per_source": per_source_best,
+            "best_single_pass_rate": wilson(sum(r["outcomes"][best_single]["passed"] for r in rows), len(rows)),
+            "category_aware_pass_rate": wilson(by_source_passes, len(rows))}
+
+
 def main():
     tasks = load_tasks()
     rows = build_outcomes(tasks, read_jsonl(GENERATIONS_FILE), read_jsonl(RESULTS_FILE))
@@ -105,6 +121,18 @@ def main():
     print(f"  {BASELINE} passes but every cheaper one fails: {h['baseline_passes_but_every_cheaper_model_fails']}")
     print(f"\nCost-aware oracle saves {h['oracle_savings_vs_baseline_pct']:.1f}% vs always-{BASELINE}, "
           f"at pass rate {h['oracle_pass_rate'][0]*100:.1f}% vs {h['pass_rate'][BASELINE][0]*100:.1f}%.")
+    ps = per_source(rows)
+    if len(ps["table"]) > 1:
+        print(f"\nPass rate by benchmark:")
+        print(f"{'Benchmark':<12}{'n':>5}  " + "".join(f"{m:<20}" for m in MODELS))
+        for src, t in ps["table"].items():
+            print(f"{src:<12}{t['n']:>5}  " + "".join(f"{t['pass'][m][0]*100:5.1f}%{'':<14}" for m in MODELS))
+        b, c = ps["best_single_pass_rate"], ps["category_aware_pass_rate"]
+        print(f"\nBest single model overall ({ps['best_single_model']}): {b[0]*100:.1f}% [{b[1]*100:.1f}, {b[2]*100:.1f}]")
+        print(f"Best model per benchmark {ps['best_model_per_source']}: {c[0]*100:.1f}% [{c[1]*100:.1f}, {c[2]*100:.1f}]")
+        h["per_source"] = ps
+        with open(HEADROOM_FILE, "w", encoding="utf-8") as f:
+            json.dump(h, f, indent=1)
     print(f"\nSaved {OUTCOMES_FILE} and {HEADROOM_FILE}")
 
 

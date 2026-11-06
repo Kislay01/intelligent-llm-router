@@ -13,6 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 sys.path.append(os.path.dirname(__file__))
 
 from common import GENERATIONS_FILE, RESULTS_FILE, append_jsonl, load_tasks, read_jsonl
+from exact import grade_exact
 from extract import build_program
 from runner import SandboxError, run_program, selftest
 
@@ -55,7 +56,10 @@ def main():
 
     def work(item):
         task, gen = item
-        result = run_program(build_program(task, gen["response"]), args.mode, args.timeout)
+        if task.get("kind") == "exact":  # GSM8K / MMLU: compare answers, nothing to execute
+            result = grade_exact(task, gen["response"])
+        else:
+            result = run_program(build_program(task, gen["response"]), args.mode, args.timeout)
         with lock:
             append_jsonl(RESULTS_FILE, {"task_id": task["id"], "source": task["source"], "model": gen["model"],
                                         "status": result["status"], "passed": result["status"] == "pass",

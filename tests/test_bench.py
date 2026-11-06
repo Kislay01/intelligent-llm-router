@@ -214,3 +214,52 @@ def test_analyze_detects_a_judge_that_loves_the_wrong_model():
     assert r["judge_top_pick_share"]["llama3.1:8b"] == 1.0
     assert r["always_model_passes"]["qwen2.5-coder:7b"] == 1.0
     assert r["mean_judge_score_passing"] < r["mean_judge_score_failing"] + 1  # sanity: numbers computed
+
+
+# ---- exact-match benchmarks ----
+def test_extract_number_variants():
+    from exact import extract_number
+    assert extract_number("so 6 * 12 = 72.\nFinal answer: 72") == 72
+    assert extract_number("Final answer: $1,234.50.") == 1234.5
+    assert extract_number("Final answer: 18 dollars") == 18
+    assert extract_number("it costs 5 then 7 total, so 12") == 12      # no final line: last number
+    assert extract_number("Final answer: 3\nFinal answer: 4") == 4      # last final line wins
+    assert extract_number("no digits here") is None
+
+
+def test_extract_letter_ignores_stray_capital_a():
+    from exact import extract_letter
+    assert extract_letter("A common mistake is X.\nFinal answer: C") == "C"
+    assert extract_letter("Final answer: (b)".replace("(b)", "(B)")) == "B"
+    assert extract_letter("Therefore the answer is D.") == "D"
+    assert extract_letter("A is wrong because... I think it is hard") is None
+
+
+def test_grade_exact_gsm8k_and_mmlu():
+    from exact import grade_exact
+    g = {"source": "gsm8k", "answer": "72"}
+    assert grade_exact(g, "Final answer: 72")["status"] == "pass"
+    assert grade_exact(g, "Final answer: 71")["status"] == "fail"
+    m = {"source": "mmlu", "answer": "C"}
+    assert grade_exact(m, "Final answer: C")["status"] == "pass"
+    assert grade_exact(m, "Final answer: A")["status"] == "fail"
+    assert grade_exact(m, "I am not sure")["status"] == "fail"
+
+
+def test_normalize_gsm8k_and_mmlu():
+    from load_benchmarks import normalize_gsm8k, normalize_mmlu
+    g = normalize_gsm8k([{"question": f"q{i}", "answer": f"work\n#### {i},000"} for i in range(20)], 5, 42)
+    assert len(g) == 5 and g[0]["kind"] == "exact" and "," not in g[0]["answer"]
+    m = normalize_mmlu([{"question": "q", "subject": "s", "choices": ["w", "x", "y", "z"], "answer": 2}] * 10, 3, 42)
+    assert m[0]["answer"] == "C" and "C. y" in m[0]["question"]
+
+
+def test_per_source_report_finds_category_specialists():
+    from report import per_source
+    models = ["llama3.2:3b", "llama3.1:8b", "qwen2.5-coder:7b", "mistral:7b"]
+    def row(src, winner):
+        return {"source": src, "outcomes": {m: {"passed": m == winner, "cost": 1.0} for m in models}}
+    rows = [row("humaneval", "qwen2.5-coder:7b")] * 6 + [row("gsm8k", "llama3.1:8b")] * 6
+    ps = per_source(rows, models)
+    assert ps["best_model_per_source"] == {"humaneval": "qwen2.5-coder:7b", "gsm8k": "llama3.1:8b"}
+    assert ps["category_aware_pass_rate"][0] == 1.0 and ps["best_single_pass_rate"][0] == 0.5
