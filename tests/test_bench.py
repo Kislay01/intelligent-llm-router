@@ -140,3 +140,25 @@ def test_build_outcomes_skips_tasks_missing_a_model():
     tasks, gens, res, models = _outcomes(data)
     gens = [g for g in gens if not (g["task_id"] == "t1" and g["model"] == "mistral:7b")]
     assert [r["id"] for r in build_outcomes(tasks, gens, res, models)] == ["t0"]
+
+
+def test_first_run_image_pull_noise_is_not_a_sandbox_error(monkeypatch):
+    import subprocess
+    import runner
+
+    def fake_run(cmd, **kwargs):
+        return subprocess.CompletedProcess(
+            cmd, 0, stdout="", stderr="Unable to find image 'python:3.12-slim' locally\nStatus: Downloaded newer image")
+    monkeypatch.setattr(runner.subprocess, "run", fake_run)
+    assert runner.run_program("pass", "docker")["status"] == "pass"
+
+
+def test_docker_daemon_down_raises_sandbox_error(monkeypatch):
+    import subprocess
+    import runner
+
+    def fake_run(cmd, **kwargs):
+        return subprocess.CompletedProcess(cmd, 125, stdout="", stderr="Cannot connect to the Docker daemon")
+    monkeypatch.setattr(runner.subprocess, "run", fake_run)
+    with pytest.raises(runner.SandboxError):
+        runner.run_program("pass", "docker")

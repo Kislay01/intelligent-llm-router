@@ -3,8 +3,9 @@ import subprocess
 import sys
 
 DOCKER_IMAGE = "python:3.12-slim"
+# "Unable to find image ... locally" is NOT here: Docker prints it on every first run, then pulls and runs.
 DAEMON_ERRORS = ("cannot connect to the docker daemon", "error during connect", "is the docker daemon running",
-                 "unable to find image", "pull access denied", "no such file or directory: 'docker'")
+                 "pull access denied", "error response from daemon")
 
 
 class SandboxError(RuntimeError):
