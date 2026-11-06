@@ -37,6 +37,7 @@ Response + routing metadata returned, logged to SQLite
 - **UMAP embedding visualization** — 2D projection showing query clusters by category and by winning model
 - **Full test suite + CI/CD** — pytest tests (mocked external calls) run automatically via GitHub Actions on every push
 - **Chat UI + live dashboard** — single-page frontend for querying the router and viewing usage stats
+- **Chat history** — every query and response is stored in SQLite and grouped into chats; browse, reopen or delete past chats from the sidebar without re-running any model
 - **Request logging** — every routed query logged to SQLite (model, confidence, fallback status, latency)
 - **Dockerized** — fully containerized via Docker Compose (app + Ollama), runs identically on any machine
 
@@ -109,7 +110,7 @@ docker exec -it intelligent-llm-router-ollama-1 ollama pull qwen2.5-coder:7b
 
 Open `http://localhost:8000/`.
 
-To stop: `docker-compose down`. To restart later: `docker-compose up -d` (no rebuild needed).
+To stop: `docker-compose down`. To restart later: `docker-compose up -d` (no rebuild needed). Chat history is kept in the `router_db` Docker volume, so it survives `down` and rebuilds; `docker-compose down -v` deletes it.
 
 ### Option B: Local development
 
@@ -151,7 +152,10 @@ python src/embedding_visualization.py  # UMAP cluster chart
 |---|---|---|
 | `/` | GET | Chat UI + dashboard |
 | `/health` | GET | Health check |
-| `/route` | POST | Routes a query, returns chosen model, confidence, response, latency |
+| `/route` | POST | Routes a query, returns chosen model, confidence, response, latency. Optional `session_id` continues an existing chat; omit it to start a new one |
+| `/sessions` | GET | Lists chats, most recent first |
+| `/sessions/{id}` | GET | Returns one chat with all stored messages |
+| `/sessions/{id}` | DELETE | Deletes a chat and its messages (they also leave the usage stats) |
 | `/stats` | GET | Aggregated usage stats (model distribution, recent requests) |
 
 Example:
@@ -181,7 +185,8 @@ Runs automatically via GitHub Actions on every push (`.github/workflows/ci.yml`)
 
 - **Dataset size**: 174 labeled examples is small by ML standards; one class (`codellama:7b`) has only 2 real examples. Sufficient to demonstrate the routing mechanism; a production system would train on real query logs at much larger scale.
 - **Local models, not commercial APIs**: uses Ollama-hosted open models for zero-cost demonstration. The routing architecture (embedding → classifier → model call) transfers directly to commercial APIs (OpenAI, Anthropic, Azure); only the backend calls would change.
-- **Single-turn only**: the router considers each query in isolation, with no conversation history.
+- **Single-turn only**: chats are stored and browsable, but the router and the models still see each query in isolation; earlier messages in a chat are not sent as context.
+- **History is stored in plain text, with no users or login**: everyone who can reach the app sees every chat.
 - **No content moderation layer**: a production router would need safety checks before dispatching to a model.
 - **Synchronous request handling**: no async queuing (e.g., Celery/Redis) for concurrent load at scale.
 - **Single LLM judge, no inter-rater reliability check**: labels come from one Gemini pass per query, with a partial bias audit rather than full multi-judge validation.

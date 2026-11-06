@@ -14,8 +14,12 @@ services:
       - "8000:8000"
     environment:
       - OLLAMA_HOST=http://ollama:11434
+      - ROUTER_DB_PATH=/app/db/router_logs.db
+    volumes:
+      - router_db:/app/db
     depends_on:
       - ollama
 
 volumes:
   ollama_data:
+  router_db:

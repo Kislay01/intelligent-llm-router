@@ -2,15 +2,17 @@ import os
 import pickle
 import sys
 import time
+from typing import Optional
 
 sys.path.append(os.path.dirname(__file__))
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
 from embed import embed_query
 from ollama_client import query_model
-from db import init_db, log_request, get_stats
+from db import (init_db, log_request, get_stats, create_session, session_exists,
+                list_sessions, get_session, delete_session)
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
@@ -34,6 +36,7 @@ with open(ENCODER_PATH, "rb") as f:
 
 class RouteRequest(BaseModel):
     query: str
+    session_id: Optional[int] = None  # omit to start a new chat
 
 
 class RouteResponse(BaseModel):
@@ -44,6 +47,8 @@ class RouteResponse(BaseModel):
     fallback_triggered: bool
     response: str
     latency_seconds: float
+    session_id: int
+    request_id: int
 
 
 @app.get("/")
@@ -58,6 +63,9 @@ def health():
 
 @app.post("/route", response_model=RouteResponse)
 def route_query(request: RouteRequest):
+    if request.session_id is not None and not session_exists(request.session_id):
+        raise HTTPException(status_code=404, detail="Session not found")
+
     embedding = embed_query(request.query)
 
     probabilities = classifier.predict_proba([embedding])[0]
@@ -77,12 +85,18 @@ def route_query(request: RouteRequest):
     model_response = query_model(final_model, request.query)
     latency = time.perf_counter() - start_time
 
-    log_request(
+    session_id = request.session_id
+    if session_id is None:
+        session_id = create_session(request.query.strip()[:60] or "New chat")
+
+    request_id = log_request(
         query=request.query,
         routed_model=final_model,
         confidence=confidence,
         fallback_triggered=fallback_triggered,
-        latency_seconds=round(latency, 2)
+        latency_seconds=round(latency, 2),
+        response=model_response,
+        session_id=session_id,
     )
 
     return RouteResponse(
@@ -92,8 +106,30 @@ def route_query(request: RouteRequest):
         all_probabilities=all_probs,
         fallback_triggered=fallback_triggered,
         response=model_response,
-        latency_seconds=round(latency, 2)
+        latency_seconds=round(latency, 2),
+        session_id=session_id,
+        request_id=request_id,
     )
+
+
+@app.get("/sessions")
+def sessions():
+    return list_sessions()
+
+
+@app.get("/sessions/{session_id}")
+def session_detail(session_id: int):
+    session = get_session(session_id)
+    if session is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+    return session
+
+
+@app.delete("/sessions/{session_id}")
+def session_delete(session_id: int):
+    if not delete_session(session_id):
+        raise HTTPException(status_code=404, detail="Session not found")
+    return {"deleted": session_id}
 
 
 @app.get("/stats")
