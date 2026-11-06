@@ -1,0 +1,198 @@
+{
+ "results": {
+  "none": {
+   "agreement_with_best_model": 0.3333333333333333,
+   "fallback_rate": 0.125,
+   "quality": [
+    8.479166666666666,
+    8.0,
+    8.9375
+   ],
+   "cost_per_query": [
+    4.861812499999999e-05,
+    2.9448749999999998e-05,
+    6.891984375e-05
+   ],
+   "quality_delta_pct": [
+    -7.289293849658327,
+    -11.480736582903818,
+    -2.7522935779816513
+   ],
+   "savings_pct": [
+    45.88290130929027,
+    29.09773647698422,
+    63.339303438369676
+   ]
+  },
+  "sticky": {
+   "agreement_with_best_model": 0.4166666666666667,
+   "fallback_rate": 0.125,
+   "quality": [
+    8.645833333333334,
+    8.207812500000001,
+    9.083333333333334
+   ],
+   "cost_per_query": [
+    4.2111145833333335e-05,
+    2.5449593749999996e-05,
+    6.0862322916666654e-05
+   ],
+   "quality_delta_pct": [
+    -5.466970387243735,
+    -10.738856953682246,
+    0.45984993614303266
+   ],
+   "savings_pct": [
+    53.12585512005305,
+    36.758169998487425,
+    68.6859382946286
+   ]
+  },
+  "rewrite": {
+   "agreement_with_best_model": 0.3333333333333333,
+   "fallback_rate": 0.0,
+   "quality": [
+    8.729166666666666,
+    8.291666666666666,
+    9.125520833333331
+   ],
+   "cost_per_query": [
+    5.945979166666667e-05,
+    3.795557291666667e-05,
+    8.030794791666666e-05
+   ],
+   "quality_delta_pct": [
+    -4.55580865603646,
+    -8.22012064848561,
+    -0.4750593824228163
+   ],
+   "savings_pct": [
+    33.81498332660831,
+    18.387827319529862,
+    51.501974604627804
+   ]
+  }
+ },
+ "rewrites": [
+  {
+   "base_id": 4,
+   "followup": "And how many oceans?",
+   "rewrite": "How many oceans are there?"
+  },
+  {
+   "base_id": 24,
+   "followup": "When was that?",
+   "rewrite": "When was the telephone invented?"
+  },
+  {
+   "base_id": 36,
+   "followup": "How much does it weigh?",
+   "rewrite": "How much does the blue whale typically weigh?"
+  },
+  {
+   "base_id": 16,
+   "followup": "What about 10?",
+   "rewrite": "What is the result of converting 10 kilometers to miles?"
+  },
+  {
+   "base_id": 28,
+   "followup": "Who created it?",
+   "rewrite": "What was the primary protocol proposed by Tim Berners-Lee in 1989?"
+  },
+  {
+   "base_id": 8,
+   "followup": "How tall is it exactly?",
+   "rewrite": "What is the exact height of Mount Everest?"
+  },
+  {
+   "base_id": 48,
+   "followup": "Why is that unusual compared to other substances?",
+   "rewrite": "What is the typical behavior of most substances when they cool and solidify, compared to the unique behavior of water?"
+  },
+  {
+   "base_id": 56,
+   "followup": "Which of those would you pick for a developing country?",
+   "rewrite": "Which renewable energy source would be most suitable for a developing country considering its advantages and disadvantages?"
+  },
+  {
+   "base_id": 68,
+   "followup": "Can you explain that more simply?",
+   "rewrite": "Can the concept of antibiotic overuse leading to drug-resistant bacteria be explained in a simple and straightforward manner?"
+  },
+  {
+   "base_id": 72,
+   "followup": "Give me a real-world example of that",
+   "rewrite": "Can you provide a real-world example of a caching system that introduced data consistency issues, such as stale data, write invalidation, read-after-write inconsistencies, or complexities in managing data consistency across multiple levels of caching?"
+  },
+  {
+   "base_id": 52,
+   "followup": "Now only the arguments against, in two sentences",
+   "rewrite": "Are there valid arguments against using animals for medical testing, specifically regarding animal welfare concerns?"
+  },
+  {
+   "base_id": 64,
+   "followup": "How does that affect farming?",
+   "rewrite": "Does the reduction in evapotranspiration due to deforestation affect farming practices?"
+  },
+  {
+   "base_id": 80,
+   "followup": "Now do it in Java",
+   "rewrite": "How to remove duplicates from a sorted array in place using a two-pointer approach in Java?"
+  },
+  {
+   "base_id": 92,
+   "followup": "Walk me through it step by step",
+   "rewrite": "Can you walk me through the dynamic programming solution you provided for finding the minimum number of edits to convert one string to another in Python?"
+  },
+  {
+   "base_id": 100,
+   "followup": "What's the time complexity?",
+   "rewrite": "What is the time complexity of the provided Python code for checking if a graph is bipartite?"
+  },
+  {
+   "base_id": 104,
+   "followup": "Show the same with a RIGHT JOIN",
+   "rewrite": "Can you explain the difference between INNER JOIN, LEFT JOIN, and RIGHT JOIN with examples?"
+  },
+  {
+   "base_id": 112,
+   "followup": "Rewrite it in TypeScript",
+   "rewrite": "When to use composition over inheritance in TypeScript with an example?"
+  },
+  {
+   "base_id": 160,
+   "followup": "Add error handling for invalid input",
+   "rewrite": "Can you add error handling for invalid input in the Python function to evaluate a postfix expression using a stack?"
+  },
+  {
+   "base_id": 116,
+   "followup": "Make it rhyme",
+   "rewrite": "Can you write a short poem about autumn rain that rhymes?"
+  },
+  {
+   "base_id": 124,
+   "followup": "Continue the scene",
+   "rewrite": "Can the dialogue continue with Detective James pressing Johnson for more information, perhaps asking for his phone records or a list of people he was in contact with around the time of the robbery, while Johnson becomes increasingly agitated and defensive?"
+  },
+  {
+   "base_id": 136,
+   "followup": "Shorter, and a bit funnier",
+   "rewrite": "Write a farewell letter from a retiring teacher to their students, but make it shorter and add a bit of humor."
+  },
+  {
+   "base_id": 148,
+   "followup": "Now from the dog's point of view",
+   "rewrite": "Can the humorous short piece about a cat who thinks it runs the household be rewritten from the dog's point of view?"
+  },
+  {
+   "base_id": 120,
+   "followup": "Give it a sad ending",
+   "rewrite": "Write a short story about a robot discovering emotions for the first time, but ultimately succumbing to a crushing sorrow that tears it apart, leaving it a hollow shell of its former self."
+  },
+  {
+   "base_id": 140,
+   "followup": "Turn that into a haiku",
+   "rewrite": "Life's marathon pace"
+  }
+ ]
+}
