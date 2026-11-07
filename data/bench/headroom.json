@@ -17,9 +17,9 @@
    0.851336089658644
   ],
   "mistral:7b": [
-   0.47198275862068967,
-   0.4269752347981347,
-   0.5174503998611175
+   0.4870689655172414,
+   0.44188199243379167,
+   0.5324683004858632
   ]
  },
  "total_cost": {
@@ -28,18 +28,18 @@
   "qwen2.5-coder:7b": 0.009130240000000001,
   "mistral:7b": 0.007902885
  },
- "all_models_pass": 173,
- "no_model_passes": 46,
- "mixed": 245,
- "baseline_fails_but_a_cheaper_model_passes": 95,
+ "all_models_pass": 176,
+ "no_model_passes": 44,
+ "mixed": 244,
+ "baseline_fails_but_a_cheaper_model_passes": 97,
  "baseline_passes_but_every_cheaper_model_fails": 14,
  "oracle_pass_rate": [
-  0.9008620689655172,
-  0.8702907059763073,
-  0.9248502135143922
+  0.9051724137931034,
+  0.8750892766354126,
+  0.928601545215402
  ],
- "oracle_cost": 0.0074485750000000015,
- "oracle_savings_vs_baseline_pct": 65.10312827147557,
+ "oracle_cost": 0.007403615000000001,
+ "oracle_savings_vs_baseline_pct": 65.31376766933549,
  "per_source": {
   "table": {
    "gsm8k": {
@@ -136,9 +136,9 @@
       0.6813284290433533
      ],
      "mistral:7b": [
-      0.47,
-      0.3751065198210374,
-      0.5671131686275227
+      0.54,
+      0.44264685393523856,
+      0.6343935614666815
      ]
     }
    }
