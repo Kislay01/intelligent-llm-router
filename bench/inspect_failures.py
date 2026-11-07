@@ -1,5 +1,8 @@
 """Audit failed answers: are they wrong answers, or did extraction/sandboxing break?
 
+Exact-match tasks: WrongAnswer = a final answer was found and was wrong; NoAnswerFound = our extraction found
+no answer (a possible plumbing problem, or a model that never gave one).
+
 Error types that point at OUR plumbing rather than the model: SyntaxError / IndentationError (bad code
 extraction), NameError for the target function (wrong block picked). AssertionError = a genuinely wrong answer.
 
@@ -20,7 +23,10 @@ def error_type(detail: str, status: str) -> str:
     """Exception name from the last line of stderr, e.g. 'AssertionError'."""
     if status == "timeout":
         return "Timeout"
-    lines = [l for l in (detail or "").strip().splitlines() if l.strip()]
+    text = (detail or "").strip()
+    if text.startswith("expected "):  # GSM8K / MMLU exact-match failures
+        return "NoAnswerFound" if text.endswith("got None") else "WrongAnswer"
+    lines = [l for l in text.splitlines() if l.strip()]
     if not lines:
         return "NoMessage"
     last = lines[-1].split(":", 1)[0].strip()

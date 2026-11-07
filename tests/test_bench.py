@@ -275,3 +275,10 @@ def test_analyze_reports_each_benchmark_separately():
     r = analyze([row("gsm8k", True)] * 5 + [row("mmlu", False)] * 5)
     assert r["by_source"]["gsm8k"]["pairwise_accuracy"][0] == 1.0
     assert r["by_source"]["mmlu"]["pairwise_accuracy"][0] == 0.0
+
+
+def test_error_type_for_exact_match_failures():
+    from inspect_failures import error_type
+    assert error_type("expected C, got B", "fail") == "WrongAnswer"
+    assert error_type("expected 72, got 71.0", "fail") == "WrongAnswer"
+    assert error_type("expected C, got None", "fail") == "NoAnswerFound"
