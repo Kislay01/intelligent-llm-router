@@ -282,3 +282,23 @@ def test_error_type_for_exact_match_failures():
     assert error_type("expected C, got B", "fail") == "WrongAnswer"
     assert error_type("expected 72, got 71.0", "fail") == "WrongAnswer"
     assert error_type("expected C, got None", "fail") == "NoAnswerFound"
+
+
+def test_extract_letter_forms_seen_in_real_replies():
+    from exact import extract_letter
+    assert extract_letter("C. Normative, Descriptive") == "C"
+    assert extract_letter("  (B) This dispute is territorial") == "B"
+    assert extract_letter("It is a territorial dispute. (B) The claim is the issue.") == "B"
+    assert extract_letter("Options (A) cats (B) dogs (C) birds, none is clearly right") is None
+    assert extract_letter("Final answer: There seems to be a mistake in the problem") is None
+    assert extract_letter("A. is not it\nFinal answer: D") == "D"            # explicit final answer wins
+
+
+def test_regrade_scope_keeps_other_benchmarks():
+    from grade import grade_pairs, kept_after_regrade
+    results = [{"task_id": "a", "model": "m", "source": "mmlu"}, {"task_id": "b", "model": "m", "source": "mbpp"}]
+    assert kept_after_regrade(results) == []
+    assert kept_after_regrade(results, ["mmlu"]) == [results[1]]
+    tasks = [{"id": "a", "source": "mmlu"}, {"id": "b", "source": "mbpp"}]
+    gens = [{"task_id": "a", "model": "m"}, {"task_id": "b", "model": "m"}]
+    assert [t["id"] for t, _ in grade_pairs(tasks, gens, set(), ["mmlu"])] == ["a"]

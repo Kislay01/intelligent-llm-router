@@ -5,6 +5,7 @@ Usage:
   python bench/grade.py [--workers 2] [--regrade]
 """
 import argparse
+import json
 import os
 import sys
 import threading
@@ -18,10 +19,24 @@ from extract import build_program
 from runner import SandboxError, run_program, selftest
 
 
-def grade_pairs(tasks, generations, done):
+def grade_pairs(tasks, generations, done, sources=None):
     by_id = {t["id"]: t for t in tasks}
     return [(by_id[g["task_id"]], g) for g in generations
-            if g["task_id"] in by_id and (g["task_id"], g["model"]) not in done]
+            if g["task_id"] in by_id and (g["task_id"], g["model"]) not in done
+            and (not sources or by_id[g["task_id"]]["source"] in sources)]
+
+
+def kept_after_regrade(results, sources=None):
+    """Results to keep when regrading: none for a full regrade, else everything outside `sources`."""
+    return [] if not sources else [r for r in results if r["source"] not in sources]
+
+
+def rewrite_results(rows):
+    tmp = RESULTS_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        for row in rows:
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    os.replace(tmp, RESULTS_FILE)
 
 
 def main():
@@ -30,6 +45,8 @@ def main():
                         help="local runs model code directly on this machine: unsafe, tests only")
     parser.add_argument("--workers", type=int, default=2)
     parser.add_argument("--regrade", action="store_true")
+    parser.add_argument("--sources", nargs="+", default=None,
+                        help="only these benchmarks (humaneval mbpp gsm8k mmlu); with --regrade, only these are redone")
     parser.add_argument("--selftest", action="store_true")
     parser.add_argument("--timeout", type=int, default=10)
     args = parser.parse_args()
@@ -46,10 +63,12 @@ def main():
         print("WARNING: local mode executes model-written code on this machine without isolation.")
 
     tasks, generations = load_tasks(), read_jsonl(GENERATIONS_FILE)
-    done = set() if args.regrade else {(r["task_id"], r["model"]) for r in read_jsonl(RESULTS_FILE)}
-    if args.regrade and os.path.exists(RESULTS_FILE):
-        os.remove(RESULTS_FILE)
-    todo = grade_pairs(tasks, generations, done)
+    existing = read_jsonl(RESULTS_FILE)
+    if args.regrade:
+        existing = kept_after_regrade(existing, args.sources)
+        rewrite_results(existing)
+    done = {(r["task_id"], r["model"]) for r in existing}
+    todo = grade_pairs(tasks, generations, done, args.sources)
     print(f"{len(todo)} answers to grade ({len(done)} already graded)")
 
     lock, counter = threading.Lock(), {"n": 0}
