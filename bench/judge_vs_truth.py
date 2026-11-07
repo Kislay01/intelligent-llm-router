@@ -64,7 +64,18 @@ def analyze(judged: list) -> dict:
     win_share = {m: float(np.mean([top_pick_pass_for(j, m) for j in judged])) for m in models}
     pass_share = {m: float(np.mean([j["passed"][m] for j in judged])) for m in models}
 
+    by_source = {}
+    for src in sorted({j.get("source") for j in judged if j.get("source")}):
+        sub = [j for j in judged if j.get("source") == src]
+        by_source[src] = {
+            "n": len(sub),
+            "pairwise_accuracy": bootstrap_mean([pair_accuracy(j["scores"], j["passed"]) for j in sub]),
+            "judge_top_pick_passes": bootstrap_mean([top_pick_pass(j["scores"], j["passed"]) for j in sub]),
+            "random_model_passes": bootstrap_mean([np.mean(list(j["passed"].values())) for j in sub]),
+        }
+
     return {
+        "by_source": by_source,
         "n_tasks": len(judged),
         "pairwise_accuracy": bootstrap_mean(pair),           # 0.5 = no better than chance
         "judge_top_pick_passes": bootstrap_mean(top),
@@ -99,6 +110,15 @@ def print_report(r: dict) -> None:
         print(f"{m:<20}{r['judge_top_pick_share'][m]*100:>6.1f}%{'':<12}{r['always_model_passes'][m]*100:>6.1f}%")
 
 
+def print_by_source(r: dict) -> None:
+    if len(r["by_source"]) < 2:
+        return
+    f = lambda t: f"{t[0]*100:5.1f}% [{t[1]*100:4.1f}, {t[2]*100:4.1f}]"
+    print(f"\n{'Benchmark':<12}{'n':>5}  {'Pairwise accuracy':<22}{'Top pick passes':<22}{'Random model passes'}")
+    for src, v in r["by_source"].items():
+        print(f"{src:<12}{v['n']:>5}  {f(v['pairwise_accuracy']):<22}{f(v['judge_top_pick_passes']):<22}{f(v['random_model_passes'])}")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=None)
@@ -128,7 +148,7 @@ def main():
         time.sleep(args.sleep)
 
     runs = {r["task_id"]: r["scores"] for r in read_jsonl(JUDGE_RUNS_FILE)}
-    judged = [{"task_id": o["id"], "scores": runs[o["id"]],
+    judged = [{"task_id": o["id"], "source": o["source"], "scores": runs[o["id"]],
                "passed": {m: o["outcomes"][m]["passed"] for m in MODELS}} for o in targets if o["id"] in runs]
     if not judged:
         sys.exit("Nothing judged yet.")
@@ -136,6 +156,7 @@ def main():
     with open(RESULT_FILE, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=1)
     print_report(result)
+    print_by_source(result)
     if len(judged) < len(targets):
         print(f"\nNote: only {len(judged)} of {len(targets)} tasks judged so far; re-run to finish.")
 

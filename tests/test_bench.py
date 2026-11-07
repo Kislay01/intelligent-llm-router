@@ -263,3 +263,15 @@ def test_per_source_report_finds_category_specialists():
     ps = per_source(rows, models)
     assert ps["best_model_per_source"] == {"humaneval": "qwen2.5-coder:7b", "gsm8k": "llama3.1:8b"}
     assert ps["category_aware_pass_rate"][0] == 1.0 and ps["best_single_pass_rate"][0] == 0.5
+
+
+def test_analyze_reports_each_benchmark_separately():
+    from judge_vs_truth import analyze
+    def row(src, judge_right):
+        good, bad = (9, 3) if judge_right else (3, 9)
+        return {"task_id": "x", "source": src,
+                "scores": {"llama3.2:3b": good, "llama3.1:8b": bad, "qwen2.5-coder:7b": bad, "mistral:7b": bad},
+                "passed": {"llama3.2:3b": True, "llama3.1:8b": False, "qwen2.5-coder:7b": False, "mistral:7b": False}}
+    r = analyze([row("gsm8k", True)] * 5 + [row("mmlu", False)] * 5)
+    assert r["by_source"]["gsm8k"]["pairwise_accuracy"][0] == 1.0
+    assert r["by_source"]["mmlu"]["pairwise_accuracy"][0] == 0.0
