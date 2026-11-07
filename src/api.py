@@ -7,7 +7,7 @@ from typing import Optional
 sys.path.append(os.path.dirname(__file__))
 
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from embed import embed_query
 from ollama_client import query_model, query_chat
@@ -15,6 +15,7 @@ from context import build_chat_messages, rewrite_query
 from routing import CONFIDENCE_THRESHOLD, FALLBACK_MODEL, MODES, resolve_route
 from db import (init_db, log_request, log_learning, get_stats, create_session, session_exists,
                 list_sessions, get_session, delete_session)
+from v2_serve import DEFAULT_COST_WEIGHT, lam_from_cost_weight, load_curve, load_router
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
@@ -38,6 +39,22 @@ with open(ENCODER_PATH, "rb") as f:
     label_encoder = pickle.load(f)
 
 
+# ROUTER_VERSION=v1 keeps the original single-label classifier (rollback switch). v2 needs models/router_v2.pkl
+# (python src/v2_train.py); without it the app falls back to v1.
+ROUTER_VERSION = os.getenv("ROUTER_VERSION", "v2")
+v2 = load_router() if ROUTER_VERSION == "v2" else None
+if ROUTER_VERSION == "v2" and v2 is None:
+    print("WARNING: models/router_v2.pkl not found, serving the v1 router. Run: python src/v2_train.py")
+
+
+def make_v2_predict(lam: float, seen: dict):
+    """predict function for resolve_route: remembers the embedding so the explanation reuses it."""
+    def predict(text: str):
+        seen["vec"] = embed_query(text)
+        return v2.predict(seen["vec"], lam)
+    return predict
+
+
 def predict_text(text: str):
     """Classifier output for one piece of text: (model, confidence, probabilities)."""
     probabilities = classifier.predict_proba([embed_query(text)])[0]
@@ -49,6 +66,8 @@ def predict_text(text: str):
 class RouteRequest(BaseModel):
     query: str
     session_id: Optional[int] = None  # omit to start a new chat
+    # v2 only: 0 = best quality, 1 = cheapest. Omit for the default.
+    cost_weight: Optional[float] = Field(default=None, ge=0.0, le=1.0)
 
 
 class RouteResponse(BaseModel):
@@ -62,6 +81,9 @@ class RouteResponse(BaseModel):
     session_id: int
     request_id: int
     routing_query: str
+    router_version: str = "v1"
+    cost_weight: Optional[float] = None
+    explanation: Optional[list] = None  # v2: the most similar training queries and which models passed them
 
 
 @app.get("/")
@@ -86,7 +108,14 @@ def route_query(request: RouteRequest):
     mode = os.getenv("ROUTING_CONTEXT_MODE", DEFAULT_ROUTING_MODE)
     if mode not in MODES:
         mode = DEFAULT_ROUTING_MODE
-    decision = resolve_route(mode, request.query, history, predict_text, rewrite_query)
+    seen: dict = {}
+    if v2 is not None:
+        cost_weight = DEFAULT_COST_WEIGHT if request.cost_weight is None else request.cost_weight
+        predict = make_v2_predict(lam_from_cost_weight(cost_weight), seen)
+    else:
+        cost_weight, predict = None, predict_text
+    decision = resolve_route(mode, request.query, history, predict, rewrite_query)
+    explanation = v2.explain(seen["vec"]) if v2 is not None and "vec" in seen else None
     final_model = decision.model
 
     start_time = time.perf_counter()
@@ -127,7 +156,18 @@ def route_query(request: RouteRequest):
         session_id=session_id,
         request_id=request_id,
         routing_query=decision.routing_query,
+        router_version="v2" if v2 is not None else "v1",
+        cost_weight=cost_weight,
+        explanation=explanation,
     )
+
+
+@app.get("/dial-curve")
+def dial_curve():
+    """Measured quality/cost curve for the slider (empty if data/v2_results.json is not shipped)."""
+    curve = load_curve() if v2 is not None else {}
+    return {"router_version": "v2" if v2 is not None else "v1", "default_cost_weight": DEFAULT_COST_WEIGHT,
+            "points": curve.get("points", []), "always_8b_judge": curve.get("always_8b_judge")}
 
 
 @app.get("/sessions")

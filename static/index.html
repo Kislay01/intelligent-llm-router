@@ -32,6 +32,13 @@
   .tab.active { border-bottom: 2px solid #4f7cff; color: #4f7cff; }
   .hidden { display: none; }
   .empty { color: #777; margin-top: 24px; }
+  #dial { margin-top: 12px; font-size: 13px; color: #b8bccb; }
+  #dial input[type=range] { width: 100%; margin: 6px 0 2px; }
+  #dial .ends { display: flex; justify-content: space-between; font-size: 12px; color: #8a8fa3; }
+  #dialHint { font-size: 12px; color: #8a8fa3; margin-top: 4px; min-height: 16px; }
+  details.why { margin-top: 10px; font-size: 13px; color: #b8bccb; }
+  details.why summary { cursor: pointer; color: #8fb4ff; }
+  details.why table { margin-top: 6px; }
   .note { color: #8a8fa3; font-size: 12px; font-style: italic; margin-bottom: 8px; }
 </style>
 </head>
@@ -51,6 +58,12 @@
 
   <div id="chat-tab">
     <div id="thread"><p class="empty">Ask something to start a chat. Past chats are listed on the left.</p></div>
+    <div id="dial" class="hidden">
+      <label for="dialSlider"><b>Cost / quality</b> (applies to the next message)</label>
+      <input type="range" id="dialSlider" min="0" max="100" step="1" value="27" oninput="updateDialHint()">
+      <div class="ends"><span>Best quality</span><span>Cheapest</span></div>
+      <div id="dialHint"></div>
+    </div>
     <textarea id="queryInput" placeholder="Ask something... (Ctrl+Enter to send)"></textarea><br>
     <button id="sendBtn" onclick="sendQuery()">Send</button>
   </div>
@@ -129,9 +142,72 @@ function appendMessage(m) {
   const pre = document.createElement('pre');
   pre.textContent = m.response;
   card.append(badges, pre);
+  if (m.explanation) card.appendChild(renderWhy(m));
 
   thread.append(user, card);
   card.scrollIntoView({ block: 'end' });
+}
+
+const MODEL_ORDER = ['llama3.2:3b', 'llama3.1:8b', 'qwen2.5-coder:7b', 'mistral:7b'];
+
+// "Why this model?": predicted pass chance per model, and the training queries the prediction came from.
+function renderWhy(m) {
+  const details = document.createElement('details');
+  details.className = 'why';
+  const summary = document.createElement('summary');
+  summary.textContent = 'Why this model?';
+  details.appendChild(summary);
+
+  const intro = document.createElement('div');
+  intro.textContent = 'Predicted chance each model answers correctly (from the most similar past queries); the cost slider then trades this against price.';
+  details.appendChild(intro);
+
+  const probs = document.createElement('table');
+  MODEL_ORDER.forEach(name => {
+    if (!(name in m.all_probabilities)) return;
+    const tr = document.createElement('tr');
+    const chosen = name === m.routed_model ? ' \u2190 chosen' : '';
+    tr.innerHTML = `<td>${esc(name)}</td><td>${(m.all_probabilities[name] * 100).toFixed(0)}%</td><td>${esc(chosen)}</td>`;
+    probs.appendChild(tr);
+  });
+  details.appendChild(probs);
+
+  const head = document.createElement('div');
+  head.style.marginTop = '8px';
+  head.textContent = 'Most similar past queries (\u2713 passed, \u2717 failed):';
+  details.appendChild(head);
+  m.explanation.forEach(n => {
+    const row = document.createElement('div');
+    row.style.marginTop = '4px';
+    const results = MODEL_ORDER.filter(x => x in n.passed).map(x => x.split(':')[0] + ' ' + (n.passed[x] ? '\u2713' : '\u2717')).join('  ');
+    const kind = n.source === 'judged' ? 'judge-graded' : 'unit-tested';
+    row.textContent = '\u201c' + n.text.replace(/\s+/g, ' ').slice(0, 110) + '\u201d  (' + (n.similarity * 100).toFixed(0) + '% similar, ' + kind + ')  ' + results;
+    details.appendChild(row);
+  });
+  return details;
+}
+
+let dialCurve = null;
+
+async function initDial() {
+  try {
+    const res = await fetch('/dial-curve');
+    dialCurve = await res.json();
+  } catch (e) { return; }
+  if (dialCurve.router_version !== 'v2') return;
+  document.getElementById('dialSlider').value = Math.round(dialCurve.default_cost_weight * 100);
+  document.getElementById('dial').classList.remove('hidden');
+  updateDialHint();
+}
+
+function updateDialHint() {
+  const hint = document.getElementById('dialHint');
+  const w = document.getElementById('dialSlider').value / 100;
+  if (!dialCurve || !dialCurve.points.length) { hint.textContent = ''; return; }
+  const p = dialCurve.points.reduce((a, b) => Math.abs(b.cost_weight - w) < Math.abs(a.cost_weight - w) ? b : a);
+  hint.textContent = 'Measured out-of-sample on 174 queries near this setting: about ' + p.saved_vs_8b_pct.toFixed(0) +
+    '% cheaper than always using llama3.1:8b, judge score ' + p.judge.toFixed(2) + ' vs ' +
+    (dialCurve.always_8b_judge == null ? '?' : dialCurve.always_8b_judge.toFixed(2)) + ' for llama3.1:8b alone.';
 }
 
 function renderThread(messages) {
@@ -202,7 +278,7 @@ async function sendQuery() {
     const res = await fetch('/route', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query, session_id: currentSessionId })
+      body: JSON.stringify({ query, session_id: currentSessionId, cost_weight: dialCurve && dialCurve.router_version === 'v2' ? document.getElementById('dialSlider').value / 100 : null })
     });
     if (!res.ok) throw new Error('Server returned ' + res.status);
     const data = await res.json();
@@ -217,6 +293,8 @@ async function sendQuery() {
     btn.textContent = 'Send';
   }
 }
+
+initDial();
 
 document.getElementById('queryInput').addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) sendQuery();

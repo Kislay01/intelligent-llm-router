@@ -23,5 +23,8 @@ jobs:
       - name: Train classifier (generates model artifacts for tests)
         run: python src/train_classifier.py
 
+      - name: Train v2 router (from committed benchmark data and cached embeddings)
+        run: python src/v2_train.py
+
       - name: Run tests
         run: pytest tests/ -v

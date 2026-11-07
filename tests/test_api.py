@@ -18,6 +18,12 @@ def temp_db(tmp_path, monkeypatch):
     db.init_db()
 
 
+@pytest.fixture(autouse=True)
+def v1_router(monkeypatch):
+    """These tests cover the v1 path; tests/test_api_v2.py covers v2. Pinning avoids depending on models/router_v2.pkl."""
+    monkeypatch.setattr(api, "v2", None)
+
+
 client = TestClient(api.app)
 
 

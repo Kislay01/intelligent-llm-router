@@ -70,6 +70,11 @@ intelligent-llm-router/
 │   ├── train_classifier.py        # Trains + evaluates the routing classifier
 │   ├── cost_quality_analysis.py   # Router vs baseline cost/quality comparison
 │   ├── embedding_visualization.py # UMAP cluster visualization
+│   ├── v2_data.py                 # v2: pools benchmark tasks + judged queries, calibrates the judge, caches embeddings
+│   ├── v2_router.py               # v2: per-model pass predictors, cost/quality dial, baselines
+│   ├── v2_metrics.py              # v2: splits, paired bootstrap, summaries
+│   ├── v2_eval.py                 # v2: held-out evaluation (python src/v2_eval.py)
+│   ├── v2_train.py / v2_serve.py  # v2: builds and serves models/router_v2.pkl
 │   ├── db.py                      # SQLite request logging
 │   └── api.py                     # FastAPI app (routing, stats, UI serving)
 ├── static/
@@ -163,6 +168,20 @@ python bench/report.py                   # pass rates, routing headroom, cost-aw
 python bench/judge_vs_truth.py           # how often does the Gemini judge agree with the unit tests?
 ```
 
+## v2 router: cost/quality dial and explanations
+
+v2 predicts, for each model, the chance it answers correctly (nearest neighbours over query embeddings, trained on
+the 464 benchmark tasks with unit-test/exact-match outcomes plus the 174 judge-labelled queries), then picks the model
+with the best predicted chance minus a price penalty. The penalty is the **cost/quality slider** in the chat UI
+(`cost_weight` in the API: 0 = best quality, 1 = cheapest). Each reply has a "Why this model?" panel showing the predicted
+chance per model and the most similar past queries with the models that passed them.
+
+```bash
+python src/v2_train.py          # builds models/router_v2.pkl from the committed data and cached embeddings
+python src/v2_eval.py           # the held-out evaluation behind the numbers below
+ROUTER_VERSION=v1 uvicorn ...   # roll back to the original classifier (also the fallback if router_v2.pkl is missing)
+```
+
 ## API
 
 | Endpoint | Method | Description |
@@ -173,7 +192,10 @@ python bench/judge_vs_truth.py           # how often does the Gemini judge agree
 | `/sessions` | GET | Lists chats, most recent first |
 | `/sessions/{id}` | GET | Returns one chat with all stored messages |
 | `/sessions/{id}` | DELETE | Deletes a chat and its messages (they also leave the usage stats) |
+| `/dial-curve` | GET | Measured quality/cost curve behind the slider (v2) |
 | `/stats` | GET | Aggregated usage stats (model distribution, recent requests) |
+
+`/route` also accepts `cost_weight` (0 to 1, v2 only) and returns `router_version`, `cost_weight` and `explanation`.
 
 Example:
 
@@ -197,9 +219,17 @@ Runs automatically via GitHub Actions on every push (`.github/workflows/ci.yml`)
 - **Cost vs quality**: router achieved a **43.0% cost reduction** for a **2.9% quality drop** versus always using the strongest model, evaluated on 35 held-out test queries (see `data/cost_quality_chart.png`)
 - **Judge-order bias audit**: 77.8% label consistency (14/18) under model-order randomization; all inconsistencies were isolated to one model's marginal wins, not a systemic ordering bias (see `src/judge_bias_audit.py`)
 - **Follow-up routing** (24 hand-written follow-ups, classifier trained without their base queries; quality is a proxy): `none` 8.48 [8.00, 8.94] quality / 45.9% savings, `sticky` 8.65 [8.21, 9.08] / 53.1%, `rewrite` 8.73 [8.29, 9.13] / 33.8%. The differences are within the confidence intervals, so the strategies are not statistically separable at this sample size. `rewrite` adds ~5 s per follow-up and about a third of its rewrites drift or embellish (one answered the question instead of rewriting it), so `sticky` is the default (`src/compare_followup_routing.py`)
+- **v2 router (all out-of-sample, 95% bootstrap CIs; `python src/v2_eval.py`)**:
+  - *General queries (174, judge scale; nearest-neighbour router, benchmarks in training):* at the default cost setting v2 scores 8.77 at 52.8% lower cost than always-llama3.1:8b, versus 8.79 at 50.7% for the v1 recipe on the same folds: the same quality at the same cost, within noise. What v2 adds is a measured curve. At the best-quality end it scores 8.87 against 8.99 for always-llama3.1:8b (difference -0.12, CI -0.30 to +0.06, so indistinguishable) at 39.6% lower cost; at the cheap end of the slider it scores 8.65 (-0.34, CI -0.58 to -0.11) at 70.4% lower cost. Across the slider it beats always-qwen2.5-coder (8.27) by +0.38 to +0.60 points (CIs exclude zero)
+  - *Benchmark tasks (464, unit tests / exact match):* v2 does **not** beat always using qwen2.5-coder:7b (81.9% pass rate). At the default setting it scores 81.5% (-0.4 points, CI -1.6 to +0.8) with the same cost as always-qwen, and trained without the benchmark it is tested on it is -0.9 points (CI -2.6 to +0.9): a tie, not a win. The cost-aware oracle reaches 90.5%, but a learning curve shows that more data of the same kind does not close that gap
+  - *Judge reliability:* the LLM judge agrees with unit-test ground truth on 87.6% of answers (77% on MMLU), so judge-derived labels carry about that much noise
 - **Embedding visualization**: query categories separate cleanly in embedding space (UMAP); winning-model distribution does not cleanly align with category clusters, confirming routing is a distinct sub-problem from topic classification (see `data/embedding_clusters.png`)
 
 ## Limitations
+
+- **v2 does not beat the best single model on benchmarks.** qwen2.5-coder:7b alone passes 81.9% of the benchmark tasks and the router cannot reliably pick better per query from query text alone; its measured benefit is on general queries, where the best model varies by task type. It matches, and does not exceed, the v1 recipe at equal cost on those queries.
+- **The default cost setting is a judgement call**, chosen to match v1's cost on the judged queries; other settings are measured, not tuned.
+- **General-query labels are judge-derived**, so evaluation on those 174 queries partly inherits the judge's errors; the benchmark results are the ground-truth ones.
 
 - **Dataset size**: 174 labeled examples is small by ML standards; one class (`codellama:7b`) has only 2 real examples. Sufficient to demonstrate the routing mechanism; a production system would train on real query logs at much larger scale.
 - **Local models, not commercial APIs**: uses Ollama-hosted open models for zero-cost demonstration. The routing architecture (embedding → classifier → model call) transfers directly to commercial APIs (OpenAI, Anthropic, Azure); only the backend calls would change.
