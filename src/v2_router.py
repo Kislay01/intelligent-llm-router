@@ -14,6 +14,7 @@ from sklearn.linear_model import LogisticRegression
 sys.path.append(os.path.dirname(__file__))
 
 from pricing import MODEL_PRICING_PER_1M_TOKENS, SERVED_MODELS
+from relabel import cost_aware_label
 
 PRICES = np.array([MODEL_PRICING_PER_1M_TOKENS[m] for m in SERVED_MODELS])
 NORM_PRICES = PRICES / PRICES.max()
@@ -95,14 +96,24 @@ def cheapest_passing_label(passed: np.ndarray) -> np.ndarray:
     return labels
 
 
-class V1StyleClassifier:
-    """The v1 recipe on the pooled data: multiclass 'which model is the cheapest good one?'. No dial."""
+def judge_score_label(scores: np.ndarray) -> np.ndarray:
+    """The actual v1 label: cheapest model whose judge score equals the best score (tolerance 0)."""
+    return np.array([SERVED_MODELS.index(cost_aware_label(dict(zip(SERVED_MODELS, row)), 0)) for row in scores])
 
-    def __init__(self, C: float = 1.0):
+
+class V1StyleClassifier:
+    """Multiclass 'which model is the cheapest good one?'. No dial.
+
+    label_fn=cheapest_passing_label: the v1 idea applied to binary pass/fail outcomes.
+    label_fn=judge_score_label: the faithful v1 recipe; pass judge scores in place of `passed`.
+    """
+
+    def __init__(self, C: float = 1.0, label_fn=cheapest_passing_label):
         self.C = C
+        self.label_fn = label_fn
 
     def fit(self, X: np.ndarray, passed: np.ndarray, weight: Optional[np.ndarray] = None):
-        y = cheapest_passing_label(passed)
+        y = self.label_fn(passed)
         self.only = int(y[0]) if len(np.unique(y)) < 2 else None
         if self.only is None:
             self.clf = LogisticRegression(C=self.C, max_iter=2000, class_weight="balanced")

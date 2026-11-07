@@ -9,6 +9,7 @@ E  learning curve on A                                                          
 Usage: python src/v2_eval.py [--folds 5] [--repeats 3] [--judged-weight 0.5]
 """
 import argparse
+import dataclasses
 import json
 import os
 import sys
@@ -21,7 +22,7 @@ sys.path.append(os.path.dirname(__file__))
 from pricing import SERVED_MODELS
 from v2_data import build_pool
 from v2_metrics import (LLAMA8, QWEN, cv_splits, log_loss, pick_default_lam, predict_over_splits, report)
-from v2_router import KnnPredictor, PassPredictor, V1StyleClassifier
+from v2_router import KnnPredictor, PassPredictor, V1StyleClassifier, judge_score_label
 
 RESULTS_FILE = "data/v2_results.json"
 # Normalised prices are 0.33 / 0.39 / 0.33 / 1.0, so the dial only starts to prefer a 3b/mistral over qwen
@@ -86,6 +87,14 @@ def experiment_d(pool, obj, judged, folds, repeats, C, lam):
         splits, reps = cv_splits(pool, judged, extra, folds, repeats)
         P = probs_for(pool, splits, reps, judged, C)
         out[label] = {v: report(pool, judged, P, LAMS, lam, value=v) for v in ("passed", "judge")}
+    # The faithful v1 recipe (labels from 1-10 judge scores, trained on the judged queries only), same folds.
+    view = dataclasses.replace(pool, passed=pool.judge)
+    splits, reps = cv_splits(view, judged, np.array([], dtype=int), folds, repeats)
+    P1 = predict_over_splits(view, splits, reps, judged, lambda: V1StyleClassifier(label_fn=judge_score_label))
+    for v in ("passed", "judge"):
+        row = report(pool, judged, {"v1-style": P1}, LAMS, lam, value=v)["strategies"]["v1-style classifier"]
+        out["judged_only"][v]["strategies"]["v1 recipe (judge-score labels)"] = row
+        out["with_benchmarks"][v]["strategies"]["v1 recipe (judge-score labels)"] = row
     return out
 
 
@@ -113,6 +122,14 @@ def print_table(title, res, value="pass rate %", scale=100.0, digits=1):
     for name, s in res["strategies"].items():
         print(f"{name:<34}{s['value']*scale:<12.{digits}f}{fmt(s['vs_qwen']['delta'], scale, digits, True):<30}"
               f"{fmt(s['vs_8b']['delta'], scale, digits, True):<30}{fmt(s['vs_8b']['savings'])}")
+
+
+def print_frontier(title, res, name, value="judge", scale=1.0, digits=2):
+    print(f"\n{title}: dial -> {value}, cost saved vs always-8b, and which model it picks")
+    print(f"  {'dial':<6}{value:<8}{'vs 8b (pts) [95% CI]':<26}{'saved %':<10}" + "".join(f"{m.split(':')[0][:9]:<11}" for m in SERVED_MODELS))
+    for e in res["frontier"][name]:
+        print(f"  {e['lam']:<6.2f}{e['value']*scale:<8.{digits}f}{fmt(e['vs_8b']['delta'], scale, digits, True):<26}"
+              f"{e['vs_8b']['savings'][0]:<10.1f}" + "".join(f"{e['share'][m]*100:<11.0f}" for m in SERVED_MODELS))
 
 
 def main():
@@ -145,6 +162,9 @@ def main():
     print_table("D. CV on judged queries, judged only (v1 data)", d["judged_only"]["passed"])
     print_table("D. judge score, benchmarks in training", d["with_benchmarks"]["judge"], "judge", 1.0, 2)
     print_table("D. judge score, judged only", d["judged_only"]["judge"], "judge", 1.0, 2)
+    for name in ("LR", "kNN"):
+        print_frontier(f"D. judged queries, benchmarks in training, {name}", d["with_benchmarks"]["judge"], name)
+    print_frontier("A. benchmark tasks, LR", a, "LR", "pass %", 100.0, 1)
     e = experiment_e(pool, obj, judged, args.folds, C, lam)
     print("\nE. Learning curve (training fraction -> pass rate, delta vs always-qwen in points)")
     for row in e:
