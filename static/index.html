@@ -141,8 +141,9 @@ function appendMessage(m) {
   });
   const pre = document.createElement('pre');
   pre.textContent = m.response;
-  card.append(badges, pre);
-  if (m.explanation) card.appendChild(renderWhy(m));
+  card.appendChild(badges);
+  if (m.explanation && m.all_probabilities) card.appendChild(renderWhy(m));  // above the answer, so a long answer does not bury it
+  card.appendChild(pre);
 
   thread.append(user, card);
   card.scrollIntoView({ block: 'end' });

@@ -1,3 +1,4 @@
+import json
 import os
 import sqlite3
 from contextlib import closing
@@ -57,6 +58,8 @@ def init_db() -> None:
             conn.execute("ALTER TABLE requests ADD COLUMN session_id INTEGER")
         if "routing_query" not in existing:
             conn.execute("ALTER TABLE requests ADD COLUMN routing_query TEXT")
+        if "why" not in existing:  # v2: JSON {"probabilities": ..., "neighbours": [...]} for "Why this model?"
+            conn.execute("ALTER TABLE requests ADD COLUMN why TEXT")
         conn.commit()
 
 
@@ -74,13 +77,13 @@ def session_exists(session_id: int) -> bool:
 
 def log_request(query, routed_model, confidence, fallback_triggered, latency_seconds,
                 response: str = "", session_id: Optional[int] = None,
-                routing_query: Optional[str] = None) -> int:
+                routing_query: Optional[str] = None, why: Optional[dict] = None) -> int:
     with closing(_connect()) as conn:
         cur = conn.execute(
             "INSERT INTO requests (query, routed_model, confidence, fallback_triggered, "
-            "latency_seconds, response, session_id, routing_query) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+            "latency_seconds, response, session_id, routing_query, why) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (query, routed_model, confidence, int(fallback_triggered), latency_seconds, response,
-             session_id, routing_query),
+             session_id, routing_query, json.dumps(why) if why else None),
         )
         if session_id is not None:
             conn.execute("UPDATE sessions SET updated_at = CURRENT_TIMESTAMP WHERE id = ?", (session_id,))
@@ -125,12 +128,21 @@ def get_session(session_id: int) -> Optional[dict]:
             return None
         messages = conn.execute("""
             SELECT id, timestamp, query, response, routed_model, confidence,
-                   fallback_triggered, latency_seconds, routing_query
+                   fallback_triggered, latency_seconds, routing_query, why
             FROM requests WHERE session_id = ? ORDER BY id
         """, (session_id,)).fetchall()
         result = dict(session)
-        result["messages"] = [{**dict(m), "fallback_triggered": bool(m["fallback_triggered"])} for m in messages]
+        result["messages"] = [_message(m) for m in messages]
         return result
+
+
+def _message(row) -> dict:
+    """A stored request as the UI expects it, with the stored 'why' unpacked (None for chats made before v2)."""
+    message = {**dict(row), "fallback_triggered": bool(row["fallback_triggered"])}
+    why = json.loads(message.pop("why")) if message["why"] else None
+    message["all_probabilities"] = why["probabilities"] if why else None
+    message["explanation"] = why["neighbours"] if why else None
+    return message
 
 
 def delete_session(session_id: int) -> bool:

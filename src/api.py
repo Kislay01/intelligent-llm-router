@@ -138,6 +138,7 @@ def route_query(request: RouteRequest):
         response=model_response,
         session_id=session_id,
         routing_query=decision.routing_query,
+        why={"probabilities": decision.probabilities, "neighbours": explanation} if explanation else None,
     )
 
     # Only standalone text is useful for learning: a first message, or a follow-up that was rewritten.

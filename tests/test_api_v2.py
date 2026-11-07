@@ -141,3 +141,38 @@ def test_train_writes_loadable_artifact(tmp_path, monkeypatch):
 def v2_serve_load(path):
     from v2_serve import load_router
     return load_router(path)
+
+
+@patch("api.query_model", return_value="answer")
+def test_why_this_model_survives_reopening_the_chat(_q, v2):
+    sent = client.post("/route", json={"query": "hello"}).json()
+    stored = client.get(f"/sessions/{sent['session_id']}").json()["messages"][0]
+    assert stored["explanation"] == sent["explanation"]
+    assert stored["all_probabilities"] == pytest.approx(sent["all_probabilities"])
+
+
+@patch("api.query_model", return_value="answer")
+def test_chats_without_a_why_have_none(_q, monkeypatch):
+    monkeypatch.setattr(api, "v2", None)
+    sent = client.post("/route", json={"query": "hello"}).json()
+    stored = client.get(f"/sessions/{sent['session_id']}").json()["messages"][0]
+    assert stored["explanation"] is None and stored["all_probabilities"] is None
+
+
+def test_old_database_without_why_column_is_migrated(tmp_path, monkeypatch):
+    import sqlite3
+    path = str(tmp_path / "old.db")
+    conn = sqlite3.connect(path)
+    conn.execute("CREATE TABLE requests (id INTEGER PRIMARY KEY AUTOINCREMENT, timestamp TEXT DEFAULT CURRENT_TIMESTAMP, "
+                 "query TEXT NOT NULL, routed_model TEXT NOT NULL, confidence REAL NOT NULL, "
+                 "fallback_triggered INTEGER NOT NULL, latency_seconds REAL NOT NULL)")
+    conn.execute("INSERT INTO requests (query, routed_model, confidence, fallback_triggered, latency_seconds) "
+                 "VALUES ('old', 'llama3.2:3b', 0.5, 0, 1.0)")
+    conn.commit()
+    conn.close()
+    monkeypatch.setattr(db, "DB_PATH", path)
+    db.init_db()
+    sid = db.create_session("t")
+    db.log_request("new", "llama3.1:8b", 0.9, False, 1.0, "r", sid, "new", why={"probabilities": {"a": 1}, "neighbours": []})
+    msg = db.get_session(sid)["messages"][0]
+    assert msg["all_probabilities"] == {"a": 1} and msg["explanation"] == []
