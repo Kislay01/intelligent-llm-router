@@ -1054,3 +1054,803 @@
 {"task_id": "mbpp/804", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\nAssertionError"}
 {"task_id": "mbpp/806", "source": "mbpp", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
 {"task_id": "mbpp/809", "source": "mbpp", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "Traceback (most recent call last):\n  File \"<stdin>\", line 6, in <module>\nAssertionError"}
+{"task_id": "gsm8k/13", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 18, got 36.0"}
+{"task_id": "gsm8k/51", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/54", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/61", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/65", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/88", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/93", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 36, got 39.0"}
+{"task_id": "gsm8k/114", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/135", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/142", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/146", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/161", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/163", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 50, got 46.0"}
+{"task_id": "gsm8k/178", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/189", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/191", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/198", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 320, got 360.0"}
+{"task_id": "gsm8k/206", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/209", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 145, got 70.0"}
+{"task_id": "gsm8k/228", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/255", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 192, got 176.0"}
+{"task_id": "gsm8k/285", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/292", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/318", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/326", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/333", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/334", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/350", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/393", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/407", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 2000, got 4000.0"}
+{"task_id": "gsm8k/429", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/432", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/435", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/440", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/447", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/449", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/451", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 11050, got 110100.0"}
+{"task_id": "gsm8k/457", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/466", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 1, got 100.0"}
+{"task_id": "gsm8k/469", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/476", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/501", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/505", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 1600, got 1200.0"}
+{"task_id": "gsm8k/538", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/541", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 50, got 75.0"}
+{"task_id": "gsm8k/542", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/546", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 130, got 91.0"}
+{"task_id": "gsm8k/548", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/552", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/563", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 12, got 6.0"}
+{"task_id": "gsm8k/569", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/592", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/600", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/644", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/646", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/664", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/689", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 7, got 12.0"}
+{"task_id": "gsm8k/696", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/704", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/727", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/735", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/740", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/747", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/758", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/775", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/777", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 4400, got 5200.0"}
+{"task_id": "gsm8k/778", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/810", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/821", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 35, got 45.0"}
+{"task_id": "gsm8k/859", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 1520, got 1360.0"}
+{"task_id": "gsm8k/864", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 80, got 480.0"}
+{"task_id": "gsm8k/865", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/919", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/928", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/939", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/940", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/946", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1022", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1034", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1093", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1098", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1103", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1116", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1130", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1140", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 27, got 54.0"}
+{"task_id": "gsm8k/1149", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1161", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 170, got 3390.0"}
+{"task_id": "gsm8k/1182", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 1800, got 18.0"}
+{"task_id": "gsm8k/1206", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1209", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1232", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1236", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1247", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1266", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1287", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1300", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1301", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1309", "source": "gsm8k", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1310", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 64, got 32.0"}
+{"task_id": "gsm8k/1316", "source": "gsm8k", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected 230, got 470.0"}
+{"task_id": "mmlu/106", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/409", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/434", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/488", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/520", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/711", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/750", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1139", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/1169", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/1291", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1307", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/1424", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/1519", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1535", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1584", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1654", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/1674", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1679", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1824", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2045", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/2286", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2547", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/2615", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2664", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3150", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/3257", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3432", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3527", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/3582", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/3611", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3657", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3733", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3811", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/3814", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4012", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4333", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4374", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4506", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4552", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4554", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/4557", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4741", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/4803", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/5514", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected C, got D"}
+{"task_id": "mmlu/5574", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/5635", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected D, got A"}
+{"task_id": "mmlu/5820", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5881", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5925", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5977", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6065", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/6201", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/6224", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6227", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6873", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/6912", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/6924", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/7359", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/7428", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/7527", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/8279", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/8785", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/8928", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/8935", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/9044", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/9195", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/9459", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/9654", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/9674", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/9863", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/9891", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10133", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/10299", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/10415", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected C, got None"}
+{"task_id": "mmlu/10476", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/10617", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10647", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10834", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10980", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/11087", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/11199", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11438", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected C, got A"}
+{"task_id": "mmlu/11490", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11498", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected D, got A"}
+{"task_id": "mmlu/11543", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11731", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/11955", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/12066", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected C, got A"}
+{"task_id": "mmlu/12135", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/12149", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/12432", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/12509", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/12665", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/13202", "source": "mmlu", "model": "llama3.2:3b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/13223", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13261", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13588", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13666", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13885", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/14013", "source": "mmlu", "model": "llama3.2:3b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/13", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/51", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 5, got 2.0"}
+{"task_id": "gsm8k/54", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/61", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/65", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/88", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/93", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/114", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/135", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/142", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/146", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/161", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/163", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/178", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/189", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/191", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/198", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/206", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/209", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/228", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/255", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/285", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/292", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/318", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/326", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/333", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/334", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/350", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/393", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 20, got 23.0"}
+{"task_id": "gsm8k/407", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/429", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/432", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/435", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/440", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/447", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/449", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/451", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/457", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/466", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 1, got 100.0"}
+{"task_id": "gsm8k/469", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/476", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/501", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/505", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/538", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/541", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 50, got 25.0"}
+{"task_id": "gsm8k/542", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/546", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/548", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/552", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/563", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/569", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/592", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/600", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/644", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/646", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/664", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/689", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 7, got 12.0"}
+{"task_id": "gsm8k/696", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/704", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/727", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 112, got 40.0"}
+{"task_id": "gsm8k/735", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/740", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 25, got 13.0"}
+{"task_id": "gsm8k/747", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/758", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/775", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/777", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/778", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/810", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/821", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 35, got 55.0"}
+{"task_id": "gsm8k/859", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/864", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/865", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/919", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/928", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/939", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/940", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 280, got 1400.0"}
+{"task_id": "gsm8k/946", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1022", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1034", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1093", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1098", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1103", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1116", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1130", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1140", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 27, got 36.0"}
+{"task_id": "gsm8k/1149", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1161", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 170, got 140.0"}
+{"task_id": "gsm8k/1182", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1206", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1209", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1232", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1236", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 84, got 30.0"}
+{"task_id": "gsm8k/1247", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1266", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1287", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1300", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1301", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1309", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 2280, got 2180.0"}
+{"task_id": "gsm8k/1310", "source": "gsm8k", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected 64, got 32.0"}
+{"task_id": "gsm8k/1316", "source": "gsm8k", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/106", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/409", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/434", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/488", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/520", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/711", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/750", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1139", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1169", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/1291", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1307", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/1424", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/1519", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1535", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1584", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1654", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1674", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1679", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1824", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2045", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/2286", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/2547", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/2615", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/2664", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3150", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got None"}
+{"task_id": "mmlu/3257", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got D"}
+{"task_id": "mmlu/3432", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3527", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/3582", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/3611", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3657", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3733", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got A"}
+{"task_id": "mmlu/3811", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/3814", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4012", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4333", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4374", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4506", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4552", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4554", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4557", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4741", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4803", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/5514", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/5574", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/5635", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected D, got A"}
+{"task_id": "mmlu/5820", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5881", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5925", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5977", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/6065", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/6201", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6224", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6227", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6873", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/6912", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6924", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/7359", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/7428", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/7527", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/8279", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got D"}
+{"task_id": "mmlu/8785", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/8928", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/8935", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/9044", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/9195", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/9459", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/9654", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/9674", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/9863", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/9891", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10133", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/10299", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10415", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10476", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/10617", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/10647", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10834", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10980", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/11087", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/11199", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/11438", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got A"}
+{"task_id": "mmlu/11490", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11498", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/11543", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11731", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11955", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/12066", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/12135", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/12149", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/12432", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/12509", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/12665", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13202", "source": "mmlu", "model": "llama3.1:8b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/13223", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13261", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13588", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13666", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13885", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/14013", "source": "mmlu", "model": "llama3.1:8b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/13", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/51", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected 5, got 4.0"}
+{"task_id": "gsm8k/54", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/61", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/65", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/88", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/93", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/114", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/135", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/142", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/146", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/161", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/163", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected 50, got 54.0"}
+{"task_id": "gsm8k/178", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/189", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/191", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/198", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/206", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/209", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/228", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/255", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected 192, got 96.0"}
+{"task_id": "gsm8k/285", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/292", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/318", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/326", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/333", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/334", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/350", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/393", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/407", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/429", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/432", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/435", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/440", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/447", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/449", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/451", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/457", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/466", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/469", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected 4, got 1.0"}
+{"task_id": "gsm8k/476", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/501", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/505", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected 1600, got 1200.0"}
+{"task_id": "gsm8k/538", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/541", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/542", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/546", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/548", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/552", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/563", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/569", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/592", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/600", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/644", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/646", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/664", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/689", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/696", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/704", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/727", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/735", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/740", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/747", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/758", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/775", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/777", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/778", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/810", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/821", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/859", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/864", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/865", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/919", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/928", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/939", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/940", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/946", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1022", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1034", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1093", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1098", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1103", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1116", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1130", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1140", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1149", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1161", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1182", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1206", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1209", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1232", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1236", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1247", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1266", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1287", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1300", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1301", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1309", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected 2280, got 2180.0"}
+{"task_id": "gsm8k/1310", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected 64, got 4.0"}
+{"task_id": "gsm8k/1316", "source": "gsm8k", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/106", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/409", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/434", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/488", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/520", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/711", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/750", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1139", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/1169", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1291", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1307", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/1424", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1519", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1535", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1584", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1654", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/1674", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1679", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1824", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2045", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/2286", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2547", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected D, got A"}
+{"task_id": "mmlu/2615", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2664", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/3150", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3257", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/3432", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3527", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3582", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/3611", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3657", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3733", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3811", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/3814", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/4012", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4333", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4374", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4506", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4552", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4554", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/4557", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4741", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4803", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/5514", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5574", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5635", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5820", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5881", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5925", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5977", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6065", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/6201", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/6224", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6227", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6873", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6912", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/6924", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/7359", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/7428", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/7527", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/8279", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/8785", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/8928", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/8935", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/9044", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/9195", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/9459", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/9654", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/9674", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/9863", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/9891", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/10133", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/10299", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10415", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/10476", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/10617", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10647", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected C, got A"}
+{"task_id": "mmlu/10834", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10980", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/11087", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/11199", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11438", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11490", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11498", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11543", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11731", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/11955", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/12066", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected C, got A"}
+{"task_id": "mmlu/12135", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/12149", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/12432", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/12509", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/12665", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13202", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/13223", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13261", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13588", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13666", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13885", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/14013", "source": "mmlu", "model": "qwen2.5-coder:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/13", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 18, got 15.0"}
+{"task_id": "gsm8k/51", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/54", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/61", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/65", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/88", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/93", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 36, got 36.05"}
+{"task_id": "gsm8k/114", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/135", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/142", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 140, got 1540.0"}
+{"task_id": "gsm8k/146", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/161", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/163", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 50, got 49.0"}
+{"task_id": "gsm8k/178", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/189", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 34, got 32.75"}
+{"task_id": "gsm8k/191", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/198", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 320, got 60.0"}
+{"task_id": "gsm8k/206", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/209", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 145, got 1.0"}
+{"task_id": "gsm8k/228", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 1, got 0.5"}
+{"task_id": "gsm8k/255", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 192, got 256.0"}
+{"task_id": "gsm8k/285", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 21, got 24.0"}
+{"task_id": "gsm8k/292", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/318", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 123, got 150.0"}
+{"task_id": "gsm8k/326", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 14, got 7.0"}
+{"task_id": "gsm8k/333", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/334", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 6, got 12.0"}
+{"task_id": "gsm8k/350", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 8, got 7.5"}
+{"task_id": "gsm8k/393", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/407", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 2000, got 4000.0"}
+{"task_id": "gsm8k/429", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 13, got 22.0"}
+{"task_id": "gsm8k/432", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/435", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 5, got 3.0"}
+{"task_id": "gsm8k/440", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/447", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 5, got 19.0"}
+{"task_id": "gsm8k/449", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/451", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 11050, got 10950.0"}
+{"task_id": "gsm8k/457", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/466", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/469", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/476", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/501", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/505", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 1600, got 1200.0"}
+{"task_id": "gsm8k/538", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/541", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 50, got 25.0"}
+{"task_id": "gsm8k/542", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 7, got 6.0"}
+{"task_id": "gsm8k/546", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 130, got 104.0"}
+{"task_id": "gsm8k/548", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/552", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 450, got 650.0"}
+{"task_id": "gsm8k/563", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 12, got 18.0"}
+{"task_id": "gsm8k/569", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/592", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/600", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 10, got 2.0"}
+{"task_id": "gsm8k/644", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/646", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/664", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/689", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 7, got 7.2"}
+{"task_id": "gsm8k/696", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/704", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/727", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 112, got 128.0"}
+{"task_id": "gsm8k/735", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/740", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/747", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/758", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/775", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/777", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 4400, got 2400.0"}
+{"task_id": "gsm8k/778", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/810", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 310, got 320.0"}
+{"task_id": "gsm8k/821", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/859", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/864", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 80, got 160.0"}
+{"task_id": "gsm8k/865", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/919", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/928", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 60, got 6.0"}
+{"task_id": "gsm8k/939", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/940", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/946", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 450, got 280.0"}
+{"task_id": "gsm8k/1022", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1034", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 66, got 134.0"}
+{"task_id": "gsm8k/1093", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1098", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 30, got 34.0"}
+{"task_id": "gsm8k/1103", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1116", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1130", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 25, got 12.5"}
+{"task_id": "gsm8k/1140", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 27, got 2.0"}
+{"task_id": "gsm8k/1149", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1161", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 170, got 92.5"}
+{"task_id": "gsm8k/1182", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1206", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1209", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 29, got 39.0"}
+{"task_id": "gsm8k/1232", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1236", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 84, got 6.0"}
+{"task_id": "gsm8k/1247", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1266", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1287", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 84, got 132.0"}
+{"task_id": "gsm8k/1300", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 120, got 600.0"}
+{"task_id": "gsm8k/1301", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 23, got 26.0"}
+{"task_id": "gsm8k/1309", "source": "gsm8k", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "gsm8k/1310", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 64, got 32.0"}
+{"task_id": "gsm8k/1316", "source": "gsm8k", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected 230, got 470.0"}
+{"task_id": "mmlu/106", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/409", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got None"}
+{"task_id": "mmlu/434", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/488", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/520", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/711", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/750", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1139", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/1169", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/1291", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/1307", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1424", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/1519", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1535", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/1584", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1654", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/1674", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/1679", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/1824", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2045", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/2286", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got None"}
+{"task_id": "mmlu/2547", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/2615", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/2664", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3150", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got None"}
+{"task_id": "mmlu/3257", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got A"}
+{"task_id": "mmlu/3432", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3527", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3582", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got None"}
+{"task_id": "mmlu/3611", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3657", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3733", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/3811", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got None"}
+{"task_id": "mmlu/3814", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4012", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/4333", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4374", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/4506", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got None"}
+{"task_id": "mmlu/4552", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4554", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4557", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4741", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/4803", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/5514", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/5574", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got None"}
+{"task_id": "mmlu/5635", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5820", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got None"}
+{"task_id": "mmlu/5881", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5925", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/5977", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/6065", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/6201", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/6224", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6227", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/6873", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/6912", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/6924", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/7359", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/7428", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got A"}
+{"task_id": "mmlu/7527", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/8279", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/8785", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got None"}
+{"task_id": "mmlu/8928", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got None"}
+{"task_id": "mmlu/8935", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/9044", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/9195", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/9459", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/9654", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/9674", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/9863", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got B"}
+{"task_id": "mmlu/9891", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got C"}
+{"task_id": "mmlu/10133", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected D, got B"}
+{"task_id": "mmlu/10299", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10415", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got B"}
+{"task_id": "mmlu/10476", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/10617", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/10647", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10834", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/10980", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got None"}
+{"task_id": "mmlu/11087", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11199", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/11438", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11490", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11498", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/11543", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got C"}
+{"task_id": "mmlu/11731", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/11955", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/12066", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected C, got A"}
+{"task_id": "mmlu/12135", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/12149", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got D"}
+{"task_id": "mmlu/12432", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/12509", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got C"}
+{"task_id": "mmlu/12665", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected A, got D"}
+{"task_id": "mmlu/13202", "source": "mmlu", "model": "mistral:7b", "status": "fail", "passed": false, "detail": "expected B, got A"}
+{"task_id": "mmlu/13223", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13261", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13588", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13666", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/13885", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
+{"task_id": "mmlu/14013", "source": "mmlu", "model": "mistral:7b", "status": "pass", "passed": true, "detail": ""}
