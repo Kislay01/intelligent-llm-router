@@ -11,7 +11,7 @@ from pricing import SERVED_MODELS
 from v2_data import build_pool, cached_embed, calibrate_threshold, raw_query
 from v2_metrics import cv_splits, paired_bootstrap, pick_default_lam, predict_over_splits, report
 from v2_router import (NORM_PRICES, KnnPredictor, PassPredictor, V1StyleClassifier, cheapest_passing_label,
-                        choose)
+                        choose, judge_score_label)
 
 N_MODELS = len(SERVED_MODELS)
 HAS_DATA = os.path.exists("data/bench/tasks.json") and os.path.exists("data/labeled_results.jsonl")
@@ -220,3 +220,13 @@ def test_report_structure_and_oracle_dominates():
         s["value"] for k, s in out["strategies"].items() if k.startswith("Always"))
     assert [e["lam"] for e in out["frontier"]["LR"]] == [0.0, 0.5]
     assert abs(sum(out["frontier"]["LR"][0]["share"].values()) - 1) < 1e-9
+
+
+def test_judge_score_label_matches_v1_cost_aware_label():
+    from relabel import cost_aware_label
+    scores = np.array([[10, 10, 10, 10], [6, 9, 9, 7], [5, 5, 8, 8], [4, 4, 4, 4]], dtype=float)
+    expected = [SERVED_MODELS.index(cost_aware_label(dict(zip(SERVED_MODELS, r)), 0)) for r in scores]
+    assert judge_score_label(scores).tolist() == expected
+    assert judge_score_label(scores)[1] == SERVED_MODELS.index("qwen2.5-coder:7b")  # ties at 9: 0.07 < 0.18
+    clf = V1StyleClassifier(label_fn=judge_score_label).fit(np.random.default_rng(0).normal(size=(4, 3)), scores)
+    assert clf.choose(np.zeros((2, 3))).shape == (2,)
